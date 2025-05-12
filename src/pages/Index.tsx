@@ -12,6 +12,7 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FundingSection from "@/components/FundingSection";
 import F6SOffersCarousel from "@/components/F6SOffersCarousel";
+import QuoteGenerator from "@/components/QuoteGenerator";
 
 const Index = () => {
   useEffect(() => {
@@ -64,6 +65,7 @@ const Index = () => {
           <TestimonialsSection />
           <NotesSection />
           <ContactForm />
+          <QuoteGenerator />
         </main>
         <Footer />
       </div>
