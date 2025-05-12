@@ -8,7 +8,9 @@ import {
   FileText, 
   FileCode, 
   Info, 
-  Link 
+  Link,
+  Bot,
+  MessageCircle
 } from "lucide-react";
 
 const ServicesSection: React.FC = () => {
@@ -17,6 +19,70 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       id: 1,
+      icon: <MessageSquare size={24} />,
+      title: {
+        en: "WhatsApp Business API Setup",
+        ar: "إعداد واجهة برمجة تطبيقات واتساب بزنس"
+      },
+      description: {
+        en: "Complete WhatsApp Business API deployment and configuration for enterprise-level customer communication.",
+        ar: "نشر وتكوين واجهة برمجة تطبيقات WhatsApp Business الكاملة للتواصل مع العملاء على مستوى الشركات."
+      },
+      features: [
+        {
+          en: "API configuration & setup",
+          ar: "تكوين وإعداد واجهة برمجة التطبيقات"
+        },
+        {
+          en: "Multi-agent inbox",
+          ar: "صندوق وارد متعدد الوكلاء"
+        },
+        {
+          en: "Message templates approval",
+          ar: "الموافقة على قوالب الرسائل"
+        },
+        {
+          en: "Business account verification",
+          ar: "التحقق من حساب الأعمال"
+        }
+      ],
+      image: "/images/whatsapp-api.png",
+      highlighted: true
+    },
+    {
+      id: 2,
+      icon: <Bot size={24} />,
+      title: {
+        en: "Chatbot Development & Integration",
+        ar: "تطوير ودمج روبوتات المحادثة"
+      },
+      description: {
+        en: "Custom chatbot solutions for WhatsApp, Facebook Messenger, and website integration with advanced AI capabilities.",
+        ar: "حلول روبوت محادثة مخصصة لـ WhatsApp و Facebook Messenger ودمج موقع الويب مع قدرات الذكاء الاصطناعي المتقدمة."
+      },
+      features: [
+        {
+          en: "AI-powered responses",
+          ar: "ردود مدعومة بالذكاء الاصطناعي"
+        },
+        {
+          en: "Multi-platform integration",
+          ar: "تكامل متعدد المنصات"
+        },
+        {
+          en: "Custom workflows & logic",
+          ar: "سير عمل ومنطق مخصص"
+        },
+        {
+          en: "Analytics & reporting",
+          ar: "التحليلات وإعداد التقارير"
+        }
+      ],
+      image: "/images/chatbot-integration.png",
+      highlighted: true
+    },
+    {
+      id: 3,
       icon: <Badge size={24} />,
       title: {
         en: "Facebook Business Manager Verification",
@@ -38,39 +104,48 @@ const ServicesSection: React.FC = () => {
         {
           en: "Domain verification",
           ar: "التحقق من النطاق"
+        },
+        {
+          en: "Ad account setup",
+          ar: "إعداد حساب الإعلانات"
         }
       ],
       image: "/images/facebook-verification.png"
     },
     {
-      id: 2,
-      icon: <MessageSquare size={24} />,
+      id: 4,
+      icon: <MessageCircle size={24} />,
       title: {
-        en: "WhatsApp Business API Setup",
-        ar: "إعداد واجهة برمجة تطبيقات واتساب بزنس"
+        en: "WhatsApp Automation Scripts",
+        ar: "نصوص أتمتة واتساب"
       },
       description: {
-        en: "Deploy and configure WhatsApp Business API for your business to enable large-scale customer communication.",
-        ar: "نشر وتكوين واجهة برمجة تطبيقات WhatsApp Business لعملك لتمكين التواصل مع العملاء على نطاق واسع."
+        en: "Custom automation scripts for WhatsApp Business to streamline customer service and marketing workflows.",
+        ar: "نصوص أتمتة مخصصة لـ WhatsApp Business لتبسيط خدمة العملاء وسير عمل التسويق."
       },
       features: [
         {
-          en: "API configuration",
-          ar: "تكوين واجهة برمجة التطبيقات"
+          en: "Auto-responders",
+          ar: "الردود التلقائية"
         },
         {
-          en: "Chatbot integration",
-          ar: "تكامل روبوت الدردشة"
+          en: "Scheduled messaging",
+          ar: "المراسلة المجدولة"
         },
         {
-          en: "Automated messaging",
-          ar: "المراسلة الآلية"
+          en: "Customer segmentation",
+          ar: "تقسيم العملاء"
+        },
+        {
+          en: "Campaign automation",
+          ar: "أتمتة الحملات"
         }
       ],
-      image: "/images/whatsapp-api.png"
+      image: "/images/whatsapp-automation.png",
+      highlighted: true
     },
     {
-      id: 3,
+      id: 5,
       icon: <Badge size={24} />,
       title: {
         en: "SendPulse $5000 Grant Application",
@@ -92,12 +167,16 @@ const ServicesSection: React.FC = () => {
         {
           en: "Account setup",
           ar: "إعداد الحساب"
+        },
+        {
+          en: "Integration setup",
+          ar: "إعداد التكامل"
         }
       ],
       image: "/images/sendpulse-grant.png"
     },
     {
-      id: 4,
+      id: 6,
       icon: <Link size={24} />,
       title: {
         en: "Make.com Teams Plan ($636/year)",
@@ -119,12 +198,16 @@ const ServicesSection: React.FC = () => {
         {
           en: "Advanced integrations",
           ar: "تكاملات متقدمة"
+        },
+        {
+          en: "Technical setup support",
+          ar: "دعم الإعداد الفني"
         }
       ],
       image: "/images/make-workflows.png"
     },
     {
-      id: 5,
+      id: 7,
       icon: <FileCode size={24} />,
       title: {
         en: "WordPress Integration",
@@ -146,12 +229,16 @@ const ServicesSection: React.FC = () => {
         {
           en: "Automated publishing",
           ar: "النشر الآلي"
+        },
+        {
+          en: "Custom webhook setup",
+          ar: "إعداد webhook مخصص"
         }
       ],
       image: "/images/wordpress-integration.png"
     },
     {
-      id: 6,
+      id: 8,
       icon: <Info size={24} />,
       title: {
         en: "Ongoing Technical Support",
@@ -173,6 +260,10 @@ const ServicesSection: React.FC = () => {
         {
           en: "System maintenance",
           ar: "صيانة النظام"
+        },
+        {
+          en: "Regular updates",
+          ar: "تحديثات منتظمة"
         }
       ],
       image: "/images/technical-support.png"
@@ -191,10 +282,23 @@ const ServicesSection: React.FC = () => {
             "حلول تقنية شاملة لاحتياجات أعمالك الرقمية"
           )}
         </p>
+        
+        <div className="text-center mb-10">
+          <div className="inline-block bg-tech-blue/10 rounded-lg px-4 py-2 mb-6">
+            <h3 className="text-lg font-medium text-tech-blue">
+              {t("Specialized in WhatsApp Business API & Chatbot Solutions", "متخصصون في واجهة برمجة تطبيقات WhatsApp Business وحلول روبوتات الدردشة")}
+            </h3>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((service) => (
-            <div key={service.id} className="service-card animate-fade-in overflow-hidden">
+            <div 
+              key={service.id} 
+              className={`service-card animate-fade-in overflow-hidden ${
+                service.highlighted ? 'border-2 border-tech-blue shadow-lg' : ''
+              }`}
+            >
               {service.image && (
                 <div className="h-40 overflow-hidden -mx-6 -mt-6 mb-4">
                   <img 
