@@ -9,7 +9,8 @@ import {
   CarouselPrevious 
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge, DollarSign, Package } from "lucide-react";
+import { Badge as LucideBadge, DollarSign, Package } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 // F6S top offers data
 const f6sOffers = [
@@ -179,7 +180,7 @@ const F6SOffersCarousel: React.FC = () => {
                           )}
                         </div>
                         <div className="flex items-center">
-                          <Badge variant="outline" className="px-3 py-1 bg-blue-50">
+                          <Badge className="px-3 py-1 bg-blue-50">
                             {offer.category}
                           </Badge>
                         </div>
