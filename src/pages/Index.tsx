@@ -10,6 +10,8 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import NotesSection from "@/components/NotesSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import FundingSection from "@/components/FundingSection";
+import F6SOffersCarousel from "@/components/F6SOffersCarousel";
 
 const Index = () => {
   useEffect(() => {
@@ -54,6 +56,8 @@ const Index = () => {
         <Header />
         <main>
           <ServicesSection />
+          <FundingSection />
+          <F6SOffersCarousel />
           <IntegratedPlatforms />
           <PricingSection />
           <DetailedPlans />
