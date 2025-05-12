@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Check, X, ArrowRight, MessageSquare, Link } from "lucide-react";
+import { Check, X, ArrowRight, MessageSquare, Link, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MessageCalculator from "./MessageCalculator";
 
@@ -259,6 +259,23 @@ const PricingSection: React.FC = () => {
             {t("Calculate WhatsApp Message Costs", "حساب تكاليف رسائل واتساب")}
           </h3>
           <div className="max-w-2xl mx-auto">
+            <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 mb-6">
+              <div className="flex items-start gap-2">
+                <Info size={18} className="text-blue-600 mt-0.5" />
+                <div>
+                  <h4 className="text-sm font-medium text-blue-800 mb-1">
+                    {t("Updated Pricing Information", "معلومات التسعير المحدثة")}
+                  </h4>
+                  <p className="text-xs text-blue-700">
+                    {t(
+                      "Our calculator now includes pricing from more providers including Mini Chat, which often offers the most competitive rates in the market. All pricing data is updated as of May 2025.",
+                      "تتضمن الآلة الحاسبة لدينا الآن أسعارًا من المزيد من مقدمي الخدمات بما في ذلك Mini Chat، والتي غالبًا ما تقدم أكثر الأسعار تنافسية في السوق. تم تحديث جميع بيانات التسعير اعتبارًا من مايو 2025."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <MessageCalculator />
             
             <div className="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-200">

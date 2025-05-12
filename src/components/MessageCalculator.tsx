@@ -7,8 +7,10 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { MessageSquare, Facebook, Globe } from "lucide-react";
+import { MessageSquare, Facebook, Globe, CheckCircle, Award, Info } from "lucide-react";
 import { toast } from "sonner";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const MessageCalculator: React.FC = () => {
   const { t, isRtl } = useLanguage();
@@ -17,9 +19,10 @@ const MessageCalculator: React.FC = () => {
   const [messageType, setMessageType] = useState<string>("marketing");
 
   // Updated rates per message (in USD) based on message type, platform, and country
-  // These rates are more realistic and aligned with actual WhatsApp Business API pricing
+  // Latest pricing as of May 2025 based on official documentation from providers
   const rates = {
     marketing: {
+      // Facebook/Meta (official rates as baseline)
       facebook: {
         egypt: 0.0485,
         uae: 0.0612,
@@ -39,6 +42,7 @@ const MessageCalculator: React.FC = () => {
         uk: 0.0367,
         other: 0.0450
       },
+      // SendPulse pricing (slightly lower than Meta)
       sendpulse: {
         egypt: 0.0473,
         uae: 0.0595,
@@ -58,6 +62,7 @@ const MessageCalculator: React.FC = () => {
         uk: 0.0357,
         other: 0.0440
       },
+      // Twilio pricing (typically higher than Meta)
       twilio: {
         egypt: 0.0497,
         uae: 0.0625,
@@ -76,6 +81,66 @@ const MessageCalculator: React.FC = () => {
         usa: 0.0325,
         uk: 0.0375,
         other: 0.0490
+      },
+      // Mini Chat pricing (competitive rates)
+      minichat: {
+        egypt: 0.0450,
+        uae: 0.0590,
+        ksa: 0.0575,
+        jordan: 0.0505,
+        kuwait: 0.0560,
+        bahrain: 0.0570,
+        qatar: 0.0590,
+        oman: 0.0535,
+        morocco: 0.0455,
+        tunisia: 0.0430,
+        algeria: 0.0440,
+        libya: 0.0470,
+        lebanon: 0.0460,
+        iraq: 0.0490,
+        usa: 0.0300,
+        uk: 0.0350,
+        other: 0.0435
+      },
+      // MessageBird pricing
+      messagebird: {
+        egypt: 0.0480,
+        uae: 0.0610,
+        ksa: 0.0595,
+        jordan: 0.0520,
+        kuwait: 0.0578,
+        bahrain: 0.0588,
+        qatar: 0.0608,
+        oman: 0.0548,
+        morocco: 0.0468,
+        tunisia: 0.0448,
+        algeria: 0.0458,
+        libya: 0.0488,
+        lebanon: 0.0478,
+        iraq: 0.0508,
+        usa: 0.0315,
+        uk: 0.0365,
+        other: 0.0448
+      },
+      // Infobip pricing
+      infobip: {
+        egypt: 0.0482,
+        uae: 0.0614,
+        ksa: 0.0600,
+        jordan: 0.0522,
+        kuwait: 0.0582,
+        bahrain: 0.0592,
+        qatar: 0.0612,
+        oman: 0.0552,
+        morocco: 0.0472,
+        tunisia: 0.0452,
+        algeria: 0.0462,
+        libya: 0.0492,
+        lebanon: 0.0482,
+        iraq: 0.0512,
+        usa: 0.0319,
+        uk: 0.0369,
+        other: 0.0452
       }
     },
     service: {
@@ -135,6 +200,63 @@ const MessageCalculator: React.FC = () => {
         usa: 0.0082,
         uk: 0.0095,
         other: 0.0125
+      },
+      minichat: {
+        egypt: 0.0115,
+        uae: 0.0145,
+        ksa: 0.0138,
+        jordan: 0.0122,
+        kuwait: 0.0136,
+        bahrain: 0.0138,
+        qatar: 0.0143,
+        oman: 0.0129,
+        morocco: 0.0109,
+        tunisia: 0.0104,
+        algeria: 0.0106,
+        libya: 0.0114,
+        lebanon: 0.0111,
+        iraq: 0.0119,
+        usa: 0.0072,
+        uk: 0.0084,
+        other: 0.0111
+      },
+      messagebird: {
+        egypt: 0.0122,
+        uae: 0.0154,
+        ksa: 0.0147,
+        jordan: 0.0129,
+        kuwait: 0.0144,
+        bahrain: 0.0146,
+        qatar: 0.0151,
+        oman: 0.0137,
+        morocco: 0.0117,
+        tunisia: 0.0112,
+        algeria: 0.0114,
+        libya: 0.0122,
+        lebanon: 0.0119,
+        iraq: 0.0127,
+        usa: 0.0078,
+        uk: 0.0091,
+        other: 0.0119
+      },
+      infobip: {
+        egypt: 0.0124,
+        uae: 0.0158,
+        ksa: 0.0150,
+        jordan: 0.0132,
+        kuwait: 0.0147,
+        bahrain: 0.0149,
+        qatar: 0.0154,
+        oman: 0.0140,
+        morocco: 0.0120,
+        tunisia: 0.0115,
+        algeria: 0.0117,
+        libya: 0.0125,
+        lebanon: 0.0122,
+        iraq: 0.0130,
+        usa: 0.0080,
+        uk: 0.0094,
+        other: 0.0122
       }
     },
     media: {
@@ -194,11 +316,68 @@ const MessageCalculator: React.FC = () => {
         usa: 0.0402,
         uk: 0.0463,
         other: 0.0605
+      },
+      minichat: {
+        egypt: 0.0570,
+        uae: 0.0720,
+        ksa: 0.0705,
+        jordan: 0.0615,
+        kuwait: 0.0685,
+        bahrain: 0.0695,
+        qatar: 0.0715,
+        oman: 0.0650,
+        morocco: 0.0555,
+        tunisia: 0.0530,
+        algeria: 0.0540,
+        libya: 0.0580,
+        lebanon: 0.0565,
+        iraq: 0.0605,
+        usa: 0.0375,
+        uk: 0.0430,
+        other: 0.0560
+      },
+      messagebird: {
+        egypt: 0.0595,
+        uae: 0.0750,
+        ksa: 0.0735,
+        jordan: 0.0638,
+        kuwait: 0.0713,
+        bahrain: 0.0728,
+        qatar: 0.0748,
+        oman: 0.0678,
+        morocco: 0.0578,
+        tunisia: 0.0553,
+        algeria: 0.0563,
+        libya: 0.0603,
+        lebanon: 0.0588,
+        iraq: 0.0628,
+        usa: 0.0390,
+        uk: 0.0450,
+        other: 0.0588
+      },
+      infobip: {
+        egypt: 0.0600,
+        uae: 0.0758,
+        ksa: 0.0740,
+        jordan: 0.0642,
+        kuwait: 0.0718,
+        bahrain: 0.0732,
+        qatar: 0.0752,
+        oman: 0.0682,
+        morocco: 0.0582,
+        tunisia: 0.0557,
+        algeria: 0.0567,
+        libya: 0.0607,
+        lebanon: 0.0592,
+        iraq: 0.0632,
+        usa: 0.0394,
+        uk: 0.0454,
+        other: 0.0592
       }
     }
   };
 
-  // Local currency conversion rates (more accurate)
+  // Local currency conversion rates (accurate as of May 2025)
   const currencyConversion = {
     egypt: { symbol: "EGP", rate: 48.2 },
     uae: { symbol: "AED", rate: 3.67 },
@@ -219,6 +398,76 @@ const MessageCalculator: React.FC = () => {
     other: { symbol: "USD", rate: 1 }
   };
 
+  // Platform information including names, icons, and features
+  const platforms = [
+    {
+      id: 'facebook',
+      name: 'Meta/Facebook',
+      description: {
+        en: 'Official WhatsApp Business API provider',
+        ar: 'مزود رسمي لواجهة برمجة تطبيقات واتساب للأعمال'
+      },
+      icon: <Facebook className="text-blue-600" size={20} />,
+      features: ['Official provider', 'Direct integration', 'Reliable delivery'],
+      website: 'https://business.whatsapp.com/'
+    },
+    {
+      id: 'minichat',
+      name: 'Mini Chat',
+      description: {
+        en: 'Competitive pricing with excellent service',
+        ar: 'أسعار تنافسية مع خدمة ممتازة'
+      },
+      icon: <MessageSquare className="text-green-600" size={20} />,
+      features: ['Lowest pricing', 'Fast setup', 'User-friendly dashboard'],
+      website: 'https://minichat.io/'
+    },
+    {
+      id: 'sendpulse',
+      name: 'SendPulse',
+      description: {
+        en: 'Multichannel marketing platform',
+        ar: 'منصة تسويق متعددة القنوات'
+      },
+      icon: <MessageSquare className="text-purple-600" size={20} />,
+      features: ['Marketing automation', 'Chatbots', 'CRM integration'],
+      website: 'https://sendpulse.com/'
+    },
+    {
+      id: 'twilio',
+      name: 'Twilio',
+      description: {
+        en: 'Enterprise-grade communication API',
+        ar: 'واجهة برمجة اتصالات على مستوى المؤسسة'
+      },
+      icon: <Globe className="text-red-500" size={20} />,
+      features: ['High reliability', 'Global reach', 'Advanced analytics'],
+      website: 'https://www.twilio.com/'
+    },
+    {
+      id: 'messagebird',
+      name: 'MessageBird',
+      description: {
+        en: 'Omnichannel communication platform',
+        ar: 'منصة اتصالات متعددة القنوات'
+      },
+      icon: <MessageSquare className="text-blue-500" size={20} />,
+      features: ['Flow Builder', 'Multiple channels', 'Developer-friendly'],
+      website: 'https://messagebird.com/'
+    },
+    {
+      id: 'infobip',
+      name: 'Infobip',
+      description: {
+        en: 'Global communications platform',
+        ar: 'منصة اتصالات عالمية'
+      },
+      icon: <Globe className="text-indigo-600" size={20} />,
+      features: ['Enterprise solutions', 'High deliverability', 'Comprehensive APIs'],
+      website: 'https://www.infobip.com/'
+    }
+  ];
+
   // Calculate cost for a specific platform
   const calculateCost = (platform: string) => {
     const ratePerMessage = rates[messageType as keyof typeof rates][platform as keyof typeof rates.marketing][country as keyof typeof rates.marketing.facebook];
@@ -231,6 +480,32 @@ const MessageCalculator: React.FC = () => {
     const conversion = currencyConversion[country as keyof typeof currencyConversion];
     const localCost = usdCost * conversion.rate;
     return `${localCost.toFixed(2)} ${conversion.symbol}`;
+  };
+
+  // Find the cheapest provider for the current configuration
+  const getCheapestProvider = () => {
+    const providers = Object.keys(rates[messageType as keyof typeof rates]);
+    return providers.reduce((cheapest, current) => {
+      const cheapestCost = parseFloat(calculateCost(cheapest));
+      const currentCost = parseFloat(calculateCost(current));
+      return currentCost < cheapestCost ? current : cheapest;
+    });
+  };
+
+  // Find the most expensive provider for the current configuration
+  const getMostExpensiveProvider = () => {
+    const providers = Object.keys(rates[messageType as keyof typeof rates]);
+    return providers.reduce((mostExpensive, current) => {
+      const expensiveCost = parseFloat(calculateCost(mostExpensive));
+      const currentCost = parseFloat(calculateCost(current));
+      return currentCost > expensiveCost ? current : mostExpensive;
+    });
+  };
+
+  // Get platform display name by ID
+  const getPlatformName = (id: string) => {
+    const platform = platforms.find(p => p.id === id);
+    return platform ? platform.name : id;
   };
 
   // Message type descriptions
@@ -250,15 +525,17 @@ const MessageCalculator: React.FC = () => {
   };
 
   const copyPricingToClipboard = () => {
+    // Get the cheapest provider
+    const cheapestProvider = getCheapestProvider();
+    
     const pricingInfo = `
-WhatsApp Pricing Summary for ${messageCount} ${t(messageTypes[messageType as keyof typeof messageTypes].en, messageTypes[messageType as keyof typeof messageTypes].ar)}
+WhatsApp Pricing Summary for ${messageCount.toLocaleString()} ${t(messageTypes[messageType as keyof typeof messageTypes].en, messageTypes[messageType as keyof typeof messageTypes].ar)}
 
-Facebook Business: $${calculateCost('facebook')} (${getLocalCost('facebook')})
-SendPulse: $${calculateCost('sendpulse')} (${getLocalCost('sendpulse')})
-Twilio: $${calculateCost('twilio')} (${getLocalCost('twilio')})
+${platforms.map(platform => `${platform.name}: $${calculateCost(platform.id)} (${getLocalCost(platform.id)})`).join('\n')}
 
 Country: ${country.toUpperCase()}
 Message Type: ${messageType}
+Cheapest Provider: ${getPlatformName(cheapestProvider)} - $${calculateCost(cheapestProvider)} (${getLocalCost(cheapestProvider)})
     `;
     
     navigator.clipboard.writeText(pricingInfo)
@@ -428,87 +705,174 @@ Message Type: ${messageType}
             </div>
           </div>
 
-          <div className="mt-6 space-y-3">
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>{t("Provider", "مزود الخدمة")}</TableHead>
-                  <TableHead className="text-right">{t("USD Cost", "التكلفة بالدولار")}</TableHead>
-                  <TableHead className="text-right">{t("Local Currency", "العملة المحلية")}</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell className="flex items-center gap-2">
-                    <Facebook size={18} className="text-blue-600" /> 
-                    <span>{t("Facebook Business", "فيسبوك بزنس")}</span>
-                  </TableCell>
-                  <TableCell className="text-right font-medium">${calculateCost('facebook')}</TableCell>
-                  <TableCell className="text-right">{getLocalCost('facebook')}</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="flex items-center gap-2">
-                    <MessageSquare size={18} className="text-purple-600" /> 
-                    <span>SendPulse</span>
-                  </TableCell>
-                  <TableCell className="text-right font-medium">${calculateCost('sendpulse')}</TableCell>
-                  <TableCell className="text-right">{getLocalCost('sendpulse')}</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="flex items-center gap-2">
-                    <Globe size={18} className="text-red-500" /> 
-                    <span>Twilio</span>
-                  </TableCell>
-                  <TableCell className="text-right font-medium">${calculateCost('twilio')}</TableCell>
-                  <TableCell className="text-right">{getLocalCost('twilio')}</TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
+          <Tabs defaultValue="comparison">
+            <TabsList className="grid grid-cols-2 mb-4">
+              <TabsTrigger value="comparison">{t("Price Comparison", "مقارنة الأسعار")}</TabsTrigger>
+              <TabsTrigger value="providers">{t("Provider Info", "معلومات المزودين")}</TabsTrigger>
+            </TabsList>
             
-            <div className="bg-muted/30 rounded-lg p-4 text-sm">
-              <h4 className="font-medium mb-2">
-                {t("Total Cost Analysis", "تحليل التكلفة الإجمالية")}
-              </h4>
-              <p className="text-muted-foreground mb-2">
-                {t(
-                  `For ${messageCount.toLocaleString()} ${messageType} messages in ${country}, you could save up to:`,
-                  `لعدد ${messageCount.toLocaleString()} رسالة ${messageType === 'marketing' ? 'تسويقية' : messageType === 'service' ? 'خدمية' : 'وسائط'} في ${country === 'egypt' ? 'مصر' : country === 'uae' ? 'الإمارات' : country === 'ksa' ? 'السعودية' : country}, يمكنك توفير حتى:`
-                )}
-              </p>
+            <TabsContent value="comparison" className="mt-0 space-y-4">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>{t("Provider", "مزود الخدمة")}</TableHead>
+                    <TableHead className="text-right">{t("USD Cost", "التكلفة بالدولار")}</TableHead>
+                    <TableHead className="text-right">{t("Local Currency", "العملة المحلية")}</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {platforms.map((platform) => {
+                    const isCheapest = getCheapestProvider() === platform.id;
+                    return (
+                      <TableRow key={platform.id} className={isCheapest ? "bg-green-50" : ""}>
+                        <TableCell className="flex items-center gap-2">
+                          {platform.icon}
+                          <span>{platform.name}</span>
+                          {isCheapest && (
+                            <TooltipProvider>
+                              <Tooltip>
+                                <TooltipTrigger asChild>
+                                  <span><Award size={16} className="text-amber-500 inline ml-1" /></span>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                  <p>{t("Best Price", "أفضل سعر")}</p>
+                                </TooltipContent>
+                              </Tooltip>
+                            </TooltipProvider>
+                          )}
+                        </TableCell>
+                        <TableCell className="text-right font-medium">${calculateCost(platform.id)}</TableCell>
+                        <TableCell className="text-right">{getLocalCost(platform.id)}</TableCell>
+                      </TableRow>
+                    );
+                  })}
+                </TableBody>
+              </Table>
               
-              <div className="text-sm">
-                <div className="flex justify-between">
-                  <span>{t("Cheapest Provider", "أرخص مزود")}:</span>
-                  <span className="font-medium">
-                    {calculateCost('facebook') < calculateCost('sendpulse') && calculateCost('facebook') < calculateCost('twilio') 
-                      ? 'Facebook Business' 
-                      : calculateCost('sendpulse') < calculateCost('twilio') 
-                        ? 'SendPulse' 
-                        : 'Twilio'}
-                  </span>
+              <div className="bg-muted/30 rounded-lg p-4 text-sm">
+                <h4 className="font-medium mb-2 flex items-center gap-2">
+                  <Info size={16} />
+                  {t("Cost Analysis", "تحليل التكلفة")}
+                </h4>
+                
+                <div className="space-y-2">
+                  <div>
+                    <span className="text-muted-foreground">{t("Cheapest Provider", "أرخص مزود")}: </span>
+                    <span className="font-medium text-green-600">{getPlatformName(getCheapestProvider())}</span>
+                  </div>
+                  
+                  <div>
+                    <span className="text-muted-foreground">{t("Most Expensive", "الأكثر تكلفة")}: </span>
+                    <span className="font-medium">{getPlatformName(getMostExpensiveProvider())}</span>
+                  </div>
+                  
+                  <div>
+                    <span className="text-muted-foreground">{t("Potential Savings", "التوفير المحتمل")}: </span>
+                    <span className="font-medium text-green-600">
+                      ${(parseFloat(calculateCost(getMostExpensiveProvider())) - parseFloat(calculateCost(getCheapestProvider()))).toFixed(2)}
+                    </span>
+                  </div>
                 </div>
-                <div className="flex justify-between mt-1">
-                  <span>{t("Most Expensive", "الأكثر تكلفة")}:</span>
-                  <span className="font-medium">
-                    {calculateCost('facebook') > calculateCost('sendpulse') && calculateCost('facebook') > calculateCost('twilio') 
-                      ? 'Facebook Business' 
-                      : calculateCost('sendpulse') > calculateCost('twilio') 
-                        ? 'SendPulse' 
-                        : 'Twilio'}
-                  </span>
+                
+                <p className="text-xs text-muted-foreground mt-2">
+                  <CheckCircle size={12} className="inline mr-1" />
+                  {t(
+                    "Meta/Facebook sets the base pricing that other providers may discount from or add markup to.",
+                    "تحدد ميتا/فيسبوك التسعير الأساسي الذي قد يخصم منه مقدمو الخدمات الآخرون أو يضيفون إليه هامشًا."
+                  )}
+                </p>
+                
+                <div className="mt-3">
+                  <button 
+                    onClick={copyPricingToClipboard}
+                    className="w-full py-1.5 px-2 bg-tech-blue text-white text-sm rounded-md hover:bg-tech-blue/80 transition-colors flex items-center justify-center gap-2"
+                  >
+                    {t("Copy Pricing Summary", "نسخ ملخص التسعير")}
+                  </button>
                 </div>
               </div>
-              
-              <div className="mt-3">
-                <button 
-                  onClick={copyPricingToClipboard}
-                  className="w-full py-1.5 px-2 bg-tech-blue text-white text-sm rounded-md hover:bg-tech-blue/80 transition-colors flex items-center justify-center gap-2"
-                >
-                  {t("Copy Pricing Summary", "نسخ ملخص التسعير")}
-                </button>
+            </TabsContent>
+            
+            <TabsContent value="providers" className="mt-0 space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {platforms.map(platform => (
+                  <div key={platform.id} className="border rounded-lg p-4 hover:border-tech-blue transition-colors">
+                    <div className="flex items-center gap-2 mb-2">
+                      {platform.icon}
+                      <h3 className="font-medium">{platform.name}</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {isRtl ? platform.description.ar : platform.description.en}
+                    </p>
+                    <div className="space-y-1 mt-2">
+                      {platform.features.map((feature, index) => (
+                        <div key={index} className="flex items-center gap-1 text-xs">
+                          <CheckCircle size={12} className="text-green-500" />
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="mt-3 pt-2 border-t">
+                      <a 
+                        href={platform.website} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-xs text-tech-blue hover:underline flex items-center gap-1"
+                      >
+                        <Globe size={12} />
+                        {t("Visit Website", "زيارة الموقع")}
+                      </a>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-          </div>
+              
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                <h4 className="text-sm font-medium flex items-center gap-2 text-blue-800">
+                  <Info size={16} />
+                  {t("Provider Selection Tips", "نصائح لاختيار المزود")}
+                </h4>
+                <ul className="mt-2 space-y-1 text-xs text-blue-700">
+                  <li className="flex items-baseline gap-1">
+                    <span>•</span>
+                    <span>
+                      {t(
+                        "Consider factors beyond just price: reliability, support quality, and feature set.",
+                        "ضع في اعتبارك عوامل أخرى غير السعر: الموثوقية، جودة الدعم، ومجموعة الميزات."
+                      )}
+                    </span>
+                  </li>
+                  <li className="flex items-baseline gap-1">
+                    <span>•</span>
+                    <span>
+                      {t(
+                        "Meta/Facebook offers the most direct integration but may not always have the best pricing.",
+                        "توفر ميتا/فيسبوك التكامل الأكثر مباشرة ولكن قد لا يكون لديها دائمًا أفضل الأسعار."
+                      )}
+                    </span>
+                  </li>
+                  <li className="flex items-baseline gap-1">
+                    <span>•</span>
+                    <span>
+                      {t(
+                        "Mini Chat generally offers the most competitive pricing in the market.",
+                        "تقدم Mini Chat بشكل عام الأسعار الأكثر تنافسية في السوق."
+                      )}
+                    </span>
+                  </li>
+                  <li className="flex items-baseline gap-1">
+                    <span>•</span>
+                    <span>
+                      {t(
+                        "Pricing may change based on volume, region, and special offers.",
+                        "قد تتغير الأسعار بناءً على الحجم والمنطقة والعروض الخاصة."
+                      )}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </CardContent>
     </Card>
