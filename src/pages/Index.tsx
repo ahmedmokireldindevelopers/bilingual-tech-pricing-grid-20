@@ -33,6 +33,19 @@ const Index = () => {
         }
       });
     });
+
+    // Scroll to section if URL contains hash
+    if (window.location.hash) {
+      const targetElement = document.querySelector(window.location.hash);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }, 100);
+      }
+    }
   }, []);
 
   return (

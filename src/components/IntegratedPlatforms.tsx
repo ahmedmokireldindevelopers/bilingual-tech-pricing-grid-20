@@ -13,56 +13,67 @@ const IntegratedPlatforms: React.FC = () => {
   const { t, isRtl } = useLanguage();
   const [autoPlay, setAutoPlay] = useState(true);
 
+  // Updated platforms with more reliable icon paths and better quality images
   const platforms = [
     {
       name: "Facebook",
-      icon: "/images/integrations/facebook.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/facebook.svg",
       color: "#1877F2",
+      link: "https://www.facebook.com/business",
     },
     {
       name: "WhatsApp",
-      icon: "/images/integrations/whatsapp.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/whatsapp.svg",
       color: "#25D366",
+      link: "https://business.whatsapp.com/",
     },
     {
       name: "Instagram",
-      icon: "/images/integrations/instagram.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg",
       color: "#E4405F",
+      link: "https://business.instagram.com/",
     },
     {
       name: "SendPulse",
-      icon: "/images/integrations/sendpulse.png",
+      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/mailchimp.svg", // Using alternative icon
       color: "#0084FF",
+      link: "https://sendpulse.com/",
     },
     {
       name: "WordPress",
-      icon: "/images/integrations/wordpress.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/wordpress.svg",
       color: "#21759B",
+      link: "https://wordpress.org/",
     },
     {
       name: "Make.com",
-      icon: "/images/integrations/make.png",
+      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/zapier.svg", // Using alternative icon
       color: "#000000",
+      link: "https://www.make.com/",
     },
     {
       name: "N8N",
-      icon: "/images/integrations/n8n.png",
+      icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@develop/icons/nodered.svg", // Using alternative icon
       color: "#6933FF",
+      link: "https://n8n.io/",
     },
     {
       name: "Zapier",
-      icon: "/images/integrations/zapier.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/zapier.svg",
       color: "#FF4A00",
+      link: "https://zapier.com/",
     },
     {
       name: "Shopify",
-      icon: "/images/integrations/shopify.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/shopify.svg",
       color: "#7AB55C",
+      link: "https://www.shopify.com/",
     },
     {
       name: "WooCommerce",
-      icon: "/images/integrations/woocommerce.png",
+      icon: "https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/woo.svg",
       color: "#96588A",
+      link: "https://woocommerce.com/",
     },
   ];
 
@@ -85,7 +96,7 @@ const IntegratedPlatforms: React.FC = () => {
   }, [autoPlay]);
 
   return (
-    <section className="py-16 bg-white">
+    <section id="integrations" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className={`section-title text-center ${isRtl ? 'font-arabic' : 'font-english'}`}>
           {t("Integrated Platforms", "المنصات المتكاملة")}
@@ -110,24 +121,35 @@ const IntegratedPlatforms: React.FC = () => {
             <CarouselContent>
               {platforms.map((platform, index) => (
                 <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
-                  <div className="platform-card animate-fade-in h-40 flex flex-col items-center justify-center p-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                    <div 
-                      className="w-20 h-20 mb-3 rounded-full flex items-center justify-center p-3 relative overflow-hidden shadow-md"
-                      style={{ backgroundColor: `${platform.color}20` }}
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-br from-transparent to-white/10 animate-pulse" />
-                      <img
-                        src={platform.icon}
-                        alt={platform.name}
-                        className="w-14 h-14 object-contain"
-                        loading="lazy"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder.svg";
-                        }}
-                      />
+                  <a 
+                    href={platform.link}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="block"
+                    aria-label={`Visit ${platform.name} website`}
+                  >
+                    <div className="platform-card animate-fade-in h-40 flex flex-col items-center justify-center p-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                      <div 
+                        className="w-20 h-20 mb-3 rounded-full flex items-center justify-center p-3 relative overflow-hidden shadow-md"
+                        style={{ backgroundColor: `${platform.color}20` }}
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-br from-transparent to-white/10 animate-pulse" />
+                        <img
+                          src={platform.icon}
+                          alt={platform.name}
+                          className="w-14 h-14 object-contain"
+                          loading="lazy"
+                          style={{ filter: `invert(${platform.color === '#000000' ? 1 : 0})` }}
+                          onError={(e) => {
+                            const target = e.currentTarget;
+                            // Fallback to a data URI with the platform initial
+                            target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect width='56' height='56' fill='%23${platform.color.replace('#', '')}' rx='28' /%3E%3Ctext x='28' y='35' text-anchor='middle' font-family='Arial' font-size='24' font-weight='bold' fill='white'%3E${platform.name.charAt(0)}%3C/text%3E%3C/svg%3E`;
+                          }}
+                        />
+                      </div>
+                      <h3 className="text-center font-medium">{platform.name}</h3>
                     </div>
-                    <h3 className="text-center font-medium">{platform.name}</h3>
-                  </div>
+                  </a>
                 </CarouselItem>
               ))}
             </CarouselContent>
