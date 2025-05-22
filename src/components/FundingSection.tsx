@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Badge as LucideBadge, DollarSign, Gift, CreditCard, Cloud } from "lucide-react";
+import { Badge as LucideBadge } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -11,7 +11,7 @@ const FundingSection: React.FC = () => {
   const fundingOptions = [
     {
       id: 1,
-      icon: <CreditCard className="w-10 h-10 text-tech-accent" />,
+      iconUrl: "https://cdn.worldvectorlogo.com/logos/stripe-4.svg",
       title: {
         en: "Stripe Payments Funding",
         ar: "تمويل مدفوعات Stripe"
@@ -22,11 +22,12 @@ const FundingSection: React.FC = () => {
       },
       value: "$25,000",
       link: "#pricing",
-      featured: true
+      featured: true,
+      logoColor: "#635BFF"
     },
     {
       id: 2,
-      icon: <Cloud className="w-10 h-10 text-tech-blue" />,
+      iconUrl: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
       title: {
         en: "Amazon AWS Credits",
         ar: "رصيد Amazon AWS"
@@ -37,11 +38,12 @@ const FundingSection: React.FC = () => {
       },
       value: "Up to $31,000",
       link: "#pricing",
-      featured: true
+      featured: true,
+      logoColor: "#FF9900"
     },
     {
       id: 3,
-      icon: <LucideBadge className="w-10 h-10 text-tech-purple" />,
+      iconUrl: "https://sendpulse.com/static/images/sendpulse-logo.svg",
       title: {
         en: "SendPulse $5000 Grant",
         ar: "منحة SendPulse بقيمة 5000 دولار"
@@ -52,11 +54,12 @@ const FundingSection: React.FC = () => {
       },
       value: "$5,000",
       link: "#pricing",
-      featured: false
+      featured: false,
+      logoColor: "#0084FF"
     },
     {
       id: 4,
-      icon: <DollarSign className="w-10 h-10 text-tech-blue" />,
+      iconUrl: "https://images.ctfassets.net/qwh4cyyt241s/37nsmb1zWPdxqXakg4CKXE/a6e92e5f311e3711b7e1841bb7f23443/make_logo_limited.svg",
       title: {
         en: "Make.com Teams Plan",
         ar: "خطة Make.com للفرق"
@@ -67,7 +70,8 @@ const FundingSection: React.FC = () => {
       },
       value: "$636/year",
       link: "#pricing",
-      featured: false
+      featured: false,
+      logoColor: "#000000"
     }
   ];
 
@@ -105,7 +109,18 @@ const FundingSection: React.FC = () => {
               >
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between">
-                    <div className="mb-4">{option.icon}</div>
+                    <div className="mb-4 w-12 h-12 flex items-center justify-center">
+                      <img 
+                        src={option.iconUrl} 
+                        alt={isRtl ? option.title.ar : option.title.en}
+                        className="max-w-full max-h-full object-contain"
+                        onError={(e) => {
+                          // Fallback in case the image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%23${option.logoColor.replace('#', '')}' rx='24' /%3E%3Ctext x='24' y='30' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold' fill='white'%3E${option.title.en.charAt(0)}%3C/text%3E%3C/svg%3E`;
+                        }}
+                      />
+                    </div>
                     <CardDescription className="text-2xl font-bold text-tech-accent">
                       {option.value}
                     </CardDescription>
@@ -143,7 +158,18 @@ const FundingSection: React.FC = () => {
               >
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between">
-                    <div className="mb-4">{option.icon}</div>
+                    <div className="mb-4 w-12 h-12 flex items-center justify-center">
+                      <img 
+                        src={option.iconUrl} 
+                        alt={isRtl ? option.title.ar : option.title.en}
+                        className="max-w-full max-h-full object-contain"
+                        onError={(e) => {
+                          // Fallback in case the image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%23${option.logoColor.replace('#', '')}' rx='24' /%3E%3Ctext x='24' y='30' text-anchor='middle' font-family='Arial' font-size='20' font-weight='bold' fill='white'%3E${option.title.en.charAt(0)}%3C/text%3E%3C/svg%3E`;
+                        }}
+                      />
+                    </div>
                     <CardDescription className="text-xl font-semibold text-gray-700">
                       {option.value}
                     </CardDescription>
