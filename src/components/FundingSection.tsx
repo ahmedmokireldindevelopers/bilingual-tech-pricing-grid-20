@@ -71,6 +71,10 @@ const FundingSection: React.FC = () => {
     }
   ];
 
+  // Separate featured and non-featured options for better organization
+  const featuredOptions = fundingOptions.filter(option => option.featured);
+  const regularOptions = fundingOptions.filter(option => !option.featured);
+
   return (
     <section id="funding" className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
@@ -86,47 +90,80 @@ const FundingSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {fundingOptions.map((option) => (
-            <Card 
-              key={option.id} 
-              className={`bg-white transition-all duration-300 hover:shadow-lg ${
-                option.featured 
-                  ? 'border-4 border-tech-accent relative transform hover:-translate-y-2' 
-                  : 'border-2 hover:border-tech-purple'
-              }`}
-            >
-              {option.featured && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-tech-accent hover:bg-tech-accent text-white px-3 py-1 text-sm font-medium">
-                    {t("EXCLUSIVE OFFER", "عرض حصري")}
-                  </Badge>
-                </div>
-              )}
-              <CardHeader className={`pb-2 ${option.featured ? 'pt-8' : ''}`}>
-                <div className="mb-4">{option.icon}</div>
-                <CardTitle>{isRtl ? option.title.ar : option.title.en}</CardTitle>
-                <CardDescription className="text-2xl font-bold text-tech-accent">
-                  {option.value}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  {isRtl ? option.description.ar : option.description.en}
-                </p>
-                <a 
-                  href={option.link} 
-                  className={`mt-4 inline-block font-medium ${
-                    option.featured 
-                      ? 'text-tech-accent hover:text-tech-purple' 
-                      : 'text-tech-blue hover:text-tech-purple'
-                  }`}
-                >
-                  {t("Learn more →", "معرفة المزيد ←")}
-                </a>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Featured Options - Displayed prominently */}
+        <div className="mb-10">
+          <div className="text-center mb-6">
+            <Badge className="bg-tech-accent hover:bg-tech-accent text-white px-3 py-1 text-sm font-medium">
+              {t("EXCLUSIVE OFFERS", "عروض حصرية")}
+            </Badge>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {featuredOptions.map((option) => (
+              <Card 
+                key={option.id} 
+                className="bg-white border-2 border-tech-accent transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between">
+                    <div className="mb-4">{option.icon}</div>
+                    <CardDescription className="text-2xl font-bold text-tech-accent">
+                      {option.value}
+                    </CardDescription>
+                  </div>
+                  <CardTitle className="text-xl">{isRtl ? option.title.ar : option.title.en}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    {isRtl ? option.description.ar : option.description.en}
+                  </p>
+                  <a 
+                    href={option.link} 
+                    className="inline-block font-medium text-tech-accent hover:text-tech-purple"
+                  >
+                    {t("Learn more →", "معرفة المزيد ←")}
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Regular Options */}
+        <div>
+          <div className="text-center mb-6">
+            <h3 className={`text-xl font-medium ${isRtl ? 'font-arabic' : 'font-english'}`}>
+              {t("Additional Resources", "موارد إضافية")}
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {regularOptions.map((option) => (
+              <Card 
+                key={option.id} 
+                className="bg-white border border-gray-200 transition-all duration-300 hover:shadow-md hover:border-tech-purple"
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between">
+                    <div className="mb-4">{option.icon}</div>
+                    <CardDescription className="text-xl font-semibold text-gray-700">
+                      {option.value}
+                    </CardDescription>
+                  </div>
+                  <CardTitle className="text-lg">{isRtl ? option.title.ar : option.title.en}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    {isRtl ? option.description.ar : option.description.en}
+                  </p>
+                  <a 
+                    href={option.link} 
+                    className="inline-block font-medium text-tech-blue hover:text-tech-purple"
+                  >
+                    {t("Learn more →", "معرفة المزيد ←")}
+                  </a>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
