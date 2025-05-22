@@ -1,7 +1,7 @@
 
 import React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Badge as LucideBadge, DollarSign, Gift, CreditCard } from "lucide-react";
+import { Badge as LucideBadge, DollarSign, Gift, CreditCard, Cloud } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -26,6 +26,21 @@ const FundingSection: React.FC = () => {
     },
     {
       id: 2,
+      icon: <Cloud className="w-10 h-10 text-tech-blue" />,
+      title: {
+        en: "Amazon AWS Credits",
+        ar: "رصيد Amazon AWS"
+      },
+      description: {
+        en: "Qualify for AWS Activate credits worth up to $31,000 for your startup, with an initial $1,000 credit and access to AWS technical support and training.",
+        ar: "تأهل للحصول على رصيد AWS Activate بقيمة تصل إلى 31,000 دولار لشركتك الناشئة، مع رصيد أولي بقيمة 1,000 دولار والوصول إلى الدعم الفني والتدريب من AWS."
+      },
+      value: "Up to $31,000",
+      link: "#pricing",
+      featured: true
+    },
+    {
+      id: 3,
       icon: <LucideBadge className="w-10 h-10 text-tech-purple" />,
       title: {
         en: "SendPulse $5000 Grant",
@@ -40,7 +55,7 @@ const FundingSection: React.FC = () => {
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       icon: <DollarSign className="w-10 h-10 text-tech-blue" />,
       title: {
         en: "Make.com Teams Plan",
