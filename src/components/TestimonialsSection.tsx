@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const TestimonialsSection: React.FC = () => {
   const { t, isRtl } = useLanguage();
@@ -51,7 +52,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Marketing Director", "مدير التسويق"),
       company: "TechSolutions",
       country: "Egypt",
-      avatar: "/images/testimonials/avatar1.png",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "The WhatsApp Business API integration was seamless. Our customer engagement increased by 40% in just two months!",
@@ -64,7 +65,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("CEO", "الرئيس التنفيذي"),
       company: "RiyadhTech",
       country: "Saudi Arabia",
-      avatar: "/images/testimonials/avatar2.png",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "Their Facebook verification service saved us weeks of frustration. Now we can run our ad campaigns without any limitations.",
@@ -77,7 +78,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Digital Marketing Lead", "مسؤول التسويق الرقمي"),
       company: "DubaiConnect",
       country: "UAE",
-      avatar: "/images/testimonials/avatar3.png",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "The SendPulse grant program setup was quick and efficient. We got approved for the full $5000 credit!",
@@ -90,7 +91,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Operations Manager", "مدير العمليات"),
       company: "OmanGrow",
       country: "Oman",
-      avatar: "/images/testimonials/avatar4.png",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 4,
       text: {
         en: "The N8N automation solution transformed our workflow. We've reduced manual tasks by 70%.",
@@ -103,7 +104,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("IT Director", "مدير تكنولوجيا المعلومات"),
       company: "QatarInnovate",
       country: "Qatar",
-      avatar: "/images/testimonials/avatar5.png",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "Their technical support is exceptional. Any issues we had were resolved within hours, not days.",
@@ -116,7 +117,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("E-commerce Manager", "مدير التجارة الإلكترونية"),
       company: "AmmanTech",
       country: "Jordan",
-      avatar: "/images/testimonials/avatar6.png",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 4,
       text: {
         en: "WordPress integration was flawless. Our site now syncs perfectly with all our marketing tools.",
@@ -129,7 +130,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Marketing Strategist", "استراتيجي التسويق"),
       company: "LondonDigital",
       country: "England",
-      avatar: "/images/testimonials/avatar7.png",
+      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "The Make.com Team Plan has been worth every penny. Our automation capabilities have expanded tenfold.",
@@ -142,7 +143,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Digital Transformation Lead", "مسؤول التحول الرقمي"),
       company: "NYCTech",
       country: "USA",
-      avatar: "/images/testimonials/avatar8.png",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "Their comprehensive documentation made our transition to automated workflows seamless.",
@@ -155,7 +156,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("CTO", "المدير التقني"),
       company: "JakartaConnect",
       country: "Indonesia",
-      avatar: "/images/testimonials/avatar9.png",
+      avatar: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 4,
       text: {
         en: "The WhatsApp API setup was perfect for our Southeast Asian market needs. Engagement rates skyrocketed.",
@@ -168,7 +169,7 @@ const TestimonialsSection: React.FC = () => {
       position: t("Growth Manager", "مدير النمو"),
       company: "ShanghaiTech",
       country: "China",
-      avatar: "/images/testimonials/avatar10.png",
+      avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=faces&q=80",
       rating: 5,
       text: {
         en: "Their cross-platform integration expertise helped us unify our marketing efforts across global markets.",
@@ -227,17 +228,14 @@ const TestimonialsSection: React.FC = () => {
                     <CardContent className="p-6">
                       <div className="flex items-center mb-4">
                         <div className="flex-shrink-0 mr-3">
-                          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-tech-blue">
-                            <img
-                              src={testimonial.avatar}
-                              alt={testimonial.name}
-                              className="w-full h-full object-cover"
-                              loading="lazy"
-                              onError={(e) => {
-                                e.currentTarget.src = "/placeholder.svg";
-                              }}
+                          <Avatar className="w-12 h-12 border-2 border-tech-blue">
+                            <AvatarImage 
+                              src={testimonial.avatar} 
+                              alt={testimonial.name} 
+                              className="object-cover"
                             />
-                          </div>
+                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                          </Avatar>
                         </div>
                         <div>
                           <h3 className="font-medium">{testimonial.name}</h3>
