@@ -180,7 +180,7 @@ const F6SOffersCarousel: React.FC = () => {
                           )}
                         </div>
                         <div className="flex items-center">
-                          <Badge className="px-3 py-1 bg-blue-50">
+                          <Badge className="px-3 py-1 bg-blue-50 text-blue-800 hover:bg-blue-100">
                             {offer.category}
                           </Badge>
                         </div>

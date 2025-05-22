@@ -1,388 +1,287 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { jsPDF } from "jspdf";
-import autoTable from "jspdf-autotable";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { format } from "date-fns";
-import { Download } from "lucide-react";
-import { toast } from "sonner";
-
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Textarea } from "@/components/ui/textarea";
+import { jsPDF } from "jspdf";
+import 'jspdf-autotable';
+import { toast } from "@/components/ui/use-toast";
 
-// Define services with their prices
-const services = [
-  {
-    id: "whatsapp-api",
-    name: { en: "WhatsApp Business API Setup", ar: "إعداد واجهة برمجة تطبيقات واتساب بزنس" },
-    price: 350
-  },
-  {
-    id: "chatbot",
-    name: { en: "Chatbot Development & Integration", ar: "تطوير ودمج روبوتات المحادثة" },
-    price: 499
-  },
-  {
-    id: "fb-verification",
-    name: { en: "Facebook Business Manager Verification", ar: "توثيق مدير أعمال فيسبوك" },
-    price: 199
-  },
-  {
-    id: "whatsapp-automation",
-    name: { en: "WhatsApp Automation Scripts", ar: "نصوص أتمتة واتساب" },
-    price: 299
-  },
-  {
-    id: "sendpulse-grant",
-    name: { en: "SendPulse $5000 Grant Application", ar: "طلب منحة SendPulse بقيمة 5000 دولار" },
-    price: 149
-  },
-  {
-    id: "make-plan",
-    name: { en: "Make.com Teams Plan ($636/year)", ar: "خطة Make.com للفرق (636 دولار/سنة)" },
-    price: 636
-  },
-  {
-    id: "wordpress",
-    name: { en: "WordPress Integration", ar: "تكامل ووردبريس" },
-    price: 250
-  },
-  {
-    id: "tech-support",
-    name: { en: "Ongoing Technical Support", ar: "الدعم الفني المستمر" },
-    price: 99
-  },
-];
-
-// Create form schema
-const formSchema = z.object({
-  fullName: z.string().min(2, {
-    message: "Full name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  phoneNumber: z.string().optional(),
-  companyName: z.string().min(1, {
-    message: "Company name is required.",
-  }),
-  additionalNotes: z.string().optional(),
-  services: z.array(z.string()).refine((value) => value.length >= 1, {
-    message: "You must select at least one service.",
-  }),
-});
+interface Service {
+  id: string;
+  name: string;
+  price: number;
+}
 
 const QuoteGenerator: React.FC = () => {
   const { t, isRtl } = useLanguage();
-  const [totalPrice, setTotalPrice] = useState(0);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
-  const [open, setOpen] = useState(false);
-
-  // Initialize form
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullName: "",
-      email: "",
-      phoneNumber: "",
-      companyName: "",
-      additionalNotes: "",
-      services: [],
-    },
+  const [customerInfo, setCustomerInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    notes: ""
   });
+  const [showForm, setShowForm] = useState(false);
 
-  // Handle service selection
-  const handleServiceChange = (serviceId: string, checked: boolean) => {
-    const serviceObj = services.find(s => s.id === serviceId);
-    if (!serviceObj) return;
+  const services: Service[] = [
+    { id: "whatsapp-api", name: t("WhatsApp API Integration", "دمج واتساب API"), price: 499 },
+    { id: "chatbot", name: t("Custom Chatbot Development", "تطوير روبوت محادثة مخصص"), price: 799 },
+    { id: "whatsapp-automation", name: t("WhatsApp Automation Scripts", "سكربتات أتمتة واتساب"), price: 349 },
+    { id: "website-integration", name: t("Website Integration", "دمج مع الموقع الإلكتروني"), price: 299 },
+    { id: "crm-integration", name: t("CRM Integration", "دمج مع نظام إدارة علاقات العملاء"), price: 399 },
+    { id: "training", name: t("Staff Training (2 sessions)", "تدريب الموظفين (جلستان)"), price: 199 },
+    { id: "support", name: t("30-Day Priority Support", "دعم ذو أولوية لمدة 30 يومًا"), price: 149 },
+    { id: "custom-reports", name: t("Custom Analytics Reports", "تقارير تحليلية مخصصة"), price: 249 },
+  ];
 
-    setSelectedServices(prev => {
-      const newServices = checked 
-        ? [...prev, serviceId] 
-        : prev.filter(id => id !== serviceId);
-      
-      // Calculate new total price
-      const newTotal = services
-        .filter(service => newServices.includes(service.id))
-        .reduce((sum, service) => sum + service.price, 0);
-      
-      setTotalPrice(newTotal);
-      form.setValue("services", newServices);
-      return newServices;
+  const handleServiceToggle = (serviceId: string) => {
+    if (selectedServices.includes(serviceId)) {
+      setSelectedServices(selectedServices.filter(id => id !== serviceId));
+    } else {
+      setSelectedServices([...selectedServices, serviceId]);
+    }
+  };
+
+  const calculateTotal = () => {
+    return services
+      .filter(service => selectedServices.includes(service.id))
+      .reduce((sum, service) => sum + service.price, 0);
+  };
+
+  const handleInfoChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setCustomerInfo({
+      ...customerInfo,
+      [e.target.name]: e.target.value
     });
   };
 
-  // Generate PDF quote
-  const generatePDF = (data: z.infer<typeof formSchema>) => {
-    const doc = new jsPDF();
-    const pageWidth = doc.internal.pageSize.width;
-    const date = format(new Date(), "MMMM dd, yyyy");
-    const quoteNumber = `QUO-${Math.floor(Math.random() * 10000)}`;
+  const generateQuote = () => {
+    if (selectedServices.length === 0) {
+      toast({
+        title: t("Please select at least one service", "الرجاء اختيار خدمة واحدة على الأقل"),
+        variant: "destructive"
+      });
+      return;
+    }
+
+    if (!customerInfo.name || !customerInfo.email) {
+      toast({
+        title: t("Please provide your name and email", "الرجاء تقديم اسمك وبريدك الإلكتروني"),
+        variant: "destructive"
+      });
+      return;
+    }
+
+    const pdf = new jsPDF();
     
-    // Add header logo/name
-    doc.setFontSize(24);
-    doc.setTextColor(0, 82, 165); // Blue color for the header
-    doc.text("Tech Services", pageWidth / 2, 20, { align: "center" });
-    
-    doc.setFontSize(10);
-    doc.setTextColor(100, 100, 100);
-    doc.text("Professional Technical Solutions", pageWidth / 2, 26, { align: "center" });
-    doc.text("support@techservices.com | +1-800-TECH-SRV", pageWidth / 2, 31, { align: "center" });
+    // Add header with company info
+    pdf.setFontSize(20);
+    pdf.setTextColor(0, 51, 153);
+    pdf.text("Tech Services", 105, 20, { align: "center" });
+    pdf.setFontSize(10);
+    pdf.setTextColor(100, 100, 100);
+    pdf.text("Professional Technical Solutions", 105, 27, { align: "center" });
+    pdf.text("contact@techservices.com | +1 (555) 123-4567", 105, 32, { align: "center" });
     
     // Add watermark
-    doc.setTextColor(220, 220, 220);
-    doc.setFontSize(60);
-    doc.text("QUOTE", pageWidth / 2, 110, {
-      align: "center",
-      angle: 45,
-    });
+    pdf.setFontSize(60);
+    pdf.setTextColor(230, 230, 230);
+    pdf.text("QUOTE", 105, 140, { align: "center" });
     
     // Reset text color
-    doc.setTextColor(0, 0, 0);
-    doc.setFontSize(12);
+    pdf.setTextColor(0, 0, 0);
     
-    // Client information
-    doc.text(`Quote #: ${quoteNumber}`, 14, 45);
-    doc.text(`Date: ${date}`, 14, 51);
-    doc.text(`Valid until: ${format(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), "MMMM dd, yyyy")}`, 14, 57);
+    // Add customer info
+    pdf.setFontSize(12);
+    pdf.text("Customer Information:", 20, 45);
+    pdf.setFontSize(10);
+    pdf.text(`Name: ${customerInfo.name}`, 20, 52);
+    pdf.text(`Email: ${customerInfo.email}`, 20, 57);
+    pdf.text(`Phone: ${customerInfo.phone || "N/A"}`, 20, 62);
+    pdf.text(`Company: ${customerInfo.company || "N/A"}`, 20, 67);
     
-    doc.text("Client Information:", 14, 67);
-    doc.text(`Name: ${data.fullName}`, 14, 73);
-    doc.text(`Email: ${data.email}`, 14, 79);
-    if (data.phoneNumber) doc.text(`Phone: ${data.phoneNumber}`, 14, 85);
-    doc.text(`Company: ${data.companyName}`, 14, 91);
+    // Add quote details
+    pdf.setFontSize(12);
+    pdf.text("Quote Details:", 20, 80);
     
-    // Services table
-    const tableData = services
-      .filter(service => data.services.includes(service.id))
-      .map(service => [
-        isRtl ? service.name.ar : service.name.en, 
-        `$${service.price.toFixed(2)}`
-      ]);
+    // Add services table
+    const selectedServicesList = services.filter(service => selectedServices.includes(service.id));
     
-    autoTable(doc, {
-      startY: 100,
-      head: [["Service", "Price"]],
-      body: tableData,
-      theme: "grid",
-      headStyles: { 
-        fillColor: [0, 82, 165],
-        textColor: [255, 255, 255],
-        fontStyle: "bold"
-      },
-      foot: [["Total", `$${totalPrice.toFixed(2)}`]],
-      footStyles: { 
-        fillColor: [240, 240, 240],
-        textColor: [0, 0, 0],
-        fontStyle: "bold"
-      }
+    // @ts-ignore - jspdf-autotable types are not available
+    pdf.autoTable({
+      startY: 85,
+      head: [[t("Service", "الخدمة"), t("Price", "السعر")]],
+      body: selectedServicesList.map(service => [service.name, `$${service.price}`]),
+      foot: [[t("Total", "المجموع"), `$${calculateTotal()}`]],
+      theme: 'striped',
+      headStyles: { fillColor: [0, 51, 153] },
+      footStyles: { fillColor: [240, 240, 240], textColor: [0, 0, 0], fontStyle: 'bold' }
     });
     
-    // Additional notes
-    if (data.additionalNotes) {
-      const finalY = (doc as any).lastAutoTable.finalY + 10;
-      doc.text("Additional Notes:", 14, finalY);
-      doc.setFontSize(10);
-      const splitNotes = doc.splitTextToSize(data.additionalNotes, pageWidth - 28);
-      doc.text(splitNotes, 14, finalY + 6);
+    // Add notes if any
+    if (customerInfo.notes) {
+      pdf.setFontSize(12);
+      // @ts-ignore - Get the final Y position after the table
+      const finalY = (pdf as any).lastAutoTable.finalY || 150;
+      pdf.text("Notes:", 20, finalY + 10);
+      pdf.setFontSize(10);
+      pdf.text(customerInfo.notes, 20, finalY + 18);
     }
     
-    // Save and download
-    doc.save(`quote-${quoteNumber}.pdf`);
-  };
-
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
-    try {
-      generatePDF(values);
-      toast.success("Quote generated successfully!");
-      setOpen(false);
-    } catch (error) {
-      console.error("Error generating PDF:", error);
-      toast.error("Error generating quote. Please try again.");
-    }
+    // Add footer
+    pdf.setFontSize(8);
+    pdf.setTextColor(100, 100, 100);
+    pdf.text("This quote is valid for 30 days from the date of issue.", 105, 280, { align: "center" });
+    
+    // Save the PDF
+    pdf.save(`Quote-${customerInfo.name}-${new Date().toISOString().slice(0, 10)}.pdf`);
+    
+    toast({
+      title: t("Quote Generated", "تم إنشاء عرض السعر"),
+      description: t("Your custom quote has been generated and is ready to download.", "تم إنشاء عرض السعر المخصص الخاص بك وهو جاهز للتنزيل."),
+    });
   };
 
   return (
-    <section id="quote-generator" className="py-16 bg-white">
+    <section id="quote-generator" className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <h2 className={`section-title text-center ${isRtl ? 'font-arabic' : 'font-english'}`}>
-          {t("Get Your Custom Quote", "احصل على عرض أسعار مخصص")}
-        </h2>
-        <p className="section-subtitle text-center mb-10">
-          {t(
-            "Select the services you need and get an instant quote",
-            "اختر الخدمات التي تحتاجها واحصل على عرض أسعار فوري"
-          )}
-        </p>
-
-        <div className="mx-auto max-w-3xl">
-          <Card>
-            <CardHeader>
-              <CardTitle>{t("Service Selection", "اختيار الخدمة")}</CardTitle>
-              <CardDescription>
-                {t("Choose the services you're interested in to get a customized quote", 
-                   "اختر الخدمات التي تهتم بها للحصول على عرض أسعار مخصص")}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Form {...form}>
-                <form id="quote-form" onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {services.map((service) => (
-                      <div key={service.id} className="flex items-center space-x-2 rtl:space-x-reverse">
-                        <Checkbox 
-                          id={service.id} 
-                          onCheckedChange={(checked) => handleServiceChange(service.id, checked === true)}
-                        />
-                        <label
-                          htmlFor={service.id}
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex flex-col"
-                        >
-                          <span>{isRtl ? service.name.ar : service.name.en}</span>
-                          <span className="text-muted-foreground text-xs">${service.price}</span>
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="px-4 py-3 bg-gray-50 rounded-lg">
-                    <div className="flex justify-between items-center">
-                      <span className="font-semibold">{t("Total", "المجموع")}</span>
-                      <span className="font-bold text-lg">${totalPrice.toFixed(2)}</span>
-                    </div>
-                  </div>
-
-                  <Dialog open={open} onOpenChange={setOpen}>
-                    <DialogTrigger asChild>
-                      <Button 
-                        className="w-full"
-                        disabled={selectedServices.length === 0}
-                      >
-                        {t("Generate Quote", "إنشاء عرض الأسعار")}
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-[525px]">
-                      <DialogHeader>
-                        <DialogTitle>{t("Complete Your Information", "أكمل معلوماتك")}</DialogTitle>
-                        <DialogDescription>
-                          {t("Fill in your details to receive a customized quote", 
-                             "املأ بياناتك للحصول على عرض أسعار مخصص")}
-                        </DialogDescription>
-                      </DialogHeader>
-                      <div className="grid gap-4 py-4">
-                        <FormField
-                          control={form.control}
-                          name="fullName"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{t("Full Name", "الاسم الكامل")}</FormLabel>
-                              <FormControl>
-                                <Input placeholder={t("John Doe", "محمد أحمد")} {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="email"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{t("Email", "البريد الإلكتروني")}</FormLabel>
-                              <FormControl>
-                                <Input type="email" placeholder="example@company.com" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="phoneNumber"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{t("Phone Number (Optional)", "رقم الهاتف (اختياري)")}</FormLabel>
-                              <FormControl>
-                                <Input placeholder="+1 234 567 8900" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="companyName"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{t("Company Name", "اسم الشركة")}</FormLabel>
-                              <FormControl>
-                                <Input placeholder={t("Acme Inc", "شركة أكمي")} {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                        <FormField
-                          control={form.control}
-                          name="additionalNotes"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>{t("Additional Notes (Optional)", "ملاحظات إضافية (اختياري)")}</FormLabel>
-                              <FormControl>
-                                <Textarea placeholder={t("Any specific requirements or questions...", "أي متطلبات أو أسئلة محددة...")} {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                      </div>
-                      <Button type="submit" form="quote-form" className="w-full">
-                        <Download className="mr-2" />
-                        {t("Download Quote PDF", "تنزيل عرض الأسعار PDF")}
-                      </Button>
-                    </DialogContent>
-                  </Dialog>
-                </form>
-              </Form>
-            </CardContent>
-            <CardFooter className="flex flex-col items-start">
-              <p className="text-sm text-muted-foreground">
-                {t("All quotes are valid for 30 days. For custom service packages, please contact us directly.", 
-                   "جميع عروض الأسعار صالحة لمدة 30 يومًا. للحصول على حزم خدمات مخصصة، يرجى الاتصال بنا مباشرة.")}
-              </p>
-            </CardFooter>
-          </Card>
+        <div className="text-center mb-12">
+          <h2 className={`text-3xl font-bold mb-4 ${isRtl ? 'font-arabic' : 'font-english'}`}>
+            {t("Get Your Custom Quote", "احصل على عرض سعر مخصص")}
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            {t(
+              "Select the services you're interested in to generate a custom quote tailored to your needs.",
+              "حدد الخدمات التي تهتم بها لإنشاء عرض سعر مخصص يناسب احتياجاتك."
+            )}
+          </p>
         </div>
+
+        <Card className="max-w-4xl mx-auto border-2 border-tech-light">
+          <CardHeader>
+            <CardTitle>
+              {t("Select Services", "اختر الخدمات")}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {services.map(service => (
+                <div key={service.id} className="flex items-start space-x-3 rtl:space-x-reverse">
+                  <Checkbox 
+                    id={service.id}
+                    checked={selectedServices.includes(service.id)}
+                    onCheckedChange={() => handleServiceToggle(service.id)}
+                  />
+                  <div className="flex flex-col">
+                    <Label 
+                      htmlFor={service.id}
+                      className="font-medium cursor-pointer"
+                    >
+                      {service.name}
+                    </Label>
+                    <span className="text-sm text-muted-foreground">${service.price}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 text-right border-t pt-4">
+              <p className="text-lg font-bold">
+                {t("Total", "المجموع")}: <span className="text-tech-accent">${calculateTotal()}</span>
+              </p>
+            </div>
+
+            {!showForm ? (
+              <div className="mt-6 flex justify-end">
+                <Button 
+                  onClick={() => setShowForm(true)}
+                  className="bg-tech-blue hover:bg-tech-purple"
+                >
+                  {t("Proceed to Generate Quote", "المتابعة لإنشاء عرض السعر")}
+                </Button>
+              </div>
+            ) : (
+              <div className="mt-8 border-t pt-4">
+                <h3 className="text-lg font-semibold mb-4">
+                  {t("Your Information", "معلوماتك")}
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">{t("Name", "الاسم")} *</Label>
+                    <Input 
+                      id="name"
+                      name="name"
+                      value={customerInfo.name}
+                      onChange={handleInfoChange}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">{t("Email", "البريد الإلكتروني")} *</Label>
+                    <Input 
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={customerInfo.email}
+                      onChange={handleInfoChange}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">{t("Phone", "رقم الهاتف")}</Label>
+                    <Input 
+                      id="phone"
+                      name="phone"
+                      value={customerInfo.phone}
+                      onChange={handleInfoChange}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="company">{t("Company", "الشركة")}</Label>
+                    <Input 
+                      id="company"
+                      name="company"
+                      value={customerInfo.company}
+                      onChange={handleInfoChange}
+                    />
+                  </div>
+                  <div className="space-y-2 md:col-span-2">
+                    <Label htmlFor="notes">{t("Additional Notes", "ملاحظات إضافية")}</Label>
+                    <Textarea 
+                      id="notes"
+                      name="notes"
+                      value={customerInfo.notes}
+                      onChange={handleInfoChange}
+                      rows={3}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+          </CardContent>
+          {showForm && (
+            <CardFooter className="flex justify-between">
+              <Button
+                variant="outline"
+                onClick={() => setShowForm(false)}
+              >
+                {t("Back", "رجوع")}
+              </Button>
+              <Button 
+                onClick={generateQuote}
+                className="bg-tech-blue hover:bg-tech-purple"
+              >
+                {t("Generate Quote PDF", "إنشاء عرض سعر PDF")}
+              </Button>
+            </CardFooter>
+          )}
+        </Card>
       </div>
     </section>
   );

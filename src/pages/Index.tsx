@@ -63,9 +63,9 @@ const Index = () => {
           <PricingSection />
           <DetailedPlans />
           <TestimonialsSection />
+          <QuoteGenerator />
           <NotesSection />
           <ContactForm />
-          <QuoteGenerator />
         </main>
         <Footer />
       </div>

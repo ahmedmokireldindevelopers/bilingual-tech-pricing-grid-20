@@ -1,8 +1,9 @@
 
 import React from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Badge, DollarSign, Gift } from "lucide-react";
+import { Badge as LucideBadge, DollarSign, Gift, CreditCard } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const FundingSection: React.FC = () => {
   const { t, isRtl } = useLanguage();
@@ -10,7 +11,22 @@ const FundingSection: React.FC = () => {
   const fundingOptions = [
     {
       id: 1,
-      icon: <Badge className="w-10 h-10 text-tech-purple" />,
+      icon: <CreditCard className="w-10 h-10 text-tech-accent" />,
+      title: {
+        en: "Stripe Payments Funding",
+        ar: "تمويل مدفوعات Stripe"
+      },
+      description: {
+        en: "Exclusive $25,000 in special funding for Stripe payment integration and processing fees for qualified startups and businesses.",
+        ar: "تمويل حصري بقيمة 25000 دولار لتكامل مدفوعات Stripe ورسوم المعالجة للشركات الناشئة والأعمال المؤهلة."
+      },
+      value: "$25,000",
+      link: "#pricing",
+      featured: true
+    },
+    {
+      id: 2,
+      icon: <LucideBadge className="w-10 h-10 text-tech-purple" />,
       title: {
         en: "SendPulse $5000 Grant",
         ar: "منحة SendPulse بقيمة 5000 دولار"
@@ -20,10 +36,11 @@ const FundingSection: React.FC = () => {
         ar: "احصل على رصيد تسويقي بقيمة 5000 دولار لحملات البريد الإلكتروني والرسائل القصيرة وإشعارات الويب من خلال عملية التطبيق المتخصصة لدينا."
       },
       value: "$5,000",
-      link: "#pricing"
+      link: "#pricing",
+      featured: false
     },
     {
-      id: 2,
+      id: 3,
       icon: <DollarSign className="w-10 h-10 text-tech-blue" />,
       title: {
         en: "Make.com Teams Plan",
@@ -34,21 +51,8 @@ const FundingSection: React.FC = () => {
         ar: "نساعدك في التأهل لاشتراك Make.com Teams بقيمة 636 دولارًا سنويًا للحصول على إمكانات متقدمة لأتمتة سير العمل والتكامل."
       },
       value: "$636/year",
-      link: "#pricing"
-    },
-    {
-      id: 3,
-      icon: <Gift className="w-10 h-10 text-tech-accent" />,
-      title: {
-        en: "Startup Growth Package",
-        ar: "حزمة نمو الشركات الناشئة"
-      },
-      description: {
-        en: "Comprehensive package that includes various tools and services specially curated for early-stage startups looking to scale quickly.",
-        ar: "حزمة شاملة تتضمن مختلف الأدوات والخدمات المنسقة خصيصًا للشركات الناشئة في مراحلها المبكرة التي تتطلع إلى التوسع بسرعة."
-      },
-      value: "$2,000+",
-      link: "#contact"
+      link: "#pricing",
+      featured: false
     }
   ];
 
@@ -57,20 +61,34 @@ const FundingSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className={`text-3xl font-bold mb-4 ${isRtl ? 'font-arabic' : 'font-english'}`}>
-            {t("Startup Funding & Grants", "تمويل ومنح الشركات الناشئة")}
+            {t("Exclusive Funding & Grants", "تمويل ومنح حصرية")}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t(
-              "We help startups access valuable resources, credits, and tools to accelerate growth without burning through capital.",
-              "نساعد الشركات الناشئة في الوصول إلى موارد وأرصدة وأدوات قيمة لتسريع النمو دون استنفاد رأس المال."
+              "We help startups and businesses access valuable resources, credits, and tools worth over $30,000 to accelerate growth without burning through capital.",
+              "نساعد الشركات الناشئة والأعمال في الوصول إلى موارد وأرصدة وأدوات قيمة تزيد قيمتها عن 30,000 دولار لتسريع النمو دون استنفاد رأس المال."
             )}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {fundingOptions.map((option) => (
-            <Card key={option.id} className="bg-white transition-all duration-300 hover:shadow-lg border-2 hover:border-tech-purple">
-              <CardHeader className="pb-2">
+            <Card 
+              key={option.id} 
+              className={`bg-white transition-all duration-300 hover:shadow-lg ${
+                option.featured 
+                  ? 'border-4 border-tech-accent relative transform hover:-translate-y-2' 
+                  : 'border-2 hover:border-tech-purple'
+              }`}
+            >
+              {option.featured && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <Badge className="bg-tech-accent hover:bg-tech-accent text-white px-3 py-1 text-sm font-medium">
+                    {t("EXCLUSIVE OFFER", "عرض حصري")}
+                  </Badge>
+                </div>
+              )}
+              <CardHeader className={`pb-2 ${option.featured ? 'pt-8' : ''}`}>
                 <div className="mb-4">{option.icon}</div>
                 <CardTitle>{isRtl ? option.title.ar : option.title.en}</CardTitle>
                 <CardDescription className="text-2xl font-bold text-tech-accent">
@@ -83,7 +101,11 @@ const FundingSection: React.FC = () => {
                 </p>
                 <a 
                   href={option.link} 
-                  className="mt-4 inline-block text-tech-blue hover:text-tech-purple font-medium"
+                  className={`mt-4 inline-block font-medium ${
+                    option.featured 
+                      ? 'text-tech-accent hover:text-tech-purple' 
+                      : 'text-tech-blue hover:text-tech-purple'
+                  }`}
                 >
                   {t("Learn more →", "معرفة المزيد ←")}
                 </a>
