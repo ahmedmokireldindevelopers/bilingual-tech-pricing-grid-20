@@ -43,7 +43,7 @@ const FundingSection: React.FC = () => {
     },
     {
       id: 3,
-      iconUrl: "https://sendpulse.com/static/images/sendpulse-logo.svg",
+      iconUrl: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACUklEQVRYhcWXMW/TQBTH/2ktN1KMznGREonGZWWIK3VgATOCBGZi4iOUj8D34AswoH4AqwMLEqEZGc6qUAdE4gqJSMRxxEUKIZUZkB2fYxtfnCZv8ntn3/vdu/892xV2HXwLgLvYglWAXuXXdRBsI3loUpmHx7M5Dk67kd+uK+g+PxaaY6cMQGcw5oH+zIXnKAfww+d8l003DJCoAAD02e/NAPTZFI7HluLOaDl2IwDOaJIa92diOlgZwHZ/psZFdbAyAM2ogLsJDWTtPwDQjPhaAT6lqD800V6wEkDy/MdtIxroDBYARJZgtfa5cZFeIPwuoB7jhGZoCnSlyt3jjBgOlb3I92dzvPs6gD+bw6grsPQFsDBA8vw/a+1DlXe5WLwXUI/h6XuKcSxm1Gs4e3IEIksLgFtvP2Ymjb/lkuf/UYOgP+FLfnJ+iZPzy8z56GiCN1++4/XRYTENOCMWrYDGWi2RJbQ1BUa9VmQazmx3CEBgC6jHQGSJ23+zQQAAulIFkSWuzP8zdU8SA+gMxiAyf7ul346uibwrBGC1NABA5icZ9Rge2J8j32wQEFmCfTWMYl3rGG1NyU1EPYaXHy7gxnRiNlWcPTbyAQDg4LQbrSpcfejrtSouXtzPTR6ay6awr4bwZ3OYTQKzoUZjuVtgNki04mR5zaaa9kiq6UoVr+7dSR3LPQUPc5KYTVIYIM9yAUKVi46tDcDQlCXlA/8aU7L93ggAkL7SdZW/EECaDkQEWBogrc2ua/8LAZhNldNB0i9rW/853QmA3raSB0DvLxqA4ZogGv2uAAAAAElFTkSuQmCC",
       title: {
         en: "SendPulse $5000 Grant",
         ar: "منحة SendPulse بقيمة 5000 دولار"
