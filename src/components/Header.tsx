@@ -41,7 +41,7 @@ const Header = () => {
             <h1 className={`text-xl font-bold transition-colors ${
               isScrolled ? 'text-tech-dark' : 'text-white'
             }`}>
-              {t("ahmedmokireldin", "أحمد مكي الدين")}
+              {t("Ahmed Mo Kireldin", "أحمد مو كريلدين")}
             </h1>
           </a>
 

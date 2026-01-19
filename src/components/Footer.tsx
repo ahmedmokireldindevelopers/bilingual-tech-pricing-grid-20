@@ -24,7 +24,7 @@ const Footer = () => {
                 alt="ahmedmokireldin" 
                 className="h-12 w-auto"
               />
-              <span className="font-bold text-2xl">{t("ahmedmokireldin", "أحمد مكي الدين")}</span>
+              <span className="font-bold text-2xl">{t("Ahmed Mo Kireldin", "أحمد مو كريلدين")}</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
               {t(
@@ -108,7 +108,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} {t("ahmedmokireldin. All rights reserved.", "أحمد مكي الدين. جميع الحقوق محفوظة.")}
+            &copy; {currentYear} {t("Ahmed Mo Kireldin. All rights reserved.", "أحمد مو كريلدين. جميع الحقوق محفوظة.")}
           </p>
           <button 
             onClick={scrollToTop}
