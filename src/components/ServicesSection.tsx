@@ -271,60 +271,72 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className={`section-title text-center ${isRtl ? 'font-arabic' : 'font-english'}`}>
-          {t("Our Services", "خدماتنا")}
-        </h2>
-        <p className="section-subtitle text-center">
-          {t(
-            "Comprehensive technical solutions for your digital business needs",
-            "حلول تقنية شاملة لاحتياجات أعمالك الرقمية"
-          )}
-        </p>
-        
-        <div className="text-center mb-10">
-          <div className="inline-block bg-tech-blue/10 rounded-lg px-4 py-2 mb-6">
-            <h3 className="text-lg font-medium text-tech-blue">
-              {t("Specialized in WhatsApp Business API & Chatbot Solutions", "متخصصون في واجهة برمجة تطبيقات WhatsApp Business وحلول روبوتات الدردشة")}
-            </h3>
+    <section id="services" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-tech-blue/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-tech-purple/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 bg-tech-blue/10 rounded-full px-4 py-2 mb-6">
+            <span className="w-2 h-2 rounded-full bg-tech-blue animate-pulse" />
+            <span className="text-tech-blue text-sm font-medium">
+              {t("Professional Solutions", "حلول احترافية")}
+            </span>
           </div>
+          
+          <h2 className={`text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-tech-dark via-tech-blue to-tech-purple bg-clip-text text-transparent ${isRtl ? 'font-arabic' : 'font-english'}`}>
+            {t("Our Services", "خدماتنا")}
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            {t(
+              "Comprehensive technical solutions for your digital business needs",
+              "حلول تقنية شاملة لاحتياجات أعمالك الرقمية"
+            )}
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {services.map((service) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {services.map((service, index) => (
             <div 
               key={service.id} 
-              className={`service-card animate-fade-in overflow-hidden ${
-                service.highlighted ? 'border-2 border-tech-blue shadow-lg' : ''
+              className={`group relative bg-white rounded-2xl p-6 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border ${
+                service.highlighted 
+                  ? 'border-tech-blue/30 shadow-lg shadow-tech-blue/10' 
+                  : 'border-gray-100 hover:border-tech-blue/20'
               }`}
+              style={{ animationDelay: `${index * 100}ms` }}
+              data-testid={`card-service-${service.id}`}
             >
-              {service.image && (
-                <div className="h-40 overflow-hidden -mx-6 -mt-6 mb-4">
-                  <img 
-                    src={service.image} 
-                    alt={isRtl ? service.title.ar : service.title.en}
-                    className="w-full h-full object-cover object-center"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                    }}
-                  />
+              {service.highlighted && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-tech-blue to-tech-purple text-white text-xs font-medium px-3 py-1 rounded-full">
+                    {t("Popular", "شائع")}
+                  </span>
                 </div>
               )}
-              <div className="service-icon mb-4">
+              
+              <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300 ${
+                service.highlighted 
+                  ? 'bg-gradient-to-br from-tech-blue to-tech-purple text-white' 
+                  : 'bg-tech-light text-tech-blue group-hover:bg-gradient-to-br group-hover:from-tech-blue group-hover:to-tech-purple group-hover:text-white'
+              }`}>
                 {service.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-2">
+              
+              <h3 className="text-lg font-semibold mb-3 text-tech-dark group-hover:text-tech-blue transition-colors">
                 {isRtl ? service.title.ar : service.title.en}
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-500 text-sm mb-5 leading-relaxed">
                 {isRtl ? service.description.ar : service.description.en}
               </p>
-              <ul className="feature-list">
-                {service.features.map((feature, index) => (
-                  <li key={index}>
-                    <Check className="text-green-500" size={18} />
-                    <span>{isRtl ? feature.ar : feature.en}</span>
+              
+              <ul className="space-y-2">
+                {service.features.slice(0, 3).map((feature, idx) => (
+                  <li key={idx} className="flex items-center gap-2 text-sm">
+                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                      <Check className="text-green-600 w-3 h-3" />
+                    </div>
+                    <span className="text-gray-600">{isRtl ? feature.ar : feature.en}</span>
                   </li>
                 ))}
               </ul>

@@ -1,7 +1,8 @@
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import PricingSection from "@/components/PricingSection";
 import DetailedPlans from "@/components/DetailedPlans";
@@ -16,10 +17,8 @@ import QuoteGenerator from "@/components/QuoteGenerator";
 
 const Index = () => {
   useEffect(() => {
-    // Set the page title
     document.title = "Tech Services - Professional Technical Solutions";
     
-    // Add smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -37,7 +36,6 @@ const Index = () => {
       });
     });
 
-    // Scroll to section if URL contains hash
     if (window.location.hash) {
       const targetElement = document.querySelector(window.location.hash);
       if (targetElement) {
@@ -56,6 +54,7 @@ const Index = () => {
       <div className="min-h-screen flex flex-col">
         <Header />
         <main>
+          <HeroSection />
           <ServicesSection />
           <FundingSection />
           <F6SOffersCarousel />
