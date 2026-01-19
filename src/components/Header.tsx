@@ -33,17 +33,15 @@ const Header = () => {
       <div className="container mx-auto py-4 px-4">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group" data-testid="link-logo">
-            <div className={`p-2.5 rounded-xl transition-all duration-300 ${
-              isScrolled 
-                ? 'bg-gradient-to-br from-tech-blue to-tech-purple shadow-lg' 
-                : 'bg-white/20 backdrop-blur-sm border border-white/30'
-            }`}>
-              <span className="font-bold text-xl text-white">TS</span>
-            </div>
+            <img 
+              src="/attached_assets/my_logo_ahmed_1768850090136.png" 
+              alt="ahmedmokireldin" 
+              className="h-10 w-auto"
+            />
             <h1 className={`text-xl font-bold transition-colors ${
               isScrolled ? 'text-tech-dark' : 'text-white'
             }`}>
-              {t("Tech Services", "الخدمات التقنية")}
+              {t("ahmedmokireldin", "أحمد مكي الدين")}
             </h1>
           </a>
 

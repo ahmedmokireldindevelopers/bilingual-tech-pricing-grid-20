@@ -17,7 +17,7 @@ import QuoteGenerator from "@/components/QuoteGenerator";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Tech Services - Professional Technical Solutions";
+    document.title = "ahmedmokireldin - Professional Technical Solutions";
     
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {

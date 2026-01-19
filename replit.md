@@ -1,9 +1,10 @@
-# Tech Services - Professional Technical Solutions
+# ahmedmokireldin - Professional Technical Solutions
 
 ## Overview
-A modern, bilingual (English/Arabic) landing page for a technical services company specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
+A modern, bilingual (English/Arabic) landing page for ahmedmokireldin's technical services specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
 
 ## Recent Changes
+- **2026-01-19**: Updated branding to "ahmedmokireldin" with custom logo
 - **2026-01-19**: Migrated from Lovable to Replit environment
 - **2026-01-19**: Major design improvements:
   - Added modern Hero section with gradient background and animations

@@ -19,10 +19,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-gradient-to-br from-tech-blue to-tech-purple p-2.5 rounded-xl">
-                <span className="font-bold text-xl text-white">TS</span>
-              </div>
-              <span className="font-bold text-2xl">{t("Tech Services", "الخدمات التقنية")}</span>
+              <img 
+                src="/attached_assets/my_logo_ahmed_1768850090136.png" 
+                alt="ahmedmokireldin" 
+                className="h-12 w-auto"
+              />
+              <span className="font-bold text-2xl">{t("ahmedmokireldin", "أحمد مكي الدين")}</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
               {t(
@@ -106,7 +108,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} {t("Tech Services. All rights reserved.", "الخدمات التقنية. جميع الحقوق محفوظة.")}
+            &copy; {currentYear} {t("ahmedmokireldin. All rights reserved.", "أحمد مكي الدين. جميع الحقوق محفوظة.")}
           </p>
           <button 
             onClick={scrollToTop}
