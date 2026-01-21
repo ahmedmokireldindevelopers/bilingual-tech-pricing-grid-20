@@ -1,10 +1,17 @@
-# ahmedmokireldin - Professional Technical Solutions
+# Ahmed Mo Kireldin - Professional Technical Solutions
 
 ## Overview
-A modern, bilingual (English/Arabic) landing page for ahmedmokireldin's technical services specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
+A modern, bilingual (English/Arabic) landing page for Ahmed Mo Kireldin's technical services specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
 
 ## Recent Changes
-- **2026-01-19**: Updated branding to "ahmedmokireldin" with custom logo
+- **2026-01-21**: Major feature additions:
+  - Added PWA functionality (service worker, manifest, offline support)
+  - Created Products page with catalog, search, and filtering
+  - Created Special Offers page with promotional deals
+  - Built Appointment Booking system with calendar integration
+  - Added lazy loading for performance optimization
+  - Updated navigation with links to new pages
+- **2026-01-19**: Updated branding to "Ahmed Mo Kireldin" with custom logo
 - **2026-01-19**: Migrated from Lovable to Replit environment
 - **2026-01-19**: Major design improvements:
   - Added modern Hero section with gradient background and animations
@@ -28,11 +35,12 @@ A modern, bilingual (English/Arabic) landing page for ahmedmokireldin's technica
 src/
 ├── components/          # Reusable UI components
 │   ├── ui/             # Shadcn UI components
-│   ├── Header.tsx      # Navigation header
+│   ├── Header.tsx      # Navigation header with page links
 │   ├── HeroSection.tsx # Hero section with CTA
 │   ├── ServicesSection.tsx
 │   ├── PricingSection.tsx
 │   ├── ContactForm.tsx
+│   ├── LazyImage.tsx   # Lazy loading image component
 │   └── Footer.tsx
 ├── contexts/           # React context providers
 │   └── LanguageContext.tsx  # Bilingual support (EN/AR)
@@ -40,8 +48,14 @@ src/
 ├── lib/                # Utility functions
 ├── pages/              # Page components
 │   ├── Index.tsx       # Main landing page
+│   ├── Products.tsx    # Products catalog page
+│   ├── Offers.tsx      # Special offers page
+│   ├── Booking.tsx     # Appointment booking page
 │   └── NotFound.tsx    # 404 page
-└── index.css           # Global styles and Tailwind config
+├── index.css           # Global styles and Tailwind config
+public/
+├── manifest.json       # PWA manifest
+└── sw.js              # Service worker for offline support
 ```
 
 ### Design System

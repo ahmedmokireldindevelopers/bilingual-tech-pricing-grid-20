@@ -1,0 +1,27 @@
+{
+  "name": "Ahmed Mo Kireldin - Technical Solutions",
+  "short_name": "AMK Tech",
+  "description": "Professional technical services for WhatsApp Business API, chatbots, and digital automation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4e54c8",
+  "theme_color": "#4e54c8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/attached_assets/my_logo_ahmed_1768850090136.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/attached_assets/my_logo_ahmed_1768850090136.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
