@@ -4,6 +4,14 @@
 A modern, bilingual (English/Arabic) landing page for Ahmed Mo Kireldin's technical services specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
 
 ## Recent Changes
+- **2026-01-24**: Added Admin Dashboard system:
+  - Created admin login page (/admin) with secure authentication
+  - Built admin dashboard (/admin/dashboard) for content management
+  - Added sections management (create, edit, delete, toggle visibility)
+  - Added image upload and gallery management
+  - Added bilingual content editing (English/Arabic)
+  - Implemented protected routes for admin area
+  - Demo credentials: admin / admin123
 - **2026-01-21**: Major feature additions:
   - Added PWA functionality (service worker, manifest, offline support)
   - Created Products page with catalog, search, and filtering
@@ -43,7 +51,8 @@ src/
 │   ├── LazyImage.tsx   # Lazy loading image component
 │   └── Footer.tsx
 ├── contexts/           # React context providers
-│   └── LanguageContext.tsx  # Bilingual support (EN/AR)
+│   ├── LanguageContext.tsx  # Bilingual support (EN/AR)
+│   └── AuthContext.tsx      # Admin authentication context
 ├── hooks/              # Custom React hooks
 ├── lib/                # Utility functions
 ├── pages/              # Page components
@@ -51,6 +60,8 @@ src/
 │   ├── Products.tsx    # Products catalog page
 │   ├── Offers.tsx      # Special offers page
 │   ├── Booking.tsx     # Appointment booking page
+│   ├── AdminLogin.tsx  # Admin login page
+│   ├── AdminDashboard.tsx # Admin dashboard for content management
 │   └── NotFound.tsx    # 404 page
 ├── index.css           # Global styles and Tailwind config
 public/
