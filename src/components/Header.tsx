@@ -1,12 +1,11 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar, Building2 } from "lucide-react";
+import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar, Building2, ChevronDown } from "lucide-react";
 
 const Header = () => {
-  const { t, toggleLanguage, language } = useLanguage();
+  const { t, toggleLanguage, language, isRtl } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -14,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,186 +26,164 @@ const Header = () => {
     { href: "/booking", label: t("Book Now", "احجز الآن"), icon: Calendar },
   ];
 
-  const sectionLinks = [
-    { href: "#services", label: t("Services", "الخدمات") },
-    { href: "#pricing", label: t("Pricing", "الأسعار") },
-    { href: "#contact", label: t("Contact", "اتصل بنا") },
-  ];
-
   const shouldShowLight = isHomePage && !isScrolled;
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled || !isHomePage
-        ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-        : 'bg-transparent'
+        ? 'bg-white shadow-sm border-b border-gray-100' 
+        : 'bg-white/5 backdrop-blur-sm'
     }`}>
-      <div className="container mx-auto py-4 px-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group" data-testid="link-logo">
-            <img 
-              src="/attached_assets/my_logo_ahmed_1768850090136.png" 
-              alt="ahmedmokireldin" 
-              className="h-10 w-auto"
-            />
-            <h1 className={`text-xl font-bold transition-colors ${
-              shouldShowLight ? 'text-white' : 'text-tech-dark'
-            }`}>
-              {t("Ahmed Mo Kireldin", "أحمد مو كريلدين")}
-            </h1>
+      <div className="container mx-auto">
+        <div className={`flex items-center justify-between py-2.5 px-4 ${isRtl ? 'flex-row-reverse' : ''}`}>
+          <Link to="/" className={`flex items-center gap-2 group ${isRtl ? 'flex-row-reverse' : ''}`} data-testid="link-logo">
+            <div className="relative">
+              <img 
+                src="/attached_assets/my_logo_ahmed_1768850090136.png" 
+                alt="Ahmed Mo Kireldin" 
+                className="h-8 w-auto"
+              />
+            </div>
+            <div className={`${isRtl ? 'text-right' : 'text-left'}`}>
+              <h1 className={`text-base font-bold transition-colors leading-tight ${
+                shouldShowLight ? 'text-white' : 'text-gray-900'
+              }`}>
+                Ahmed Mo Kireldin
+              </h1>
+            </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-6">
-            {isHomePage && sectionLinks.map((link) => (
-              <a 
-                key={link.href}
-                href={link.href} 
-                className={`font-medium transition-colors hover:text-tech-blue ${
-                  shouldShowLight ? 'text-white/90' : 'text-tech-dark/80'
-                }`}
-                data-testid={`link-nav-${link.href.replace('#', '')}`}
-              >
-                {link.label}
-              </a>
-            ))}
+          <nav className={`hidden lg:flex items-center gap-1 ${isRtl ? 'flex-row-reverse' : ''}`}>
             {pageLinks.map((link) => (
               <Link 
                 key={link.href}
                 to={link.href} 
-                className={`font-medium transition-colors hover:text-tech-blue flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all flex items-center gap-1.5 ${
                   location.pathname === link.href 
-                    ? 'text-tech-blue' 
-                    : shouldShowLight ? 'text-white/90' : 'text-tech-dark/80'
+                    ? 'bg-blue-50 text-blue-600' 
+                    : shouldShowLight 
+                      ? 'text-white/90 hover:bg-white/10' 
+                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 }`}
                 data-testid={`link-nav-${link.href.replace('/', '')}`}
               >
-                <link.icon size={16} />
+                <link.icon className="w-3.5 h-3.5" />
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-3">
+          <div className={`hidden md:flex items-center gap-2 ${isRtl ? 'flex-row-reverse' : ''}`}>
+            <div className={`flex items-center gap-0.5 px-1 py-0.5 rounded-lg ${shouldShowLight ? 'bg-white/10' : 'bg-gray-50'}`}>
               <a 
                 href="mailto:ahmedmokireldin@gmail.com" 
-                className={`p-2 rounded-lg transition-colors ${
+                className={`p-1.5 rounded-md transition-all ${
                   shouldShowLight 
-                    ? 'hover:bg-white/10 text-white' 
-                    : 'hover:bg-gray-100 text-tech-dark'
+                    ? 'hover:bg-white/20 text-white' 
+                    : 'hover:bg-gray-100 text-gray-500 hover:text-gray-700'
                 }`}
+                title="Email"
                 data-testid="link-email"
               >
-                <Mail size={18} />
+                <Mail className="w-4 h-4" />
               </a>
               <a 
                 href="tel:+201004101309" 
-                className={`p-2 rounded-lg transition-colors ${
+                className={`p-1.5 rounded-md transition-all ${
                   shouldShowLight 
-                    ? 'hover:bg-white/10 text-white' 
-                    : 'hover:bg-gray-100 text-tech-dark'
+                    ? 'hover:bg-white/20 text-white' 
+                    : 'hover:bg-gray-100 text-gray-500 hover:text-gray-700'
                 }`}
+                title="Phone"
                 data-testid="link-phone"
               >
-                <Phone size={18} />
+                <Phone className="w-4 h-4" />
               </a>
               <a 
                 href="https://wa.me/201006334062" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className={`p-2 rounded-lg transition-colors ${
+                className={`p-1.5 rounded-md transition-all ${
                   shouldShowLight 
-                    ? 'hover:bg-white/10 text-white' 
-                    : 'hover:bg-green-100 text-green-600'
+                    ? 'hover:bg-white/20 text-white' 
+                    : 'hover:bg-green-50 text-green-600 hover:text-green-700'
                 }`}
+                title="WhatsApp"
                 data-testid="link-whatsapp"
               >
-                <MessageSquare size={18} />
+                <MessageSquare className="w-4 h-4" />
               </a>
             </div>
             
             <Button 
               onClick={toggleLanguage} 
-              variant={shouldShowLight ? "ghost" : "outline"}
+              variant="outline"
               size="sm"
-              className={`flex items-center gap-2 ${
-                shouldShowLight && 'border-white/30 text-white hover:bg-white/10'
+              className={`h-8 px-3 text-xs font-medium gap-1.5 ${
+                shouldShowLight 
+                  ? 'border-white/30 text-white hover:bg-white/10 bg-white/5' 
+                  : 'border-gray-200 text-gray-700 hover:bg-gray-50'
               }`}
               data-testid="button-language-toggle"
             >
-              <Globe size={16} />
+              <Globe className="w-3.5 h-3.5" />
               <span>{language === "en" ? "العربية" : "English"}</span>
             </Button>
           </div>
 
           <button 
-            className={`lg:hidden p-2 rounded-lg ${
-              shouldShowLight ? 'text-white' : 'text-tech-dark'
+            className={`lg:hidden p-2 rounded-lg transition-colors ${
+              shouldShowLight ? 'text-white hover:bg-white/10' : 'text-gray-700 hover:bg-gray-100'
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="button-mobile-menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-gray-200/20">
-            <nav className="flex flex-col gap-2 mt-4">
-              {isHomePage && sectionLinks.map((link) => (
-                <a 
-                  key={link.href}
-                  href={link.href} 
-                  className={`py-2 px-4 rounded-lg font-medium transition-colors ${
-                    shouldShowLight 
-                      ? 'text-white hover:bg-white/10' 
-                      : 'text-tech-dark hover:bg-gray-100'
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  data-testid={`link-mobile-nav-${link.href.replace('#', '')}`}
-                >
-                  {link.label}
-                </a>
-              ))}
+          <div className={`lg:hidden border-t ${shouldShowLight ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white'}`}>
+            <nav className="flex flex-col p-2">
               {pageLinks.map((link) => (
                 <Link 
                   key={link.href}
                   to={link.href} 
-                  className={`py-2 px-4 rounded-lg font-medium transition-colors flex items-center gap-2 ${
+                  className={`py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center gap-2 ${
                     location.pathname === link.href
-                      ? 'text-tech-blue bg-tech-blue/10'
+                      ? 'bg-blue-50 text-blue-600'
                       : shouldShowLight 
                         ? 'text-white hover:bg-white/10' 
-                        : 'text-tech-dark hover:bg-gray-100'
+                        : 'text-gray-700 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                   data-testid={`link-mobile-nav-${link.href.replace('/', '')}`}
                 >
-                  <link.icon size={16} />
+                  <link.icon className="w-4 h-4" />
                   {link.label}
                 </Link>
               ))}
             </nav>
-            <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-200/20">
-              <div className="flex items-center gap-2">
-                <a href="mailto:ahmedmokireldin@gmail.com" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-tech-dark'}`}>
-                  <Mail size={18} />
+            <div className={`flex items-center justify-between p-3 border-t ${shouldShowLight ? 'border-white/10' : 'border-gray-100'}`}>
+              <div className="flex items-center gap-1">
+                <a href="mailto:ahmedmokireldin@gmail.com" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}>
+                  <Mail className="w-4 h-4" />
                 </a>
-                <a href="tel:+201004101309" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-tech-dark'}`}>
-                  <Phone size={18} />
+                <a href="tel:+201004101309" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}>
+                  <Phone className="w-4 h-4" />
                 </a>
-                <a href="https://wa.me/201006334062" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-green-600'}`}>
-                  <MessageSquare size={18} />
+                <a href="https://wa.me/201006334062" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-green-600 hover:bg-green-50'}`}>
+                  <MessageSquare className="w-4 h-4" />
                 </a>
               </div>
               <Button 
                 onClick={toggleLanguage} 
                 variant="outline"
                 size="sm"
-                className={`flex items-center gap-2 ${shouldShowLight && 'border-white/30 text-white'}`}
+                className="h-8 px-3 text-xs"
               >
-                <Globe size={16} />
-                <span>{language === "en" ? "العربية" : "English"}</span>
+                <Globe className="w-3.5 h-3.5 mr-1.5" />
+                {language === "en" ? "العربية" : "English"}
               </Button>
             </div>
           </div>
