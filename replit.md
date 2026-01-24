@@ -4,6 +4,13 @@
 A modern, bilingual (English/Arabic) landing page for Ahmed Mo Kireldin's technical services specializing in WhatsApp Business API, chatbot development, and digital automation solutions.
 
 ## Recent Changes
+- **2026-01-24**: Added Real Estate Marketing section:
+  - Created real estate landing page (/real-estate) with automation templates
+  - Built property submission form (/real-estate/submit) with multi-step wizard
+  - Form supports property sale, rent, or exchange listings
+  - Added image upload (up to 10 images) and PDF document upload (up to 5)
+  - Supports properties in Egypt and international locations
+  - Bilingual support (English/Arabic)
 - **2026-01-24**: Added Admin Dashboard system:
   - Created admin login page (/admin) with secure authentication
   - Built admin dashboard (/admin/dashboard) for content management
@@ -60,6 +67,8 @@ src/
 │   ├── Products.tsx    # Products catalog page
 │   ├── Offers.tsx      # Special offers page
 │   ├── Booking.tsx     # Appointment booking page
+│   ├── RealEstate.tsx  # Real estate marketing page
+│   ├── PropertySubmit.tsx # Property submission form
 │   ├── AdminLogin.tsx  # Admin login page
 │   ├── AdminDashboard.tsx # Admin dashboard for content management
 │   └── NotFound.tsx    # 404 page
