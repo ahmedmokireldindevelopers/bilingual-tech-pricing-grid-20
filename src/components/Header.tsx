@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar } from "lucide-react";
+import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar, Building2 } from "lucide-react";
 
 const Header = () => {
   const { t, toggleLanguage, language } = useLanguage();
@@ -23,6 +23,7 @@ const Header = () => {
   const pageLinks = [
     { href: "/products", label: t("Products", "المنتجات"), icon: ShoppingBag },
     { href: "/offers", label: t("Offers", "العروض"), icon: Tag },
+    { href: "/real-estate", label: t("Real Estate", "العقارات"), icon: Building2 },
     { href: "/booking", label: t("Book Now", "احجز الآن"), icon: Calendar },
   ];
 

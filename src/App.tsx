@@ -12,6 +12,8 @@ import NotFound from "./pages/NotFound";
 const Products = lazy(() => import("./pages/Products"));
 const Offers = lazy(() => import("./pages/Offers"));
 const Booking = lazy(() => import("./pages/Booking"));
+const RealEstate = lazy(() => import("./pages/RealEstate"));
+const PropertySubmit = lazy(() => import("./pages/PropertySubmit"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
 
@@ -36,6 +38,8 @@ const App = () => (
               <Route path="/products" element={<Products />} />
               <Route path="/offers" element={<Offers />} />
               <Route path="/booking" element={<Booking />} />
+              <Route path="/real-estate" element={<RealEstate />} />
+              <Route path="/real-estate/submit" element={<PropertySubmit />} />
               <Route path="/admin" element={<AdminLogin />} />
               <Route
                 path="/admin/dashboard"
