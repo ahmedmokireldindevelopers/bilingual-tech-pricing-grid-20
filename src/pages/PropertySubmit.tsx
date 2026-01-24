@@ -304,17 +304,17 @@ const PropertySubmitContent = () => {
     <div className={`min-h-screen bg-gray-50 ${isRtl ? 'rtl' : 'ltr'}`}>
       <Header />
       
-      <div className="pt-28 pb-20">
+      <div className="pt-20 pb-12">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <Badge className="mb-4">
-              <Home className="w-4 h-4 mr-2" />
+          <div className="text-center mb-6">
+            <Badge className="mb-3 text-sm">
+              <Home className="w-3 h-3 mr-1.5" />
               {t("Property Listing", "إدراج العقار")}
             </Badge>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
               {t("Submit Your Property", "أرسل عقارك")}
             </h1>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-xl mx-auto text-sm">
               {t(
                 "Fill in the details below to list your property for sale, rent, or exchange",
                 "املأ التفاصيل أدناه لإدراج عقارك للبيع أو الإيجار أو الاستبدال"
@@ -322,32 +322,32 @@ const PropertySubmitContent = () => {
             </p>
           </div>
 
-          <div className="flex justify-center mb-10">
-            <div className="flex items-center gap-2 md:gap-4">
+          <div className="flex justify-center mb-6">
+            <div className="flex items-center gap-1 md:gap-2">
               {steps.map((s, idx) => (
                 <div key={s.num} className="flex items-center">
-                  <div className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
+                  <div className={`flex items-center gap-1.5 px-2 py-1.5 rounded-md transition-colors text-sm ${
                     step === s.num ? 'bg-blue-600 text-white' : 
                     step > s.num ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-500'
                   }`}>
                     {step > s.num ? (
-                      <CheckCircle className="w-5 h-5" />
+                      <CheckCircle className="w-4 h-4" />
                     ) : (
-                      <s.icon className="w-5 h-5" />
+                      <s.icon className="w-4 h-4" />
                     )}
-                    <span className="hidden md:inline font-medium">{s.title}</span>
+                    <span className="hidden md:inline font-medium text-sm">{s.title}</span>
                     <span className="md:hidden font-medium">{s.num}</span>
                   </div>
                   {idx < steps.length - 1 && (
-                    <div className={`w-8 md:w-12 h-1 mx-2 rounded ${step > s.num ? 'bg-green-400' : 'bg-gray-200'}`} />
+                    <div className={`w-6 md:w-8 h-0.5 mx-1 rounded ${step > s.num ? 'bg-green-400' : 'bg-gray-200'}`} />
                   )}
                 </div>
               ))}
             </div>
           </div>
 
-          <Card className="max-w-3xl mx-auto">
-            <CardContent className="p-6 md:p-8">
+          <Card className="max-w-2xl mx-auto">
+            <CardContent className="p-4 md:p-6">
               {step === 1 && (
                 <div className="space-y-6">
                   <CardHeader className="px-0 pt-0">
