@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -401,6 +402,11 @@ const RealEstateContent = () => {
 const RealEstate = () => {
   return (
     <LanguageProvider>
+      <SEO
+        title="Real Estate Marketing Solutions"
+        description="Automate your real estate business with WhatsApp templates for lead capture, scheduling, and property broadcasting."
+        keywords={['Real Estate Marketing', 'WhatsApp Automation', 'Property Listing', 'Lead Capture']}
+      />
       <RealEstateContent />
     </LanguageProvider>
   );

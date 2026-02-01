@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar, Building2, ChevronDown } from "lucide-react";
+import { Mail, Phone, Globe, MessageSquare, Menu, X, ShoppingBag, Tag, Calendar, Building2, ChevronDown, Store, Zap } from "lucide-react";
 
 const Header = () => {
   const { t, toggleLanguage, language, isRtl } = useLanguage();
@@ -20,6 +20,8 @@ const Header = () => {
   }, []);
 
   const pageLinks = [
+    { href: "/store", label: t("Digital Store", "المتجر الرقمي"), icon: Store },
+    { href: "/micwa-system", label: t("N8N Systems", "نظم الأتمتة"), icon: Zap },
     { href: "/products", label: t("Products", "المنتجات"), icon: ShoppingBag },
     { href: "/offers", label: t("Offers", "العروض"), icon: Tag },
     { href: "/real-estate", label: t("Real Estate", "العقارات"), icon: Building2 },
@@ -166,13 +168,25 @@ const Header = () => {
             </nav>
             <div className={`flex items-center justify-between p-3 border-t ${shouldShowLight ? 'border-white/10' : 'border-gray-100'}`}>
               <div className="flex items-center gap-1">
-                <a href="mailto:ahmedmokireldin@gmail.com" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}>
+                <a
+                  href="mailto:ahmedmokireldin@gmail.com"
+                  className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+                  aria-label="Email"
+                >
                   <Mail className="w-4 h-4" />
                 </a>
-                <a href="tel:+201004101309" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}>
+                <a
+                  href="tel:+201004101309"
+                  className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+                  aria-label="Phone"
+                >
                   <Phone className="w-4 h-4" />
                 </a>
-                <a href="https://wa.me/201006334062" className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-green-600 hover:bg-green-50'}`}>
+                <a
+                  href="https://wa.me/201006334062"
+                  className={`p-2 rounded-lg ${shouldShowLight ? 'text-white' : 'text-green-600 hover:bg-green-50'}`}
+                  aria-label="WhatsApp"
+                >
                   <MessageSquare className="w-4 h-4" />
                 </a>
               </div>

@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -104,6 +105,12 @@ const ProductsContent = () => {
     });
   }, [searchQuery, selectedCategory]);
 
+  const handleGetStarted = (productName: string) => {
+    const message = `Hello, I am interested in the product: ${productName}`;
+    const url = `https://wa.me/201006334062?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className={`min-h-screen bg-gray-50 ${isRtl ? 'rtl' : 'ltr'}`} dir={isRtl ? 'rtl' : 'ltr'}>
       <Header />
@@ -181,7 +188,11 @@ const ProductsContent = () => {
                   </CardContent>
                   <CardFooter className="flex justify-between items-center">
                     <span className="text-2xl font-bold text-tech-blue">${product.price}</span>
-                    <Button className="bg-tech-blue hover:bg-tech-purple" data-testid={`button-buy-${product.id}`}>
+                    <Button
+                      className="bg-tech-blue hover:bg-tech-purple"
+                      data-testid={`button-buy-${product.id}`}
+                      onClick={() => handleGetStarted(product.name.en)}
+                    >
                       {t("Get Started", "ابدأ الآن")}
                     </Button>
                   </CardFooter>
@@ -207,6 +218,11 @@ const ProductsContent = () => {
 
 const Products = () => (
   <LanguageProvider>
+    <SEO 
+      title="Products & Services" 
+      description="Explore our comprehensive range of technical solutions including WhatsApp API, Chatbots, and Automation tools."
+      keywords={['WhatsApp API', 'Chatbots', 'Automation', 'Security Audit', 'Technical Support']}
+    />
     <ProductsContent />
   </LanguageProvider>
 );

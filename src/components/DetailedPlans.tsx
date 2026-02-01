@@ -229,7 +229,7 @@ const DetailedPlans: React.FC = () => {
 
                 <div className="flex flex-col gap-2">
                   <a 
-                    href="https://wa.me/201006334062" 
+                    href={`https://wa.me/201006334062?text=${encodeURIComponent(`Hello, I would like to know more about the ${plan.name.en}`)}`}
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="cta-button flex items-center justify-center gap-2"

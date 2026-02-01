@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Check, X, ArrowRight, MessageSquare, Link, Info } from "lucide-react";
+import { Check, X, ArrowRight, MessageSquare, Link, Info, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MessageCalculator from "./MessageCalculator";
 
@@ -235,7 +235,7 @@ const PricingSection: React.FC = () => {
 
               <div className="flex flex-col gap-2">
                 <a 
-                  href="https://wa.me/201006334062" 
+                  href={`https://wa.me/201006334062?text=${encodeURIComponent(`Hello, I am interested in the ${plan.name.en}`)}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="cta-button flex items-center justify-center gap-2"
@@ -291,20 +291,63 @@ const PricingSection: React.FC = () => {
                 )}
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <div className="bg-white p-4 rounded border border-gray-200">
-                  <img 
-                    src="https://scontent.fcai19-6.fna.fbcdn.net/v/t39.2365-6/387103807_709767617086680_8758572233270544545_n.png?_nc_cat=104&ccb=1-7&_nc_sid=14755e&_nc_ohc=HD2PEzKUkDcAX8h6XoA&_nc_ht=scontent.fcai19-6.fna&oh=00_AfCV5YCxGAv2_2SA7rXYH-E329JXRdX-6Jg3UvxI4zY3Qw&oe=66023858" 
-                    alt="WhatsApp Message Types" 
-                    className="w-full h-auto rounded" 
-                  />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                {/* Initiation Types */}
+                <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-semibold text-tech-dark mb-4 border-b pb-2 flex items-center justify-between">
+                    {t("Who Starts?", "من يبدأ المحادثة؟")}
+                    <span className="text-xs font-normal text-gray-500 bg-gray-100 px-2 py-1 rounded">24h Window</span>
+                  </h5>
+                  <div className="space-y-4">
+                    <div className="flex gap-3">
+                      <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <MessageSquare className="w-5 h-5 text-green-600" />
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm text-gray-900">{t("User-Initiated (Service)", "بدء المستخدم (خدمة)")}</p>
+                        <p className="text-xs text-gray-500 mt-1">
+                          {t("Customer messages you first. Free response within 24h.", "يراسلك العميل أولاً. رد مجاني خلال 24 ساعة.")}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-3">
+                      <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                        <Zap className="w-5 h-5 text-blue-600" />
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm text-gray-900">{t("Business-Initiated", "بدء الشركة")}</p>
+                        <p className="text-xs text-gray-500 mt-1">
+                          {t("You message customer. Requires Template & opt-in.", "تراسل العميل. يتطلب قالب وموافقة مسبقة.")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-white p-4 rounded border border-gray-200">
-                  <img 
-                    src="https://scontent.fcai19-6.fna.fbcdn.net/v/t39.2365-6/387084293_304701432261242_4716256922159419997_n.png?_nc_cat=110&ccb=1-7&_nc_sid=14755e&_nc_ohc=vRyXPP2MF-AAX8g-UXv&_nc_ht=scontent.fcai19-6.fna&oh=00_AfC6DIXDVYKzx5eutZApc2DK2Tmes9wQzCiIVvW-NOecow&oe=66035493" 
-                    alt="WhatsApp Conversation Types" 
-                    className="w-full h-auto rounded" 
-                  />
+
+                {/* Conversation Categories */}
+                <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-semibold text-tech-dark mb-4 border-b pb-2">
+                    {t("Conversation Categories", "فئات المحادثات")}
+                  </h5>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-gray-50 p-2 rounded text-center">
+                      <MessageSquare className="w-6 h-6 text-purple-500 mx-auto mb-1" />
+                      <span className="text-xs font-medium block">{t("Marketing", "تسويق")}</span>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded text-center">
+                      <Info className="w-6 h-6 text-blue-500 mx-auto mb-1" />
+                      <span className="text-xs font-medium block">{t("Utility", "خدمي")}</span>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded text-center">
+                      <Check className="w-6 h-6 text-green-500 mx-auto mb-1" />
+                      <span className="text-xs font-medium block">{t("Auth", "توثيق")}</span>
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded text-center">
+                      <MessageSquare className="w-6 h-6 text-orange-500 mx-auto mb-1" />
+                      <span className="text-xs font-medium block">{t("Service", "خدمة")}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               

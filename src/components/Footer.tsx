@@ -1,6 +1,7 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, MessageSquare, MapPin, ArrowUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -83,6 +84,18 @@ const Footer = () => {
                   <span className="w-1.5 h-1.5 rounded-full bg-tech-blue" />
                   {t("Contact", "اتصل بنا")}
                 </a>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-tech-blue" />
+                  {t("Privacy Policy", "سياسة الخصوصية")}
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-tech-blue" />
+                  {t("Terms of Service", "شروط الخدمة")}
+                </Link>
               </li>
             </ul>
           </div>

@@ -16,6 +16,10 @@ const RealEstate = lazy(() => import("./pages/RealEstate"));
 const PropertySubmit = lazy(() => import("./pages/PropertySubmit"));
 const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const DigitalStore = lazy(() => import("./pages/DigitalStore"));
+const MicwaSystem = lazy(() => import("./pages/MicwaSystem"));
 
 const queryClient = new QueryClient();
 
@@ -37,6 +41,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/products" element={<Products />} />
               <Route path="/offers" element={<Offers />} />
+              <Route path="/store" element={<DigitalStore />} />
               <Route path="/booking" element={<Booking />} />
               <Route path="/real-estate" element={<RealEstate />} />
               <Route path="/real-estate/submit" element={<PropertySubmit />} />
@@ -49,6 +54,9 @@ const App = () => (
                   </ProtectedRoute>
                 }
               />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/micwa-system" element={<MicwaSystem />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

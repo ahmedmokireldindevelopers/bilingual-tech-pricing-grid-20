@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -103,6 +104,12 @@ const OffersContent = () => {
     }
   };
 
+  const handleClaimOffer = (offerTitle: string) => {
+    const message = `Hello, I want to claim the offer: ${offerTitle}`;
+    const url = `https://wa.me/201006334062?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className={`min-h-screen bg-gray-50 ${isRtl ? 'rtl' : 'ltr'}`} dir={isRtl ? 'rtl' : 'ltr'}>
       <Header />
@@ -173,7 +180,11 @@ const OffersContent = () => {
                       <span className="text-gray-400 line-through text-sm">${offer.originalPrice}</span>
                       <span className="text-2xl font-bold text-tech-blue ml-2">${Math.round(discountedPrice)}</span>
                     </div>
-                    <Button className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90" data-testid={`button-claim-${offer.id}`}>
+                    <Button
+                      className="bg-gradient-to-r from-tech-blue to-tech-purple hover:opacity-90"
+                      data-testid={`button-claim-${offer.id}`}
+                      onClick={() => handleClaimOffer(offer.title.en)}
+                    >
                       {t("Claim Offer", "احصل على العرض")}
                     </Button>
                   </CardFooter>
@@ -212,6 +223,11 @@ const OffersContent = () => {
 
 const Offers = () => (
   <LanguageProvider>
+    <SEO
+      title="Special Offers & Deals"
+      description="Exclusive limited-time offers on WhatsApp API bundles, automation packages, and technical services."
+      keywords={['Deals', 'Discounts', 'Offers', 'WhatsApp API Sale', 'Automation Bundle']}
+    />
     <OffersContent />
   </LanguageProvider>
 );

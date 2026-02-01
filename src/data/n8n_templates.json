@@ -1,0 +1,3566 @@
+[
+  {
+    "id": 13071,
+    "title": "Generate PDF invoices with line item support from Airtable using Google Sheets",
+    "description": "Automate invoices in 20s: webhook pulls Airtable client/services, calculates VAT, generates Google Docs PDF, saves to Drive, syncs CRM. Learn more.",
+    "slug": "generate-pdf-invoices-with-line-item-support-from-airtable-using-google-sheets-13071",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13071-generate-pdf-invoices-with-line-item-support-from-airtable-using-google-sheets.webp",
+    "categories": [
+      "Invoice Processing"
+    ],
+    "author": "Sergio Medina",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "28 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-pdf-invoices-with-line-item-support-from-airtable-using-google-sheets-13071"
+  },
+  {
+    "id": 13070,
+    "title": "Debounce Telegram support messages and aggregate replies with OpenAI",
+    "description": "Batch Telegram user messages into 60‑second sessions so your AI replies once with a clear, complete answer—less back‑and‑forth with n8n + OpenAI.",
+    "slug": "debounce-telegram-support-messages-and-aggregate-replies-with-openai-13070",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13070-debounce-telegram-support-messages-and-aggregate-replies-with-openai.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Naveen Choudhary",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "28 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/debounce-telegram-support-messages-and-aggregate-replies-with-openai-13070"
+  },
+  {
+    "id": 13065,
+    "title": "Score and route leads with Telegram alerts and Box storage",
+    "description": "Automate lead scoring in n8n: webhook ingest, enrichment, custom scoring, Telegram alerts for hot leads, and Box archiving—no glue code. Learn more.",
+    "slug": "score-and-route-leads-with-telegram-alerts-and-box-storage-13065",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13065-score-and-route-leads-with-telegram-alerts-and-box-storage.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "28 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/score-and-route-leads-with-telegram-alerts-and-box-storage-13065"
+  },
+  {
+    "id": 13064,
+    "title": "Extract insights from LinkedIn comments with Apify, Pinecone Assistant, and GPT-4.1",
+    "description": "n8n template to analyze LinkedIn comments with Apify, Pinecone Assistant & OpenAI—get summaries and sentiment insights fast, no LLM training.",
+    "slug": "extract-insights-from-linkedin-comments-with-apify-pinecone-assistant-and-gpt-41-13064",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13064-extract-insights-from-linkedin-comments-with-apify--pinecone-assistant--and-gpt-4-1.webp",
+    "categories": [
+      "Market Research",
+      "AI RAG"
+    ],
+    "author": "Pinecone",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "28 Jan 2026",
+    "views": 1,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-insights-from-linkedin-comments-with-apify-pinecone-assistant-and-gpt-41-13064"
+  },
+  {
+    "id": 13058,
+    "title": "Send application follow-up reminders from Airtable via email and SMS",
+    "description": "Automate daily candidate follow-ups from Airtable—send Reminder 1 or 2 via Brevo/SMS, avoid duplicates with sent flags, and stay hands-off. Learn more.",
+    "slug": "send-application-follow-up-reminders-from-airtable-via-email-and-sms-13058",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13058-send-application-follow-up-reminders-from-airtable-via-email-and-sms.webp",
+    "categories": [
+      "Lead Nurturing"
+    ],
+    "author": "Jasurbek",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "28 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-application-follow-up-reminders-from-airtable-via-email-and-sms-13058"
+  },
+  {
+    "id": 13040,
+    "title": "Generate short joke videos from Google Sheets with Google Gemini and Wavespeed AI",
+    "description": "Automate faceless viral Shorts: n8n pulls jokes from Sheets, Gemini scripts scenes, Wavespeed (Wan 2.5) animates, auto captions/hashtags—no repeats.",
+    "slug": "generate-short-joke-videos-from-google-sheets-with-google-gemini-and-wavespeed-ai-13040",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13040-generate-short-joke-videos-from-google-sheets-with-google-gemini-and-wavespeed-ai.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Jordan Hoyle",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "27 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-short-joke-videos-from-google-sheets-with-google-gemini-and-wavespeed-ai-13040"
+  },
+  {
+    "id": 13034,
+    "title": "Screen and score resumes from Gmail with PDF parsing, HubSpot, Slack and PostgreSQL",
+    "description": "Talent Sovereign automates resume screening: parse PDFs to JSON, extract skills/experience, score candidates, route to HubSpot/Slack, and track analytics.",
+    "slug": "screen-and-score-resumes-from-gmail-with-pdf-parsing-hubspot-slack-and-postgresql-13034",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13034-screen-and-score-resumes-from-gmail-with-pdf-parsing--hubspot--slack-and-postgresql.webp",
+    "categories": [
+      "HR",
+      "AI Summarization"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "27 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/screen-and-score-resumes-from-gmail-with-pdf-parsing-hubspot-slack-and-postgresql-13034"
+  },
+  {
+    "id": 13033,
+    "title": "Extract invoice data from Gmail PDFs to JSON, Google Sheets and Airtable",
+    "description": "Automate AP with PDF-to-JSON invoice extraction from Gmail, confidence scoring, approvals, and sync to Sheets/Airtable—plus audit trails & alerts.",
+    "slug": "extract-invoice-data-from-gmail-pdfs-to-json-google-sheets-and-airtable-13033",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13033-extract-invoice-data-from-gmail-pdfs-to-json--google-sheets-and-airtable.webp",
+    "categories": [
+      "Invoice Processing",
+      "AI Summarization"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "27 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-invoice-data-from-gmail-pdfs-to-json-google-sheets-and-airtable-13033"
+  },
+  {
+    "id": 13032,
+    "title": "Decrypt legacy PDF archives with HTML to PDF, PostgreSQL and Google Drive",
+    "description": "AI-powered bulk PDF decryption for LegalOps—unlock legacy archives with chain-of-custody, key vault automation, audit logs & quarantine alerts.",
+    "slug": "decrypt-legacy-pdf-archives-with-html-to-pdf-postgresql-and-google-drive-13032",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13032-decrypt-legacy-pdf-archives-with-html-to-pdf--postgresql-and-google-drive.webp",
+    "categories": [
+      "Document Extraction"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "27 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/decrypt-legacy-pdf-archives-with-html-to-pdf-postgresql-and-google-drive-13032"
+  },
+  {
+    "id": 13030,
+    "title": "Create long audiobooks with custom voices using Qwen3-TTS voice design",
+    "description": "Automate audiobook creation from Google Sheets: custom AI voices, batch-safe TTS, FFmpeg merging, and Google Drive upload—learn more.",
+    "slug": "create-long-audiobooks-with-custom-voices-using-qwen3-tts-voice-design-13030",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13030-create-long-audiobooks-with-custom-voices-using-qwen3-tts-voice-design.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Davide",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "27 Jan 2026",
+    "views": 7,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-long-audiobooks-with-custom-voices-using-qwen3-tts-voice-design-13030"
+  },
+  {
+    "id": 13024,
+    "title": "Create and publish AI avatar short videos with Gemini, HeyGen and Google Sheets",
+    "description": "Automate AI avatar Shorts with n8n + HeyGen—generate scripts, render videos, publish to socials, and track results in Google Sheets. Learn more.",
+    "slug": "create-and-publish-ai-avatar-short-videos-with-gemini-heygen-and-google-sheets-13024",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13024-create-and-publish-ai-avatar-short-videos-with-gemini--heygen-and-google-sheets.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "giangxai",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "27 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-and-publish-ai-avatar-short-videos-with-gemini-heygen-and-google-sheets-13024"
+  },
+  {
+    "id": 13018,
+    "title": "Vet Jotform leads with ZeroBounce and sync qualified contacts to ActiveCampaign",
+    "description": "Automate Jotform to ActiveCampaign with ZeroBounce validation + scoring. Sync only quality leads, log rejects in Google Sheets, and prevent credit failures.",
+    "slug": "vet-jotform-leads-with-zerobounce-and-sync-qualified-contacts-to-activecampaign-13018",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13018-vet-jotform-leads-with-zerobounce-and-sync-qualified-contacts-to-activecampaign.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "ZeroBounce",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/vet-jotform-leads-with-zerobounce-and-sync-qualified-contacts-to-activecampaign-13018"
+  },
+  {
+    "id": 13015,
+    "title": "Create automated video ad clones with NanoBanana, Kling, Airtable and Blotato",
+    "description": "Automate video ad creation: analyze any video, generate scenes with NanoBanana + Kling, add AI music, and auto-publish via Blotato. Learn more.",
+    "slug": "create-automated-video-ad-clones-with-nanobanana-kling-airtable-and-blotato-13015",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13015-create-automated-video-ad-clones-with-nanobanana--kling--airtable-and-blotato.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Dr. Firas",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 20,
+    "downloads": 5,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-automated-video-ad-clones-with-nanobanana-kling-airtable-and-blotato-13015"
+  },
+  {
+    "id": 13012,
+    "title": "Generate AI case studies from Feedspace testimonials with Google Gemini and publish to WordPress",
+    "description": "Automate case studies from Feedspace testimonials: webhook capture, AI-written SEO HTML with varied tone, then publish to WordPress via REST API.",
+    "slug": "generate-ai-case-studies-from-feedspace-testimonials-with-google-gemini-and-publish-to-wordpress-13012",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13012-generate-ai-case-studies-from-feedspace-testimonials-with-google-gemini-and-publish-to-wordpress.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Feedspace",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-case-studies-from-feedspace-testimonials-with-google-gemini-and-publish-to-wordpress-13012"
+  },
+  {
+    "id": 13011,
+    "title": "Analyze Binance Futures markets with TA indicators, OpenAI news checks, and Telegram alerts",
+    "description": "n8n automated market analyst: scans Binance Futures Testnet, runs JS TA + AI news vetting, and executes paper trades with adaptive ATR risk.",
+    "slug": "analyze-binance-futures-markets-with-ta-indicators-openai-news-checks-and-telegram-alerts-13011",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13011-analyze-binance-futures-markets-with-ta-indicators--openai-news-checks--and-telegram-alerts.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Summarization"
+    ],
+    "author": "Vadim Mubi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-binance-futures-markets-with-ta-indicators-openai-news-checks-and-telegram-alerts-13011"
+  },
+  {
+    "id": 13008,
+    "title": "Vet new Form.io leads with ZeroBounce and sync qualified contacts to Pipedrive",
+    "description": "Automate Form.io to Pipedrive lead sync with ZeroBounce validation + AI scoring, credit checks, and Google Sheets logs—only quality leads reach CRM.",
+    "slug": "vet-new-formio-leads-with-zerobounce-and-sync-qualified-contacts-to-pipedrive-13008",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13008-vet-new-form-io-leads-with-zerobounce-and-sync-qualified-contacts-to-pipedrive.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "ZeroBounce",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/vet-new-formio-leads-with-zerobounce-and-sync-qualified-contacts-to-pipedrive-13008"
+  },
+  {
+    "id": 13005,
+    "title": "Sync Note.com articles to WordPress with OpenAI categorization and tags",
+    "description": "Auto-publish Note.com articles to WordPress via RSS + API, with OpenAI category/tagging, image migration, and featured image—fully automated.",
+    "slug": "sync-notecom-articles-to-wordpress-with-openai-categorization-and-tags-13005",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13005-sync-note-com-articles-to-wordpress-with-openai-categorization-and-tags.webp",
+    "categories": [
+      "Content Creation",
+      "AI Summarization"
+    ],
+    "author": "Masaki Go",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-notecom-articles-to-wordpress-with-openai-categorization-and-tags-13005"
+  },
+  {
+    "id": 13004,
+    "title": "Extract TV ad slots from Gmail attachments to Google Sheets using GPT-4o Vision",
+    "description": "AI extracts Japanese TV ad-slot details from Gmail—classifies 新規/休止/時間移動, parses attachments, and logs structured data to Google Sheets. Learn more.",
+    "slug": "extract-tv-ad-slots-from-gmail-attachments-to-google-sheets-using-gpt-4o-vision-13004",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13004-extract-tv-ad-slots-from-gmail-attachments-to-google-sheets-using-gpt-4o-vision.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Masaki Go",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-tv-ad-slots-from-gmail-attachments-to-google-sheets-using-gpt-4o-vision-13004"
+  },
+  {
+    "id": 13003,
+    "title": "Generate Japanese Twitter posts with GPT-4, quality control, and Notion",
+    "description": "AI-powered Japanese X/Twitter content generator: culturally aware posts, 5-metric quality scoring, risk checks, approval routing & analytics. Learn more.",
+    "slug": "generate-japanese-twitter-posts-with-gpt-4-quality-control-and-notion-13003",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/13003-generate-japanese-twitter-posts-with-gpt-4--quality-control--and-notion.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "yuta tokumitsu",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "26 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-japanese-twitter-posts-with-gpt-4-quality-control-and-notion-13003"
+  },
+  {
+    "id": 12996,
+    "title": "Qualify and route real estate leads with Anthropic Claude, MLS/CRM, and Google Sheets",
+    "description": "Automate real estate lead qualification with AI: enrich MLS/CRM leads, score intent & budget, route to best-fit agents, and track results—learn more.",
+    "slug": "qualify-and-route-real-estate-leads-with-anthropic-claude-mlscrm-and-google-sheets-12996",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12996-qualify-and-route-real-estate-leads-with-anthropic-claude--mls-crm--and-google-sheets.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/qualify-and-route-real-estate-leads-with-anthropic-claude-mlscrm-and-google-sheets-12996"
+  },
+  {
+    "id": 12995,
+    "title": "Score and route real estate leads with GPT‑4.1, MLS/CRM data, and Slack alerts",
+    "description": "Automate e-commerce orders end to end with AI validation, inventory checks, fraud screening, payments, shipping labels, and notifications—cut time 85%.",
+    "slug": "score-and-route-real-estate-leads-with-gpt41-mlscrm-data-and-slack-alerts-12995",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12995-score-and-route-real-estate-leads-with-gpt-4-1--mls-crm-data--and-slack-alerts.webp",
+    "categories": [
+      "Lead Generation",
+      "AI RAG"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/score-and-route-real-estate-leads-with-gpt41-mlscrm-data-and-slack-alerts-12995"
+  },
+  {
+    "id": 12994,
+    "title": "Generate and send AI-powered sales quotes with Gmail, OpenAI and Supabase",
+    "description": "Automate quote requests: AI inbox monitoring, detail extraction, smart historical pricing, and a review dashboard to approve, edit & send quotes in one click.",
+    "slug": "generate-and-send-ai-powered-sales-quotes-with-gmail-openai-and-supabase-12994",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12994-generate-and-send-ai-powered-sales-quotes-with-gmail--openai-and-supabase.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Nick",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-and-send-ai-powered-sales-quotes-with-gmail-openai-and-supabase-12994"
+  },
+  {
+    "id": 12992,
+    "title": "Orchestrate AI risk analysis and severity-based routing with Anthropic and OpenAI",
+    "description": "Automate data quality checks with AI orchestration: risk scoring, historical context, severity-based alerts, and prioritized reports for ETL—up to 70% faster.",
+    "slug": "orchestrate-ai-risk-analysis-and-severity-based-routing-with-anthropic-and-openai-12992",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12992-orchestrate-ai-risk-analysis-and-severity-based-routing-with-anthropic-and-openai.webp",
+    "categories": [
+      "Engineering",
+      "AI RAG"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/orchestrate-ai-risk-analysis-and-severity-based-routing-with-anthropic-and-openai-12992"
+  },
+  {
+    "id": 12991,
+    "title": "Prioritize vehicle maintenance with Anthropic Claude using telemetry and history",
+    "description": "Automate fleet predictive maintenance with real-time telemetry + history and Claude AI anomaly detection. Prioritize urgent work orders, cut breakdowns 80%.",
+    "slug": "prioritize-vehicle-maintenance-with-anthropic-claude-using-telemetry-and-history-12991",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12991-prioritize-vehicle-maintenance-with-anthropic-claude-using-telemetry-and-history.webp",
+    "categories": [
+      "Engineering",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/prioritize-vehicle-maintenance-with-anthropic-claude-using-telemetry-and-history-12991"
+  },
+  {
+    "id": 12990,
+    "title": "Evaluate automotive component compliance with OpenAI GPT-4.1 and regulatory APIs",
+    "description": "Automate automotive component compliance: webhook intake, smart routing, OpenAI agents, simulations, risk scoring & remediation—cut evaluation time 70%.",
+    "slug": "evaluate-automotive-component-compliance-with-openai-gpt-41-and-regulatory-apis-12990",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12990-evaluate-automotive-component-compliance-with-openai-gpt-4-1-and-regulatory-apis.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/evaluate-automotive-component-compliance-with-openai-gpt-41-and-regulatory-apis-12990"
+  },
+  {
+    "id": 12989,
+    "title": "Aggregate error alerts and send consolidated reports via Email and Jira",
+    "description": "Aggregate and deduplicate error logs in n8n, then send one consolidated alert via Email and Jira. Reduce alert fatigue and keep teams informed.",
+    "slug": "aggregate-error-alerts-and-send-consolidated-reports-via-email-and-jira-12989",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12989-aggregate-error-alerts-and-send-consolidated-reports-via-email-and-jira.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/aggregate-error-alerts-and-send-consolidated-reports-via-email-and-jira-12989"
+  },
+  {
+    "id": 12988,
+    "title": "Analyze global supply chain sustainability and risk with GPT-4o and email alerts",
+    "description": "Automate real-time supply chain monitoring with 4 AI agents analyzing risk, suppliers, sustainability, and logistics—plus tiered email alerts.",
+    "slug": "analyze-global-supply-chain-sustainability-and-risk-with-gpt-4o-and-email-alerts-12988",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12988-analyze-global-supply-chain-sustainability-and-risk-with-gpt-4o-and-email-alerts.webp",
+    "categories": [
+      "Engineering",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-global-supply-chain-sustainability-and-risk-with-gpt-4o-and-email-alerts-12988"
+  },
+  {
+    "id": 12987,
+    "title": "Orchestrate hospital event responses with Anthropic Claude and scheduling, task, and insurance APIs",
+    "description": "Automate hospital event response with AI orchestration—prioritize alerts, route tasks to key systems, verify insurance, mask PHI, cut response time 75%.",
+    "slug": "orchestrate-hospital-event-responses-with-anthropic-claude-and-scheduling-task-and-insurance-apis-12987",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12987-orchestrate-hospital-event-responses-with-anthropic-claude-and-scheduling--task--and-insurance-apis.webp",
+    "categories": [
+      "Miscellaneous",
+      "AI Chatbot"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 0,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/orchestrate-hospital-event-responses-with-anthropic-claude-and-scheduling-task-and-insurance-apis-12987"
+  },
+  {
+    "id": 12986,
+    "title": "Triage emergency patients via chat with GPT-4.1 and hospital systems",
+    "description": "Automate ED triage with AI: chat-based intake, protocol-driven priority scoring, stability checks, smart routing, team alerts, and audit logs—cut time by 60%.",
+    "slug": "triage-emergency-patients-via-chat-with-gpt-41-and-hospital-systems-12986",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12986-triage-emergency-patients-via-chat-with-gpt-4-1-and-hospital-systems.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 0,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/triage-emergency-patients-via-chat-with-gpt-41-and-hospital-systems-12986"
+  },
+  {
+    "id": 12985,
+    "title": "Manage patient appointments and care follow-ups with OpenAI, Gmail and Twilio",
+    "description": "Automate patient care follow-ups from intake data with OpenAI—personalized email/SMS, EHR & scheduling integration, consistent reminders, 70% less admin.",
+    "slug": "manage-patient-appointments-and-care-follow-ups-with-openai-gmail-and-twilio-12985",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12985-manage-patient-appointments-and-care-follow-ups-with-openai--gmail-and-twilio.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "25 Jan 2026",
+    "views": 5,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-patient-appointments-and-care-follow-ups-with-openai-gmail-and-twilio-12985"
+  },
+  {
+    "id": 12984,
+    "title": "Discover local business leads and run AI-powered cold email sequences with Google Maps and Gmail",
+    "description": "Automate local lead gen: find businesses via Google Maps, extract emails, and send AI-written multi-step cold sequences via Gmail—scale faster.",
+    "slug": "discover-local-business-leads-and-run-ai-powered-cold-email-sequences-with-google-maps-and-gmail-12984",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12984-discover-local-business-leads-and-run-ai-powered-cold-email-sequences-with-google-maps-and-gmail.webp",
+    "categories": [
+      "Lead Generation",
+      "Multimodal AI"
+    ],
+    "author": "Dinakar Selvakumar",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "25 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/discover-local-business-leads-and-run-ai-powered-cold-email-sequences-with-google-maps-and-gmail-12984"
+  },
+  {
+    "id": 12972,
+    "title": "Handle approval requests with SendGrid email and Baserow records",
+    "description": "Automate approvals in n8n with SendGrid + Baserow—route requests, log decisions, track status, and notify stakeholders at every step.",
+    "slug": "handle-approval-requests-with-sendgrid-email-and-baserow-records-12972",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12972-handle-approval-requests-with-sendgrid-email-and-baserow-records.webp",
+    "categories": [
+      "Document Extraction"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "24 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/handle-approval-requests-with-sendgrid-email-and-baserow-records-12972"
+  },
+  {
+    "id": 12971,
+    "title": "Search flights with Gemini via Telegram and send SerpAPI price alerts",
+    "description": "n8n flight price monitor + AI Telegram assistant: scheduled fare checks, instant drop alerts, real-time Google Flights via SerpAPI, EN/VI chat.",
+    "slug": "search-flights-with-gemini-via-telegram-and-send-serpapi-price-alerts-12971",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12971-search-flights-with-gemini-via-telegram-and-send-serpapi-price-alerts.webp",
+    "categories": [
+      "Market Research",
+      "AI Chatbot"
+    ],
+    "author": "Nguyễn Thiệu Toàn (Jay Nguyen)",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "24 Jan 2026",
+    "views": 26,
+    "downloads": 8,
+    "source_url": "https://n8nworkflows.xyz/workflows/search-flights-with-gemini-via-telegram-and-send-serpapi-price-alerts-12971"
+  },
+  {
+    "id": 12970,
+    "title": "Schedule and confirm revenue ops meetings with Pipedrive, Google Calendar and Slack",
+    "description": "Automate RevOps meeting booking from Pipedrive: auto-create Google Calendar events, send Gmail confirmations, and Slack alerts with time-zone safe scheduling.",
+    "slug": "schedule-and-confirm-revenue-ops-meetings-with-pipedrive-google-calendar-and-slack-12970",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12970-schedule-and-confirm-revenue-ops-meetings-with-pipedrive--google-calendar-and-slack.webp",
+    "categories": [
+      "CRM"
+    ],
+    "author": "Ahmed Salama",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "24 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/schedule-and-confirm-revenue-ops-meetings-with-pipedrive-google-calendar-and-slack-12970"
+  },
+  {
+    "id": 12963,
+    "title": "Evaluate organizational data maturity and email HTML reports with Postgres",
+    "description": "Automate data maturity assessments with n8n—score 6 key domains via forms/APIs and deliver a stakeholder-ready HTML report with next steps.",
+    "slug": "evaluate-organizational-data-maturity-and-email-html-reports-with-postgres-12963",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12963-evaluate-organizational-data-maturity-and-email-html-reports-with-postgres.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Ahmed Alnaqa",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "24 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/evaluate-organizational-data-maturity-and-email-html-reports-with-postgres-12963"
+  },
+  {
+    "id": 12961,
+    "title": "Extract data from PDF reports with Gmail, OCR, Google Sheets and OpenAI GPT-4.1-mini",
+    "description": "Automate PDF OCR + AI extraction in n8n: capture invoices/reports from Drive, Dropbox or email, parse key fields, route to Sheets/QuickBooks/Xero.",
+    "slug": "extract-data-from-pdf-reports-with-gmail-ocr-google-sheets-and-openai-gpt-41-mini-12961",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12961-extract-data-from-pdf-reports-with-gmail--ocr--google-sheets-and-openai-gpt-4-1-mini.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "24 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-data-from-pdf-reports-with-gmail-ocr-google-sheets-and-openai-gpt-41-mini-12961"
+  },
+  {
+    "id": 12960,
+    "title": "Send AI-prioritized follow-up reminders with GPT-4.1-mini, Gmail and Slack",
+    "description": "AI follow-up automation for consultants: n8n + OpenAI urgency routing with email, Slack & optional SMS. Never miss proposals, tasks or client emails.",
+    "slug": "send-ai-prioritized-follow-up-reminders-with-gpt-41-mini-gmail-and-slack-12960",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12960-send-ai-prioritized-follow-up-reminders-with-gpt-4-1-mini--gmail-and-slack.webp",
+    "categories": [
+      "Personal Productivity",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "24 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-ai-prioritized-follow-up-reminders-with-gpt-41-mini-gmail-and-slack-12960"
+  },
+  {
+    "id": 12959,
+    "title": "Generate consulting proposals and contracts with GPT-4o, Google Docs, Gmail and Slack",
+    "description": "Automate AI proposals & contracts in n8n: pull from Sheets/CRM, generate with OpenAI, create PDF, email, e-sign, log & Slack alerts.",
+    "slug": "generate-consulting-proposals-and-contracts-with-gpt-4o-google-docs-gmail-and-slack-12959",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12959-generate-consulting-proposals-and-contracts-with-gpt-4o--google-docs--gmail-and-slack.webp",
+    "categories": [
+      "Document Extraction",
+      "Multimodal AI"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "24 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-consulting-proposals-and-contracts-with-gpt-4o-google-docs-gmail-and-slack-12959"
+  },
+  {
+    "id": 12958,
+    "title": "Track and sync workflow status in Notion from the n8n API",
+    "description": "Sync n8n workflows to Notion automatically: daily inventory with status, created/edited dates, and updates by workflow ID. Learn more.",
+    "slug": "track-and-sync-workflow-status-in-notion-from-the-n8n-api-12958",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12958-track-and-sync-workflow-status-in-notion-from-the-n8n-api.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "Abdallah Hussein",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "24 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-and-sync-workflow-status-in-notion-from-the-n8n-api-12958"
+  },
+  {
+    "id": 12956,
+    "title": "Generate AI voice receptionists for local businesses with Claude, VAPI and Google Maps",
+    "description": "Automate AI voice receptionist creation for local businesses: scrape Google Maps, analyze sites, generate prompts, deploy to VAPI, track in Sheets.",
+    "slug": "generate-ai-voice-receptionists-for-local-businesses-with-claude-vapi-and-google-maps-12956",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12956-generate-ai-voice-receptionists-for-local-businesses-with-claude--vapi-and-google-maps.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Hugo Le Poole",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-voice-receptionists-for-local-businesses-with-claude-vapi-and-google-maps-12956"
+  },
+  {
+    "id": 12955,
+    "title": "Categorize Gmail messages and draft AI replies with GPT‑5.1 and Telegram alerts",
+    "description": "Automate Gmail with an AI assistant: categorize emails, apply labels, draft smart replies from your knowledge base, and get Telegram alerts to send in 1 click.",
+    "slug": "categorize-gmail-messages-and-draft-ai-replies-with-gpt51-and-telegram-alerts-12955",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12955-categorize-gmail-messages-and-draft-ai-replies-with-gpt-5-1-and-telegram-alerts.webp",
+    "categories": [
+      "Ticket Management",
+      "AI RAG"
+    ],
+    "author": "Milan Vasarhelyi - SmoothWork",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/categorize-gmail-messages-and-draft-ai-replies-with-gpt51-and-telegram-alerts-12955"
+  },
+  {
+    "id": 12954,
+    "title": "Process receipt images from Google Drive into Google Sheets using OpenAI",
+    "description": "Automate receipt tracking: drop images in Google Drive, AI extracts vendor/date/items/total, logs to Google Sheets, and emails a confirmation—learn more.",
+    "slug": "process-receipt-images-from-google-drive-into-google-sheets-using-openai-12954",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12954-process-receipt-images-from-google-drive-into-google-sheets-using-openai.webp",
+    "categories": [
+      "Invoice Processing",
+      "AI Summarization"
+    ],
+    "author": "Milan Vasarhelyi - SmoothWork",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/process-receipt-images-from-google-drive-into-google-sheets-using-openai-12954"
+  },
+  {
+    "id": 12952,
+    "title": "Generate portfolio screenshots and Upwork copy with Firecrawl, ScreenshotOne, OpenAI and Google Workspace",
+    "description": "Turn any URL into an Upwork-ready portfolio entry with AI-written descriptions and retina screenshots—auto-saved to Drive, logged in Sheets, and sent via Telegram.",
+    "slug": "generate-portfolio-screenshots-and-upwork-copy-with-firecrawl-screenshotone-openai-and-google-workspace-12952",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12952-generate-portfolio-screenshots-and-upwork-copy-with-firecrawl--screenshotone--openai-and-google-workspace.webp",
+    "categories": [
+      "Content Creation",
+      "AI Summarization"
+    ],
+    "author": "Valeriy Halahan",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-portfolio-screenshots-and-upwork-copy-with-firecrawl-screenshotone-openai-and-google-workspace-12952"
+  },
+  {
+    "id": 12950,
+    "title": "Generate hotel guest upsell recommendations with OpenAI, Sheets and Slack",
+    "description": "Automate hotel upsell discovery with AI: scan Google Sheets daily, recommend the best offer per guest, update tracking, and alert teams in Slack.",
+    "slug": "generate-hotel-guest-upsell-recommendations-with-openai-sheets-and-slack-12950",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12950-generate-hotel-guest-upsell-recommendations-with-openai--sheets-and-slack.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Summarization"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 5,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-hotel-guest-upsell-recommendations-with-openai-sheets-and-slack-12950"
+  },
+  {
+    "id": 12949,
+    "title": "Generate weekly AI equity research reports with Google Sheets, FMP, NewsAPI, OpenAI, and Gmail",
+    "description": "Automate weekly equity research: pulls 5-year financials & news, computes key signals, generates AI SWOT/risk outlook, exports PDF, emails reports.",
+    "slug": "generate-weekly-ai-equity-research-reports-with-google-sheets-fmp-newsapi-openai-and-gmail-12949",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12949-generate-weekly-ai-equity-research-reports-with-google-sheets--fmp--newsapi--openai--and-gmail.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-weekly-ai-equity-research-reports-with-google-sheets-fmp-newsapi-openai-and-gmail-12949"
+  },
+  {
+    "id": 12948,
+    "title": "Send personalized hotel pre-arrival messages using OpenAI, Google Sheets and Slack",
+    "description": "Automate pre-arrival hotel welcomes: sync Google Sheets profiles, generate AI messages, send via Slack/Email 2 days pre-check-in, with full logs & alerts.",
+    "slug": "send-personalized-hotel-pre-arrival-messages-using-openai-google-sheets-and-slack-12948",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12948-send-personalized-hotel-pre-arrival-messages-using-openai--google-sheets-and-slack.webp",
+    "categories": [
+      "Lead Nurturing",
+      "Multimodal AI"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 6,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-personalized-hotel-pre-arrival-messages-using-openai-google-sheets-and-slack-12948"
+  },
+  {
+    "id": 12947,
+    "title": "Track weekly portfolio risk using GPT-4.1, Slack alerts, and Google Sheets",
+    "description": "Automate weekly portfolio risk checks: pulls Google Sheets holdings, analyzes sector/volatility/correlation, sends AI Slack alerts, logs trends.",
+    "slug": "track-weekly-portfolio-risk-using-gpt-41-slack-alerts-and-google-sheets-12947",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12947-track-weekly-portfolio-risk-using-gpt-4-1--slack-alerts--and-google-sheets.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Summarization"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-weekly-portfolio-risk-using-gpt-41-slack-alerts-and-google-sheets-12947"
+  },
+  {
+    "id": 12946,
+    "title": "Classify guest enquiries and send replies with GPT-4o, Gmail and Slack",
+    "description": "Automate hospitality guest enquiries: GPT-4o classifies intent, drafts instant replies, routes to teams with SLAs, and logs to Slack/Gmail. Learn more.",
+    "slug": "classify-guest-enquiries-and-send-replies-with-gpt-4o-gmail-and-slack-12946",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12946-classify-guest-enquiries-and-send-replies-with-gpt-4o--gmail-and-slack.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 4,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/classify-guest-enquiries-and-send-replies-with-gpt-4o-gmail-and-slack-12946"
+  },
+  {
+    "id": 12944,
+    "title": "Create a daily market brief from Google Sheets, Alpha Vantage, Reddit, OpenAI, and Slack",
+    "description": "Automate a daily AI market brief for your portfolio—prices, news & Reddit sentiment in one Slack update. Save time and spot key drivers fast.",
+    "slug": "create-a-daily-market-brief-from-google-sheets-alpha-vantage-reddit-openai-and-slack-12944",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12944-create-a-daily-market-brief-from-google-sheets--alpha-vantage--reddit--openai--and-slack.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Summarization"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 16,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-a-daily-market-brief-from-google-sheets-alpha-vantage-reddit-openai-and-slack-12944"
+  },
+  {
+    "id": 12940,
+    "title": "Triage and escalate HubSpot tickets to Jira with Slack SLA alerts",
+    "description": "Automate VIP support triage: score HubSpot tickets, create Jira issues, alert in Slack, and escalate churn risks to enforce 15‑minute SLAs.",
+    "slug": "triage-and-escalate-hubspot-tickets-to-jira-with-slack-sla-alerts-12940",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12940-triage-and-escalate-hubspot-tickets-to-jira-with-slack-sla-alerts.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "PollupAI",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/triage-and-escalate-hubspot-tickets-to-jira-with-slack-sla-alerts-12940"
+  },
+  {
+    "id": 12939,
+    "title": "Create and publish SEO blog posts using Google Sheets, Gemini/OpenAI, Ideogram, and WordPress",
+    "description": "Automate WordPress blog publishing with n8n + AI: research, write, generate Ideogram images, auto-categories, internal links, Sheets logging & alerts.",
+    "slug": "create-and-publish-seo-blog-posts-using-google-sheets-geminiopenai-ideogram-and-wordpress-12939",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12939-create-and-publish-seo-blog-posts-using-google-sheets--gemini-openai--ideogram--and-wordpress.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Incrementors",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-and-publish-seo-blog-posts-using-google-sheets-geminiopenai-ideogram-and-wordpress-12939"
+  },
+  {
+    "id": 12938,
+    "title": "Answer research questions using OpenAI GPT-4.1 and arXiv papers",
+    "description": "Capture queries via Chat Trigger, auto-route with a Planning Agent, search arXiv, and deliver evidence-only summaries with clickable citations.",
+    "slug": "answer-research-questions-using-openai-gpt-41-and-arxiv-papers-12938",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12938-answer-research-questions-using-openai-gpt-4-1-and-arxiv-papers.webp",
+    "categories": [
+      "Market Research",
+      "AI RAG"
+    ],
+    "author": "Mikhail",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/answer-research-questions-using-openai-gpt-41-and-arxiv-papers-12938"
+  },
+  {
+    "id": 12937,
+    "title": "Scrape Google Maps business data with BrowserAct and Google Sheets",
+    "description": "Scrape Google Maps business data by location & category with BrowserAct AI. Export to Google Sheets with deduplication—ideal for lead gen & local SEO.",
+    "slug": "scrape-google-maps-business-data-with-browseract-and-google-sheets-12937",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12937-scrape-google-maps-business-data-with-browseract-and-google-sheets.webp",
+    "categories": [
+      "Market Research"
+    ],
+    "author": "Kristian Ekachandra",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 10,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/scrape-google-maps-business-data-with-browseract-and-google-sheets-12937"
+  },
+  {
+    "id": 12929,
+    "title": "Create AI product review videos with Gemini, Veo 3, Blotato and Google Sheets",
+    "description": "Automate AI product review videos with n8n + Veo 3—generate scripts, scenes, merge clips, auto-publish to Shorts/Reels/TikTok, log in Sheets.",
+    "slug": "create-ai-product-review-videos-with-gemini-veo-3-blotato-and-google-sheets-12929",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12929-create-ai-product-review-videos-with-gemini--veo-3--blotato-and-google-sheets.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "giangxai",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "23 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-ai-product-review-videos-with-gemini-veo-3-blotato-and-google-sheets-12929"
+  },
+  {
+    "id": 12928,
+    "title": "Generate DraftKings DFS lineups with GPT-4o, Google Sheets, email and Slack alerts",
+    "description": "Automate AI-optimized DraftKings DFS lineups for NFL/NBA/MLB/NHL & esports. Pull live data, log to Sheets, email subs, and alert Slack—learn more.",
+    "slug": "generate-draftkings-dfs-lineups-with-gpt-4o-google-sheets-email-and-slack-alerts-12928",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12928-generate-draftkings-dfs-lineups-with-gpt-4o--google-sheets--email-and-slack-alerts.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "22 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-draftkings-dfs-lineups-with-gpt-4o-google-sheets-email-and-slack-alerts-12928"
+  },
+  {
+    "id": 12927,
+    "title": "Generate and post Apple App Store review replies with Anthropic Claude and App Store Connect",
+    "description": "Automate Apple App Store review replies with Claude + n8n: draft in Sheets, human approval, auto-post via App Store Connect & save time.",
+    "slug": "generate-and-post-apple-app-store-review-replies-with-anthropic-claude-and-app-store-connect-12927",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12927-generate-and-post-apple-app-store-review-replies-with-anthropic-claude-and-app-store-connect.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "Ertay Kaya",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-and-post-apple-app-store-review-replies-with-anthropic-claude-and-app-store-connect-12927"
+  },
+  {
+    "id": 12926,
+    "title": "Generate AI video clips from YouTube using Reka Vision API and Gmail",
+    "description": "Automate YouTube clipping with n8n + Reka AI: trigger on new uploads, generate reels with captions, poll status, and email clip-ready links.",
+    "slug": "generate-ai-video-clips-from-youtube-using-reka-vision-api-and-gmail-12926",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12926-generate-ai-video-clips-from-youtube-using-reka-vision-api-and-gmail.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Frank Boucher",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-video-clips-from-youtube-using-reka-vision-api-and-gmail-12926"
+  },
+  {
+    "id": 12924,
+    "title": "Create YouTube SRT subtitles with ElevenLabs and Google Drive",
+    "description": "Generate time-coded SRT subtitles from any video URL with ElevenLabs AI—auto transcribe, smart split, and upload to Google Drive. Learn more.",
+    "slug": "create-youtube-srt-subtitles-with-elevenlabs-and-google-drive-12924",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12924-create-youtube-srt-subtitles-with-elevenlabs-and-google-drive.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Davide",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 15,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-youtube-srt-subtitles-with-elevenlabs-and-google-drive-12924"
+  },
+  {
+    "id": 12921,
+    "title": "Monitor construction execution from Google Drive photos with GPT‑4.1‑mini, Gmail and Google Sheets",
+    "description": "AI-driven construction monitoring: analyze Drive site photos with OpenAI, auto-generate emailed reports, log WPD to Sheets, and archive for audits.",
+    "slug": "monitor-construction-execution-from-google-drive-photos-with-gpt41mini-gmail-and-google-sheets-12921",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12921-monitor-construction-execution-from-google-drive-photos-with-gpt-4-1-mini--gmail-and-google-sheets.webp",
+    "categories": [
+      "Project Management",
+      "AI Summarization"
+    ],
+    "author": "Alysson Neves",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-construction-execution-from-google-drive-photos-with-gpt41mini-gmail-and-google-sheets-12921"
+  },
+  {
+    "id": 12920,
+    "title": "Generate scheduled B2B leads from Google Maps with Lemlist, Claude, and Pitchlane",
+    "description": "Automate weekday lead gen: find Google Maps prospects, extract owner details, enrich emails/LinkedIn, generate AI + video outreach, sync to CRM.",
+    "slug": "generate-scheduled-b2b-leads-from-google-maps-with-lemlist-claude-and-pitchlane-12920",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12920-generate-scheduled-b2b-leads-from-google-maps-with-lemlist--claude--and-pitchlane.webp",
+    "categories": [
+      "Lead Generation",
+      "Multimodal AI"
+    ],
+    "author": "Jannik Hiller",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-scheduled-b2b-leads-from-google-maps-with-lemlist-claude-and-pitchlane-12920"
+  },
+  {
+    "id": 12915,
+    "title": "Manage LinkedIn outreach sequences with Linked API and Google Sheets",
+    "description": "Automate LinkedIn outreach in n8n with Linked API: send invites, auto-message & follow up, and track every status and timestamp in Google Sheets.",
+    "slug": "manage-linkedin-outreach-sequences-with-linked-api-and-google-sheets-12915",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12915-manage-linkedin-outreach-sequences-with-linked-api-and-google-sheets.webp",
+    "categories": [
+      "Lead Nurturing"
+    ],
+    "author": "Linked API",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-linkedin-outreach-sequences-with-linked-api-and-google-sheets-12915"
+  },
+  {
+    "id": 12908,
+    "title": "Generate technical n8n workflow reports with GPT-4.1 and Google Docs",
+    "description": "Automate n8n workflow documentation: extract nodes, settings & logic, generate GPT‑4.1 reports (incl. Code analysis) and publish to Google Docs/Drive.",
+    "slug": "generate-technical-n8n-workflow-reports-with-gpt-41-and-google-docs-12908",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12908-generate-technical-n8n-workflow-reports-with-gpt-4-1-and-google-docs.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "José Ramón Villaverde",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-technical-n8n-workflow-reports-with-gpt-41-and-google-docs-12908"
+  },
+  {
+    "id": 12907,
+    "title": "Qualify leads from Gemini chat to Google Sheets and Slack with self-optimization",
+    "description": "n8n AI lead workflow: Gemini chat qualifies, delivers 3 tailored growth tactics, routes hot leads to Slack & Sheets, and self-optimizes daily. Learn more.",
+    "slug": "qualify-leads-from-gemini-chat-to-google-sheets-and-slack-with-self-optimization-12907",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12907-qualify-leads-from-gemini-chat-to-google-sheets-and-slack-with-self-optimization.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Chatbot"
+    ],
+    "author": "Pawan",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/qualify-leads-from-gemini-chat-to-google-sheets-and-slack-with-self-optimization-12907"
+  },
+  {
+    "id": 12906,
+    "title": "Match WooCommerce orders to new Zendesk tickets and send confirmation emails",
+    "description": "Automate Zendesk ticket enrichment with WooCommerce order matching, tagging & Gmail emails—cut manual lookups and speed support. Learn more.",
+    "slug": "match-woocommerce-orders-to-new-zendesk-tickets-and-send-confirmation-emails-12906",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12906-match-woocommerce-orders-to-new-zendesk-tickets-and-send-confirmation-emails.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/match-woocommerce-orders-to-new-zendesk-tickets-and-send-confirmation-emails-12906"
+  },
+  {
+    "id": 12902,
+    "title": "Sync retail product prices between Shopify and WooCommerce with alerts",
+    "description": "Automate Shopify & WooCommerce price sync with smart rounding, threshold Gmail alerts, and Google Sheets audit logs—ensure consistent retail pricing.",
+    "slug": "sync-retail-product-prices-between-shopify-and-woocommerce-with-alerts-12902",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12902-sync-retail-product-prices-between-shopify-and-woocommerce-with-alerts.webp",
+    "categories": [
+      "CRM"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-retail-product-prices-between-shopify-and-woocommerce-with-alerts-12902"
+  },
+  {
+    "id": 12901,
+    "title": "Send a daily WooCommerce sales snapshot to Slack with Google Sheets logging",
+    "description": "Automate daily WooCommerce sales reports: calculate revenue, orders, AOV & top products, send a Slack summary, and log to Google Sheets. Learn more.",
+    "slug": "send-a-daily-woocommerce-sales-snapshot-to-slack-with-google-sheets-logging-12901",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12901-send-a-daily-woocommerce-sales-snapshot-to-slack-with-google-sheets-logging.webp",
+    "categories": [
+      "CRM"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 1,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-a-daily-woocommerce-sales-snapshot-to-slack-with-google-sheets-logging-12901"
+  },
+  {
+    "id": 12892,
+    "title": "Route and prioritize Asana tasks with Gemini AI and Slack alerts",
+    "description": "Automate Asana Inbox triage with Gemini—classify bugs, features & support, assign owners instantly, and alert Slack on high-priority tasks.",
+    "slug": "route-and-prioritize-asana-tasks-with-gemini-ai-and-slack-alerts-12892",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12892-route-and-prioritize-asana-tasks-with-gemini-ai-and-slack-alerts.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "NODA shuichi",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/route-and-prioritize-asana-tasks-with-gemini-ai-and-slack-alerts-12892"
+  },
+  {
+    "id": 12891,
+    "title": "Route AI-powered customer support via email and Slack with PostgreSQL and Google Sheets",
+    "description": "Automate AI customer support with Slack: sentiment & urgency detection, smart escalation, KB + PostgreSQL context, email/Slack replies, and analytics logging.",
+    "slug": "route-ai-powered-customer-support-via-email-and-slack-with-postgresql-and-google-sheets-12891",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12891-route-ai-powered-customer-support-via-email-and-slack-with-postgresql-and-google-sheets.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI RAG"
+    ],
+    "author": "yuta tokumitsu",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "22 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/route-ai-powered-customer-support-via-email-and-slack-with-postgresql-and-google-sheets-12891"
+  },
+  {
+    "id": 12889,
+    "title": "Sanitize Google Drive markdown text with a local Ollama model",
+    "description": "Download private Google Drive markdown, detect and remove sensitive data with local Ollama 3.1, and merge into one sanitized file via n8n.",
+    "slug": "sanitize-google-drive-markdown-text-with-a-local-ollama-model-12889",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12889-sanitize-google-drive-markdown-text-with-a-local-ollama-model.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Tobi Adeleke",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sanitize-google-drive-markdown-text-with-a-local-ollama-model-12889"
+  },
+  {
+    "id": 12888,
+    "title": "Collect LinkedIn details and generate CV feedback with Gemini and Google Workspace",
+    "description": "Automate CV intake and coaching: n8n form captures LinkedIn/CV, logs to Sheets, Gemini creates Docs recommendations + cover letter, emailed via Gmail.",
+    "slug": "collect-linkedin-details-and-generate-cv-feedback-with-gemini-and-google-workspace-12888",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12888-collect-linkedin-details-and-generate-cv-feedback-with-gemini-and-google-workspace.webp",
+    "categories": [
+      "HR",
+      "AI Summarization"
+    ],
+    "author": "Abdullah Al Shishani",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/collect-linkedin-details-and-generate-cv-feedback-with-gemini-and-google-workspace-12888"
+  },
+  {
+    "id": 12885,
+    "title": "Turn Telegram chatbots into GPT-4o-mini advisors with Postgres memory and Shopify data",
+    "description": "Automate chat replies in n8n with LLM intent, Supabase memory, and real-time Shopify data—deliver accurate, on-brand responses. Learn more.",
+    "slug": "turn-telegram-chatbots-into-gpt-4o-mini-advisors-with-postgres-memory-and-shopify-data-12885",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12885-turn-telegram-chatbots-into-gpt-4o-mini-advisors-with-postgres-memory-and-shopify-data.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Yenire",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/turn-telegram-chatbots-into-gpt-4o-mini-advisors-with-postgres-memory-and-shopify-data-12885"
+  },
+  {
+    "id": 12884,
+    "title": "Generate Reddit customer leads from a product URL with OpenAI and Firecrawl",
+    "description": "Production-ready Reddit lead generator with progressive loading: URL → site analysis → 10 AI keywords → conversations in real time. Secure webhooks, frontend-ready.",
+    "slug": "generate-reddit-customer-leads-from-a-product-url-with-openai-and-firecrawl-12884",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12884-generate-reddit-customer-leads-from-a-product-url-with-openai-and-firecrawl.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Joseph",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-reddit-customer-leads-from-a-product-url-with-openai-and-firecrawl-12884"
+  },
+  {
+    "id": 12883,
+    "title": "Send instant replies to new Yelp leads with LeadResponder.ai",
+    "description": "Automate instant replies to new Yelp leads—monitored every minute—to boost engagement and increase revenue up to 30%. Add AI personalization & scheduling.",
+    "slug": "send-instant-replies-to-new-yelp-leads-with-leadresponderai-12883",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12883-send-instant-replies-to-new-yelp-leads-with-leadresponder-ai.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Chatbot"
+    ],
+    "author": "Lead Responder",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-instant-replies-to-new-yelp-leads-with-leadresponderai-12883"
+  },
+  {
+    "id": 12882,
+    "title": "Find qualified leads in Reddit posts with Firecrawl and GPT-4.1-mini",
+    "description": "Automate Reddit lead gen from your product URL: AI generates keywords, scans 100 posts, filters high-intent leads, and outputs a clean report.",
+    "slug": "find-qualified-leads-in-reddit-posts-with-firecrawl-and-gpt-41-mini-12882",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12882-find-qualified-leads-in-reddit-posts-with-firecrawl-and-gpt-4-1-mini.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Joseph",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 2,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/find-qualified-leads-in-reddit-posts-with-firecrawl-and-gpt-41-mini-12882"
+  },
+  {
+    "id": 12881,
+    "title": "Post daily motivational tweets to Twitter/X with Google Gemini AI",
+    "description": "Automate Twitter/X posts with an n8n template: AI generates tweet-ready content, schedules publishing with delays, and supports easy prompt customization.",
+    "slug": "post-daily-motivational-tweets-to-twitterx-with-google-gemini-ai-12881",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12881-post-daily-motivational-tweets-to-twitter-x-with-google-gemini-ai.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "Muhammad Tauqeer Aslam",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/post-daily-motivational-tweets-to-twitterx-with-google-gemini-ai-12881"
+  },
+  {
+    "id": 12880,
+    "title": "Monitor backup and sync logs with Google Cloud Storage, GitHub, Gmail, OpenAI, and GLPI",
+    "description": "Validate backup/sync runs via logs—no job access needed. Import-ready n8n workflow, rsync/rclone templates, GCS checks & alerts. Learn more.",
+    "slug": "monitor-backup-and-sync-logs-with-google-cloud-storage-github-gmail-openai-and-glpi-12880",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12880-monitor-backup-and-sync-logs-with-google-cloud-storage--github--gmail--openai--and-glpi.webp",
+    "categories": [
+      "DevOps",
+      "AI Summarization"
+    ],
+    "author": "Paolo Ronco",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "21 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-backup-and-sync-logs-with-google-cloud-storage-github-gmail-openai-and-glpi-12880"
+  },
+  {
+    "id": 12877,
+    "title": "Scrape verified decision-maker emails from Google with GPT-4.1 and Apify",
+    "description": "Automate decision-maker email discovery from Google searches: scrape results, infer execs with AI, validate deliverability, and log verified contacts to Sheets.",
+    "slug": "scrape-verified-decision-maker-emails-from-google-with-gpt-41-and-apify-12877",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12877-scrape-verified-decision-maker-emails-from-google-with-gpt-4-1-and-apify.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "21 Jan 2026",
+    "views": 5,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/scrape-verified-decision-maker-emails-from-google-with-gpt-41-and-apify-12877"
+  },
+  {
+    "id": 12876,
+    "title": "Score Zoho support tickets with OpenAI and sync upsell alerts to Zoho CRM",
+    "description": "Automate Zoho CRM with help desk tickets: sync contacts, AI sentiment & upsell scoring, and Gmail alerts for high-value opportunities. Learn more.",
+    "slug": "score-zoho-support-tickets-with-openai-and-sync-upsell-alerts-to-zoho-crm-12876",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12876-score-zoho-support-tickets-with-openai-and-sync-upsell-alerts-to-zoho-crm.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Summarization"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/score-zoho-support-tickets-with-openai-and-sync-upsell-alerts-to-zoho-crm-12876"
+  },
+  {
+    "id": 12874,
+    "title": "Track WooCommerce inventory and send reorder alerts via Gmail and Slack",
+    "description": "Automate WooCommerce inventory reorders with n8n—track SKU sales daily, calculate reorder qty, and send low-stock alerts via Gmail & Slack.",
+    "slug": "track-woocommerce-inventory-and-send-reorder-alerts-via-gmail-and-slack-12874",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12874-track-woocommerce-inventory-and-send-reorder-alerts-via-gmail-and-slack.webp",
+    "categories": [
+      "File Management"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-woocommerce-inventory-and-send-reorder-alerts-via-gmail-and-slack-12874"
+  },
+  {
+    "id": 12873,
+    "title": "Sync Android env config to Gradle files with GitHub and Slack alerts",
+    "description": "Auto-sync Android configs when .env.staging changes—updates Gradle files, opens a safe PR on a new branch, and notifies your team on Slack.",
+    "slug": "sync-android-env-config-to-gradle-files-with-github-and-slack-alerts-12873",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12873-sync-android-env-config-to-gradle-files-with-github-and-slack-alerts.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-android-env-config-to-gradle-files-with-github-and-slack-alerts-12873"
+  },
+  {
+    "id": 12872,
+    "title": "Send new WooCommerce product notifications to Slack, Gmail and Google Sheets",
+    "description": "Automate WooCommerce new product alerts: notify teams via Slack & Gmail, log details to Google Sheets, and keep data standardized for easy tracking.",
+    "slug": "send-new-woocommerce-product-notifications-to-slack-gmail-and-google-sheets-12872",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12872-send-new-woocommerce-product-notifications-to-slack--gmail-and-google-sheets.webp",
+    "categories": [
+      "Social Media"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-new-woocommerce-product-notifications-to-slack-gmail-and-google-sheets-12872"
+  },
+  {
+    "id": 12871,
+    "title": "Sync inventory updates between systems via webhook and Google Sheets logging",
+    "description": "Automate inventory sync across systems with n8n: webhook updates, loop prevention, API push to secondary platform, and Google Sheets audit logging. Learn more.",
+    "slug": "sync-inventory-updates-between-systems-via-webhook-and-google-sheets-logging-12871",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12871-sync-inventory-updates-between-systems-via-webhook-and-google-sheets-logging.webp",
+    "categories": [
+      "File Management"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-inventory-updates-between-systems-via-webhook-and-google-sheets-logging-12871"
+  },
+  {
+    "id": 12870,
+    "title": "Segment retail customers by purchase behavior with CRM and Google Sheets",
+    "description": "Automate real-time customer segmentation from WooCommerce/Shopify/CRM events. Tag New, Repeat, VIP or Inactive, sync to CRM, log to Sheets.",
+    "slug": "segment-retail-customers-by-purchase-behavior-with-crm-and-google-sheets-12870",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12870-segment-retail-customers-by-purchase-behavior-with-crm-and-google-sheets.webp",
+    "categories": [
+      "CRM",
+      "AI Summarization"
+    ],
+    "author": "WeblineIndia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/segment-retail-customers-by-purchase-behavior-with-crm-and-google-sheets-12870"
+  },
+  {
+    "id": 12867,
+    "title": "Auto-dub Instagram and TikTok videos with Fal AI ElevenLabs dubbing",
+    "description": "Automate video dubbing with Fal AI + ElevenLabs and publish to Instagram & TikTok in one workflow. Localize fast, boost reach, scale content.",
+    "slug": "auto-dub-instagram-and-tiktok-videos-with-fal-ai-elevenlabs-dubbing-12867",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12867-auto-dub-instagram-and-tiktok-videos-with-fal-ai-elevenlabs-dubbing.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Davide",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 10,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/auto-dub-instagram-and-tiktok-videos-with-fal-ai-elevenlabs-dubbing-12867"
+  },
+  {
+    "id": 12866,
+    "title": "Generate long-form SEO articles from news with LINE approvals and Google Docs",
+    "description": "Automate long-form SEO articles from trending RSS news with GPT‑4o—approve via LINE, write chapter-by-chapter in Google Docs, and auto-archive in Sheets.",
+    "slug": "generate-long-form-seo-articles-from-news-with-line-approvals-and-google-docs-12866",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12866-generate-long-form-seo-articles-from-news-with-line-approvals-and-google-docs.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "HayatoFujita/藤田隼人",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-long-form-seo-articles-from-news-with-line-approvals-and-google-docs-12866"
+  },
+  {
+    "id": 12865,
+    "title": "Scrape high-engagement LinkedIn posts and auto-post with Gemini images",
+    "description": "Automate LinkedIn growth: scrape viral competitor posts, spot trends with Gemini, generate AI posts + images, and auto-publish from Google Sheets. Learn more.",
+    "slug": "scrape-high-engagement-linkedin-posts-and-auto-post-with-gemini-images-12865",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12865-scrape-high-engagement-linkedin-posts-and-auto-post-with-gemini-images.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Roshan Ramani",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 6,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/scrape-high-engagement-linkedin-posts-and-auto-post-with-gemini-images-12865"
+  },
+  {
+    "id": 12864,
+    "title": "Analyze US equity futures and options with MarketData, NewsAPI, and Gemini",
+    "description": "KODOFLOW n8n template: multi-timeframe futures/options + news sentiment for US equities, delivering clear, risk-aware AI insights in ~10 minutes.",
+    "slug": "analyze-us-equity-futures-and-options-with-marketdata-newsapi-and-gemini-12864",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12864-analyze-us-equity-futures-and-options-with-marketdata--newsapi--and-gemini.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Chatbot"
+    ],
+    "author": "Paul Abraham",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "21 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-us-equity-futures-and-options-with-marketdata-newsapi-and-gemini-12864"
+  },
+  {
+    "id": 12861,
+    "title": "Manage garage service reminders, pickups and feedback with Airtable, WhatsApp and Gmail",
+    "description": "Automate garage customer updates with n8n + Airtable: WhatsApp & email service reminders, pickup alerts, feedback requests, and next-service nudges.",
+    "slug": "manage-garage-service-reminders-pickups-and-feedback-with-airtable-whatsapp-and-gmail-12861",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12861-manage-garage-service-reminders--pickups-and-feedback-with-airtable--whatsapp-and-gmail.webp",
+    "categories": [
+      "Social Media"
+    ],
+    "author": "InfyOm Technologies",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 1,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-garage-service-reminders-pickups-and-feedback-with-airtable-whatsapp-and-gmail-12861"
+  },
+  {
+    "id": 12858,
+    "title": "Generate blog posts and social media posts with GPT‑4.1, Tavily and WordPress",
+    "description": "Automate long-form content with n8n + AI agents—research, write, create visuals, and publish to WordPress & social channels while archiving assets.",
+    "slug": "generate-blog-posts-and-social-media-posts-with-gpt41-tavily-and-wordpress-12858",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12858-generate-blog-posts-and-social-media-posts-with-gpt-4-1--tavily-and-wordpress.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "N8ner",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "21 Jan 2026",
+    "views": 5,
+    "downloads": 4,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-blog-posts-and-social-media-posts-with-gpt41-tavily-and-wordpress-12858"
+  },
+  {
+    "id": 12857,
+    "title": "Generate consulting KPI summaries with GPT-4o-mini, Slack and Google Sheets",
+    "description": "Automate consulting KPI reporting: pull dashboard data, log to Google Sheets, generate AI exec summaries, and send Slack/email alerts for fast action.",
+    "slug": "generate-consulting-kpi-summaries-with-gpt-4o-mini-slack-and-google-sheets-12857",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12857-generate-consulting-kpi-summaries-with-gpt-4o-mini--slack-and-google-sheets.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "20 Jan 2026",
+    "views": 6,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-consulting-kpi-summaries-with-gpt-4o-mini-slack-and-google-sheets-12857"
+  },
+  {
+    "id": 12856,
+    "title": "Make outbound sales calls from Google Sheets using a Retell AI voice agent",
+    "description": "Automate outbound calls in n8n with Retell AI—timezone-aware business-hour dialing, Sheets/CRM triggers, call transcripts & sentiment logging. Learn more.",
+    "slug": "make-outbound-sales-calls-from-google-sheets-using-a-retell-ai-voice-agent-12856",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12856-make-outbound-sales-calls-from-google-sheets-using-a-retell-ai-voice-agent.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Chatbot"
+    ],
+    "author": "Marcus Taylor",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/make-outbound-sales-calls-from-google-sheets-using-a-retell-ai-voice-agent-12856"
+  },
+  {
+    "id": 12855,
+    "title": "Extract and qualify local business leads and draft cold emails with OpenAI, Apify and Hunter",
+    "description": "AI-powered lead gen system that scrapes real website contacts, qualifies prospects, syncs to a CRM, and creates personalized cold email drafts—learn more.",
+    "slug": "extract-and-qualify-local-business-leads-and-draft-cold-emails-with-openai-apify-and-hunter-12855",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12855-extract-and-qualify-local-business-leads-and-draft-cold-emails-with-openai--apify-and-hunter.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Cliss Zhang",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-and-qualify-local-business-leads-and-draft-cold-emails-with-openai-apify-and-hunter-12855"
+  },
+  {
+    "id": 12854,
+    "title": "Create Kling 2.6 ad videos and post them to YouTube using the YouTube API",
+    "description": "Automate Kling 2.6 video creation and YouTube posting in n8n—AI prompt refinement, Fal.ai generation, SEO title/tags, and Google Sheets logging.",
+    "slug": "create-kling-26-ad-videos-and-post-them-to-youtube-using-the-youtube-api-12854",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12854-create-kling-2-6-ad-videos-and-post-them-to-youtube-using-the-youtube-api.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Ari Nakos",
+    "complexity": "intermediate",
+    "price": "Paid",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-kling-26-ad-videos-and-post-them-to-youtube-using-the-youtube-api-12854"
+  },
+  {
+    "id": 12852,
+    "title": "Monitor company budgets with Bexio, Google Sheets and Gmail alerts",
+    "description": "Monitor budgets automatically: sync live Bexio data to Google Sheets, calculate monthly actuals, and email weekly overspend alerts—learn more.",
+    "slug": "monitor-company-budgets-with-bexio-google-sheets-and-gmail-alerts-12852",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12852-monitor-company-budgets-with-bexio--google-sheets-and-gmail-alerts.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Kamil Ostrowski",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-company-budgets-with-bexio-google-sheets-and-gmail-alerts-12852"
+  },
+  {
+    "id": 12851,
+    "title": "Track SEC Form D filings and send issuer and investor data to Google Sheets",
+    "description": "Track SEC EDGAR Form D filings in real time—auto-extract issuer, exec, offering & exemption data into Google Sheets for faster deal flow research.",
+    "slug": "track-sec-form-d-filings-and-send-issuer-and-investor-data-to-google-sheets-12851",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12851-track-sec-form-d-filings-and-send-issuer-and-investor-data-to-google-sheets.webp",
+    "categories": [
+      "Market Research"
+    ],
+    "author": "Naveen Choudhary",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-sec-form-d-filings-and-send-issuer-and-investor-data-to-google-sheets-12851"
+  },
+  {
+    "id": 12848,
+    "title": "Build a Facebook Messenger AI chatbot with OpenAI and Pinecone RAG",
+    "description": "Build an n8n Facebook Messenger chatbot with Pinecone RAG + OpenAI—dual webhooks, memory, typing/seen indicators, and cited answers from your docs.",
+    "slug": "build-a-facebook-messenger-ai-chatbot-with-openai-and-pinecone-rag-12848",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12848-build-a-facebook-messenger-ai-chatbot-with-openai-and-pinecone-rag.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI RAG"
+    ],
+    "author": "Tristan V",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 9,
+    "downloads": 4,
+    "source_url": "https://n8nworkflows.xyz/workflows/build-a-facebook-messenger-ai-chatbot-with-openai-and-pinecone-rag-12848"
+  },
+  {
+    "id": 12847,
+    "title": "Repurpose LinkedIn posts into X tweets with Apify, Claude AI and Airtable",
+    "description": "Automate LinkedIn-to-X repurposing: scrape with Apify, OCR carousels, rewrite via Claude, approve in Airtable, and auto-publish daily threads.",
+    "slug": "repurpose-linkedin-posts-into-x-tweets-with-apify-claude-ai-and-airtable-12847",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12847-repurpose-linkedin-posts-into-x-tweets-with-apify--claude-ai-and-airtable.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "Elodie Tasia",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/repurpose-linkedin-posts-into-x-tweets-with-apify-claude-ai-and-airtable-12847"
+  },
+  {
+    "id": 12846,
+    "title": "Report spam and phishing URLs from IMAP mailboxes to Spamhaus",
+    "description": "Automate Spamhaus URL reporting from IMAP spam/phish emails—extract, normalize, dedupe and filter links, then submit with threat context and results.",
+    "slug": "report-spam-and-phishing-urls-from-imap-mailboxes-to-spamhaus-12846",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12846-report-spam-and-phishing-urls-from-imap-mailboxes-to-spamhaus.webp",
+    "categories": [
+      "SecOps"
+    ],
+    "author": "Vitali",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/report-spam-and-phishing-urls-from-imap-mailboxes-to-spamhaus-12846"
+  },
+  {
+    "id": 12844,
+    "title": "Track calories and weight using Gemini, Google Sheets, Gmail and QuickChart",
+    "description": "Log meals in plain English—Gemini estimates calories, tracks balance via Sheets, charts 7-day weight trends, and emails progress reports.",
+    "slug": "track-calories-and-weight-using-gemini-google-sheets-gmail-and-quickchart-12844",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12844-track-calories-and-weight-using-gemini--google-sheets--gmail-and-quickchart.webp",
+    "categories": [
+      "Personal Productivity",
+      "AI Summarization"
+    ],
+    "author": "NODA shuichi",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-calories-and-weight-using-gemini-google-sheets-gmail-and-quickchart-12844"
+  },
+  {
+    "id": 12841,
+    "title": "Send AI-generated stale lead nudges from Notion CRM to Telegram with OpenAI",
+    "description": "Automated AI Sales Coach for n8n: scans Notion CRM daily, flags neglected deals, and sends personalized Telegram nudges—no spam, no misses.",
+    "slug": "send-ai-generated-stale-lead-nudges-from-notion-crm-to-telegram-with-openai-12841",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12841-send-ai-generated-stale-lead-nudges-from-notion-crm-to-telegram-with-openai.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Chatbot"
+    ],
+    "author": "LogicCraft Automation",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-ai-generated-stale-lead-nudges-from-notion-crm-to-telegram-with-openai-12841"
+  },
+  {
+    "id": 12839,
+    "title": "Draft personalized Outlook support email replies with Supabase RAG and OpenAI",
+    "description": "Automate first-line support: Outlook-triggered, Supabase CRM personalization, GPT-4o RAG from manuals, draft HTML replies, and Google Sheets logs. Learn more.",
+    "slug": "draft-personalized-outlook-support-email-replies-with-supabase-rag-and-openai-12839",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12839-draft-personalized-outlook-support-email-replies-with-supabase-rag-and-openai.webp",
+    "categories": [
+      "Ticket Management",
+      "AI RAG"
+    ],
+    "author": "Matthew",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/draft-personalized-outlook-support-email-replies-with-supabase-rag-and-openai-12839"
+  },
+  {
+    "id": 12838,
+    "title": "Build a LinkedIn job intelligence pipeline with Apify and Google Sheets",
+    "description": "Automate LinkedIn job intelligence with n8n + Apify: scrape, enrich with “days since posted,” dedupe, and store in Google Sheets. Learn more.",
+    "slug": "build-a-linkedin-job-intelligence-pipeline-with-apify-and-google-sheets-12838",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12838-build-a-linkedin-job-intelligence-pipeline-with-apify-and-google-sheets.webp",
+    "categories": [
+      "Market Research"
+    ],
+    "author": "Ahmed Salama",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/build-a-linkedin-job-intelligence-pipeline-with-apify-and-google-sheets-12838"
+  },
+  {
+    "id": 12837,
+    "title": "Generate personalized cold email icebreakers from LinkedIn or website data with GPT-4",
+    "description": "Automate hyper-personalized cold emails in n8n—uses LinkedIn posts or a website fallback, powered by GPT-4, and saves results to Google Sheets.",
+    "slug": "generate-personalized-cold-email-icebreakers-from-linkedin-or-website-data-with-gpt-4-12837",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12837-generate-personalized-cold-email-icebreakers-from-linkedin-or-website-data-with-gpt-4.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Matthew",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-personalized-cold-email-icebreakers-from-linkedin-or-website-data-with-gpt-4-12837"
+  },
+  {
+    "id": 12836,
+    "title": "Publish videos to 9 social platforms from Google Sheets with Blotato",
+    "description": "Automate video publishing to 9 platforms from Google Sheets. Schedule posts, publish in parallel, track status, and log errors—learn more.",
+    "slug": "publish-videos-to-9-social-platforms-from-google-sheets-with-blotato-12836",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12836-publish-videos-to-9-social-platforms-from-google-sheets-with-blotato.webp",
+    "categories": [
+      "Social Media"
+    ],
+    "author": "giangxai",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 5,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/publish-videos-to-9-social-platforms-from-google-sheets-with-blotato-12836"
+  },
+  {
+    "id": 12834,
+    "title": "Generate and post beauty salon social content with GPT-4.1, GPT-image-1 and Telegram",
+    "description": "AI agents automate beauty salon social posts—trend research, captions + photorealistic images, and auto-posting to Telegram (and more). Learn more.",
+    "slug": "generate-and-post-beauty-salon-social-content-with-gpt-41-gpt-image-1-and-telegram-12834",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12834-generate-and-post-beauty-salon-social-content-with-gpt-4-1--gpt-image-1-and-telegram.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "N8ner",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 3,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-and-post-beauty-salon-social-content-with-gpt-41-gpt-image-1-and-telegram-12834"
+  },
+  {
+    "id": 12833,
+    "title": "Create a Business Model Canvas and infographic image with Gemini",
+    "description": "AI turns guided n8n form answers into a validated 9‑block Business Model Canvas plus a polished Gemini infographic—no login, any device.",
+    "slug": "create-a-business-model-canvas-and-infographic-image-with-gemini-12833",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12833-create-a-business-model-canvas-and-infographic-image-with-gemini.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Ryosuke Mori",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "20 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-a-business-model-canvas-and-infographic-image-with-gemini-12833"
+  },
+  {
+    "id": 12829,
+    "title": "Generate AI video clips from YouTube automatically with Reka Vision",
+    "description": "Auto-clip new YouTube uploads with n8n + Reka Vision: generate AI highlight videos with custom prompts, captions, and email alerts—learn more.",
+    "slug": "generate-ai-video-clips-from-youtube-automatically-with-reka-vision-12829",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12829-generate-ai-video-clips-from-youtube-automatically-with-reka-vision.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Frank Boucher",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-video-clips-from-youtube-automatically-with-reka-vision-12829"
+  },
+  {
+    "id": 12827,
+    "title": "Automate systematic literature reviews with Google Drive, GPT-4, Gemini, Qdrant and Airtable",
+    "description": "Automate systematic literature reviews: screen Google Drive papers with LLM criteria, store accepted studies in Qdrant for semantic search, log PRISMA decisions in Airtable.",
+    "slug": "automate-systematic-literature-reviews-with-google-drive-gpt-4-gemini-qdrant-and-airtable-12827",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12827-automate-systematic-literature-reviews-with-google-drive--gpt-4--gemini--qdrant-and-airtable.webp",
+    "categories": [
+      "Document Extraction",
+      "AI RAG"
+    ],
+    "author": "Jannik Hiller",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 1,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/automate-systematic-literature-reviews-with-google-drive-gpt-4-gemini-qdrant-and-airtable-12827"
+  },
+  {
+    "id": 12826,
+    "title": "Label Gmail inbox emails with GPT-4o and store them in Mem0",
+    "description": "AI inbox triage for contractors, consultants & agencies—filters junk, labels urgent emails in Gmail, and saves searchable memory. Learn more.",
+    "slug": "label-gmail-inbox-emails-with-gpt-4o-and-store-them-in-mem0-12826",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12826-label-gmail-inbox-emails-with-gpt-4o-and-store-them-in-mem0.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "Stephan Koning",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/label-gmail-inbox-emails-with-gpt-4o-and-store-them-in-mem0-12826"
+  },
+  {
+    "id": 12823,
+    "title": "Collect historical prices from Polymarket Up/Down markets into Supabase",
+    "description": "n8n template to pull Polymarket “Up or Down” historical prices into Supabase—enter a slug, dedupe events, batch fetch data for SQL/Python.",
+    "slug": "collect-historical-prices-from-polymarket-updown-markets-into-supabase-12823",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12823-collect-historical-prices-from-polymarket-up-down-markets-into-supabase.webp",
+    "categories": [
+      "Crypto Trading"
+    ],
+    "author": "Caio Carvalho",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 15,
+    "downloads": 8,
+    "source_url": "https://n8nworkflows.xyz/workflows/collect-historical-prices-from-polymarket-updown-markets-into-supabase-12823"
+  },
+  {
+    "id": 12812,
+    "title": "Turn a YouTube channel into a second brain with Neo4j GraphRAG and GPT-4o-mini",
+    "description": "Turn any YouTube channel into an AI “second brain” with Neo4j + RAG—graph-based search, smart Q&A, and video links. Learn how.",
+    "slug": "turn-a-youtube-channel-into-a-second-brain-with-neo4j-graphrag-and-gpt-4o-mini-12812",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12812-turn-a-youtube-channel-into-a-second-brain-with-neo4j-graphrag-and-gpt-4o-mini.webp",
+    "categories": [
+      "Internal Wiki",
+      "AI RAG"
+    ],
+    "author": "Hugo Le Poole",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 16,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/turn-a-youtube-channel-into-a-second-brain-with-neo4j-graphrag-and-gpt-4o-mini-12812"
+  },
+  {
+    "id": 12810,
+    "title": "Send cold outreach emails and follow-ups with Resend, Postgres and HubSpot",
+    "description": "Automate cold outreach with a 3-stage n8n workflow: send emails, auto follow-ups in 3 days, track replies via webhooks, and sync to HubSpot.",
+    "slug": "send-cold-outreach-emails-and-follow-ups-with-resend-postgres-and-hubspot-12810",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12810-send-cold-outreach-emails-and-follow-ups-with-resend--postgres-and-hubspot.webp",
+    "categories": [
+      "Lead Nurturing"
+    ],
+    "author": "Gilbert Onyebuchi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "19 Jan 2026",
+    "views": 5,
+    "downloads": 3,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-cold-outreach-emails-and-follow-ups-with-resend-postgres-and-hubspot-12810"
+  },
+  {
+    "id": 12803,
+    "title": "Track Azure API and Service Bus failures with Application Insights correlation",
+    "description": "Correlate Azure API failures across App Insights, APIM, and Service Bus via operation IDs. Query 24h–30d and generate root-cause reports (HTML/Excel/JSON).",
+    "slug": "track-azure-api-and-service-bus-failures-with-application-insights-correlation-12803",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12803-track-azure-api-and-service-bus-failures-with-application-insights-correlation.webp",
+    "categories": [
+      "DevOps",
+      "AI Summarization"
+    ],
+    "author": "kartik ramachandran",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-azure-api-and-service-bus-failures-with-application-insights-correlation-12803"
+  },
+  {
+    "id": 12802,
+    "title": "Monitor Azure subscription resources with cost and usage tracking and reports",
+    "description": "Monitor Azure resources and costs with n8n—auto-discover assets, track spend, and export reports to Excel/Power BI or API for FinOps insights.",
+    "slug": "monitor-azure-subscription-resources-with-cost-and-usage-tracking-and-reports-12802",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12802-monitor-azure-subscription-resources-with-cost-and-usage-tracking-and-reports.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "kartik ramachandran",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-azure-subscription-resources-with-cost-and-usage-tracking-and-reports-12802"
+  },
+  {
+    "id": 12799,
+    "title": "Generate AI SOPs from Google Drive with GPT‑4o, Google Docs and Sheets",
+    "description": "Convert messy internal docs into clear SOPs automatically. AI drafts step-by-step procedures, saves to Google Docs, logs in Sheets, alerts via Slack/email.",
+    "slug": "generate-ai-sops-from-google-drive-with-gpt4o-google-docs-and-sheets-12799",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12799-generate-ai-sops-from-google-drive-with-gpt-4o--google-docs-and-sheets.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "18 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-sops-from-google-drive-with-gpt4o-google-docs-and-sheets-12799"
+  },
+  {
+    "id": 12797,
+    "title": "Generate AI images via Telegram with WaveSpeed, credit system, PIX and S3",
+    "description": "Production-ready Telegram AI image bot: text-to-image & photo edits in 4K/8K, credits + PIX payments, and S3/MinIO storage with permanent links.",
+    "slug": "generate-ai-images-via-telegram-with-wavespeed-credit-system-pix-and-s3-12797",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12797-generate-ai-images-via-telegram-with-wavespeed--credit-system--pix-and-s3.webp",
+    "categories": [
+      "Content Creation",
+      "AI Chatbot"
+    ],
+    "author": "Cleverton Ruppenthal",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 6,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-images-via-telegram-with-wavespeed-credit-system-pix-and-s3-12797"
+  },
+  {
+    "id": 12796,
+    "title": "Track CoinMarketCap crypto sector pumps with Gemini AI and send digests to Discord",
+    "description": "Track emerging crypto narratives fast: scans CMC top gainers, groups sectors, uses Gemini AI to explain catalysts, and sends Discord digests.",
+    "slug": "track-coinmarketcap-crypto-sector-pumps-with-gemini-ai-and-send-digests-to-discord-12796",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12796-track-coinmarketcap-crypto-sector-pumps-with-gemini-ai-and-send-digests-to-discord.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Summarization"
+    ],
+    "author": "M Ayoub",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-coinmarketcap-crypto-sector-pumps-with-gemini-ai-and-send-digests-to-discord-12796"
+  },
+  {
+    "id": 12795,
+    "title": "Analyze crypto market sentiment and send Discord alerts with Gemini Gemini 2.5",
+    "description": "Automated daily crypto market analysis to Discord. Pulls BTC/ETH data, DXY, Fear & Greed, funding rates from free APIs, powered by Gemini AI—learn more.",
+    "slug": "analyze-crypto-market-sentiment-and-send-discord-alerts-with-gemini-gemini-25-12795",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12795-analyze-crypto-market-sentiment-and-send-discord-alerts-with-gemini-gemini-2-5.webp",
+    "categories": [
+      "Crypto Trading",
+      "AI Summarization"
+    ],
+    "author": "M Ayoub",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-crypto-market-sentiment-and-send-discord-alerts-with-gemini-gemini-25-12795"
+  },
+  {
+    "id": 12794,
+    "title": "Manage healthcare resource allocation and conflicts with Anthropic Claude",
+    "description": "Automate AI-driven multichannel campaigns—email, social, ads, influencer & content—with consistent brand voice, perfect timing, and 80% faster setup.",
+    "slug": "manage-healthcare-resource-allocation-and-conflicts-with-anthropic-claude-12794",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12794-manage-healthcare-resource-allocation-and-conflicts-with-anthropic-claude.webp",
+    "categories": [
+      "Engineering",
+      "AI RAG"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 10,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-healthcare-resource-allocation-and-conflicts-with-anthropic-claude-12794"
+  },
+  {
+    "id": 12792,
+    "title": "Optimize fleet routes and anomaly alerts with GPT-4, Slack and Postgres",
+    "description": "Automate vet clinic inventory and client communications with AI—smart restocking, supplier emails, reminders and care follow-ups to cut no-shows and stockouts.",
+    "slug": "optimize-fleet-routes-and-anomaly-alerts-with-gpt-4-slack-and-postgres-12792",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12792-optimize-fleet-routes-and-anomaly-alerts-with-gpt-4--slack-and-postgres.webp",
+    "categories": [
+      "Engineering",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 8,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/optimize-fleet-routes-and-anomaly-alerts-with-gpt-4-slack-and-postgres-12792"
+  },
+  {
+    "id": 12791,
+    "title": "Forecast demand, optimize pricing, and engage customers with GPT‑4.1, Postgres, email, and Slack",
+    "description": "Automate inventory and customer engagement with AI—webhook-driven forecasting, pricing, promos, and personalized emails plus Slack/Teams alerts.",
+    "slug": "forecast-demand-optimize-pricing-and-engage-customers-with-gpt41-postgres-email-and-slack-12791",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12791-forecast-demand--optimize-pricing--and-engage-customers-with-gpt-4-1--postgres--email--and-slack.webp",
+    "categories": [
+      "CRM",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 5,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/forecast-demand-optimize-pricing-and-engage-customers-with-gpt41-postgres-email-and-slack-12791"
+  },
+  {
+    "id": 12790,
+    "title": "Monitor revenue tax compliance and auto-correct anomalies with Anthropic, MagicCSV, Gmail and WhatsApp",
+    "description": "Automate multi-source revenue tracking and tax compliance with triple AI validation, MagicCSV sync, and Gmail/WhatsApp reports—cut review time 80%.",
+    "slug": "monitor-revenue-tax-compliance-and-auto-correct-anomalies-with-anthropic-magiccsv-gmail-and-whatsapp-12790",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12790-monitor-revenue-tax-compliance-and-auto-correct-anomalies-with-anthropic--magiccsv--gmail-and-whatsapp.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 10,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-revenue-tax-compliance-and-auto-correct-anomalies-with-anthropic-magiccsv-gmail-and-whatsapp-12790"
+  },
+  {
+    "id": 12789,
+    "title": "Build a full REST-API with n8n webhooks",
+    "description": "Clean, extensible REST API routing template for n8n webhooks—3-level paths, multi-method support, global request/config nodes, zero setup. Learn more.",
+    "slug": "build-a-full-rest-api-with-n8n-webhooks-12789",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12789-build-a-full-rest-api-with-n8n-webhooks.webp",
+    "categories": [
+      "Engineering"
+    ],
+    "author": "Christian Knoflach",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/build-a-full-rest-api-with-n8n-webhooks-12789"
+  },
+  {
+    "id": 12788,
+    "title": "Track Amazon prices and competitor offers with Apify and Google Sheets",
+    "description": "Automate Amazon price & competitor tracking in Google Sheets with Apify + n8n. Real-time updates, scalable setup, smarter pricing—learn more.",
+    "slug": "track-amazon-prices-and-competitor-offers-with-apify-and-google-sheets-12788",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12788-track-amazon-prices-and-competitor-offers-with-apify-and-google-sheets.webp",
+    "categories": [
+      "Market Research"
+    ],
+    "author": "Faisal Ahmed | n8n",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "18 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-amazon-prices-and-competitor-offers-with-apify-and-google-sheets-12788"
+  },
+  {
+    "id": 12782,
+    "title": "Automated Feedaty Review Scraper 📈 using ScrapegraphAI & Gemini 3",
+    "description": "Automate Feedaty review scraping, sentiment analysis & PDF reputation reports with Gemini 3—auto-convert and upload to Google Drive. Learn more.",
+    "slug": "automated-feedaty-review-scraper-using-scrapegraphai-gemini-3-12782",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12782-automated-feedaty-review-scraper----using-scrapegraphai---gemini-3.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Davide",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "17 Jan 2026",
+    "views": 59,
+    "downloads": 10,
+    "source_url": "https://n8nworkflows.xyz/workflows/automated-feedaty-review-scraper-using-scrapegraphai-gemini-3-12782"
+  },
+  {
+    "id": 12781,
+    "title": "Send daily CRM summary reports to Mattermost from HubSpot",
+    "description": "Automate daily HubSpot metrics into a Markdown summary posted to Mattermost via n8n—optional internal data, KPI calculations, and fail-safes.",
+    "slug": "send-daily-crm-summary-reports-to-mattermost-from-hubspot-12781",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12781-send-daily-crm-summary-reports-to-mattermost-from-hubspot.webp",
+    "categories": [
+      "CRM"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "17 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-daily-crm-summary-reports-to-mattermost-from-hubspot-12781"
+  },
+  {
+    "id": 12779,
+    "title": "Classify job applicants from CVs using Claude, PDF.co, Google Docs and Gmail",
+    "description": "Automate job application screening: process any CV format, extract and summarize skills, match job criteria, and auto-send interview invites or rejections.",
+    "slug": "classify-job-applicants-from-cvs-using-claude-pdfco-google-docs-and-gmail-12779",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12779-classify-job-applicants-from-cvs-using-claude--pdf-co--google-docs-and-gmail.webp",
+    "categories": [
+      "HR",
+      "AI Summarization"
+    ],
+    "author": "ius AI Agency",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "17 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/classify-job-applicants-from-cvs-using-claude-pdfco-google-docs-and-gmail-12779"
+  },
+  {
+    "id": 12778,
+    "title": "Generate personalized cold email icebreakers with Apify, Baserow and OpenRouter GPT-4.1",
+    "description": "AI workflow that scrapes lead websites, summarizes their business, and generates personalized cold email subject lines & icebreakers—flags broken sites too.",
+    "slug": "generate-personalized-cold-email-icebreakers-with-apify-baserow-and-openrouter-gpt-41-12778",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12778-generate-personalized-cold-email-icebreakers-with-apify--baserow-and-openrouter-gpt-4-1.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Muhammad Faaz Khan",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "17 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-personalized-cold-email-icebreakers-with-apify-baserow-and-openrouter-gpt-41-12778"
+  },
+  {
+    "id": 12773,
+    "title": "Batch upload Instagram Reels to YouTube with scheduled delays",
+    "description": "Auto-upload Instagram Reels/videos to YouTube with n8n—dedupe via Tables, add upload delays, and generate titles/tags with safe privacy settings.",
+    "slug": "batch-upload-instagram-reels-to-youtube-with-scheduled-delays-12773",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12773-batch-upload-instagram-reels-to-youtube-with-scheduled-delays.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "Lucio",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "17 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/batch-upload-instagram-reels-to-youtube-with-scheduled-delays-12773"
+  },
+  {
+    "id": 12772,
+    "title": "Monitor brand mentions with GPT-5 Nano, Brave Search, Gmail and Google Sheets",
+    "description": "Automated music brand monitoring: multi-query web search, GPT relevance filtering, deduped Google Sheets history, and clean HTML email digests. Learn more.",
+    "slug": "monitor-brand-mentions-with-gpt-5-nano-brave-search-gmail-and-google-sheets-12772",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12772-monitor-brand-mentions-with-gpt-5-nano--brave-search--gmail-and-google-sheets.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Václav Čikl",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "16 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-brand-mentions-with-gpt-5-nano-brave-search-gmail-and-google-sheets-12772"
+  },
+  {
+    "id": 12769,
+    "title": "Turn an image into a cinematic video with NanoBanana Ultra, Kling, Blotato",
+    "description": "Automate image-to-cinematic video: NanoBanana Ultra contact sheet, Kling AI multi-shot clips, FFmpeg merge, and auto-publish via Sheets/n8n.",
+    "slug": "turn-an-image-into-a-cinematic-video-with-nanobanana-ultra-kling-blotato-12769",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12769-turn-an-image-into-a-cinematic-video-with-nanobanana-ultra--kling--blotato.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Dr. Firas",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 156,
+    "downloads": 38,
+    "source_url": "https://n8nworkflows.xyz/workflows/turn-an-image-into-a-cinematic-video-with-nanobanana-ultra-kling-blotato-12769"
+  },
+  {
+    "id": 12767,
+    "title": "Analyze website SEO and log AI recommendations to Google Sheets with OpenAI",
+    "description": "Automate on-page SEO audits with AI: extract key HTML elements, score pages, log to Google Sheets, and get prioritized actions plus Slack/email alerts.",
+    "slug": "analyze-website-seo-and-log-ai-recommendations-to-google-sheets-with-openai-12767",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12767-analyze-website-seo-and-log-ai-recommendations-to-google-sheets-with-openai.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 7,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-website-seo-and-log-ai-recommendations-to-google-sheets-with-openai-12767"
+  },
+  {
+    "id": 12766,
+    "title": "Collect, score, and coach call quality with forms, Gemini, OpenAI, Gmail, and Google Drive",
+    "description": "Automate call QA: upload recordings via n8n, get AI transcription, scoring, sentiment & risk checks, and coaching emails via Drive and Gmail.",
+    "slug": "collect-score-and-coach-call-quality-with-forms-gemini-openai-gmail-and-google-drive-12766",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12766-collect--score--and-coach-call-quality-with-forms--gemini--openai--gmail--and-google-drive.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Abdullah Al Shishani",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/collect-score-and-coach-call-quality-with-forms-gemini-openai-gmail-and-google-drive-12766"
+  },
+  {
+    "id": 12765,
+    "title": "Score call quality and send coaching emails with Gemini, OpenAI, and Gmail",
+    "description": "Automate call quality reviews: pull recordings from Drive, transcribe with Gemini, score agents, flag risks, and email coaching feedback via Gmail. Learn more.",
+    "slug": "score-call-quality-and-send-coaching-emails-with-gemini-openai-and-gmail-12765",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12765-score-call-quality-and-send-coaching-emails-with-gemini--openai--and-gmail.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "Abdullah Al Shishani",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 5,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/score-call-quality-and-send-coaching-emails-with-gemini-openai-and-gmail-12765"
+  },
+  {
+    "id": 12763,
+    "title": "Book WhatsApp consultations and sync contacts with Airtable and Google Calendar",
+    "description": "Automate WhatsApp consultation bookings in n8n with AI intent detection, live Google Calendar slots, Airtable CRM sync, and instant confirmations.",
+    "slug": "book-whatsapp-consultations-and-sync-contacts-with-airtable-and-google-calendar-12763",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12763-book-whatsapp-consultations-and-sync-contacts-with-airtable-and-google-calendar.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Blaine Holt",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/book-whatsapp-consultations-and-sync-contacts-with-airtable-and-google-calendar-12763"
+  },
+  {
+    "id": 12761,
+    "title": "Qualify and route consulting leads with GPT‑4.1-mini, Slack and Google Sheets",
+    "description": "AI-powered n8n workflow for consulting/accounting firms: qualify & route inbound leads, send Slack alerts, log to Sheets, and auto-email clients.",
+    "slug": "qualify-and-route-consulting-leads-with-gpt41-mini-slack-and-google-sheets-12761",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12761-qualify-and-route-consulting-leads-with-gpt-4-1-mini--slack-and-google-sheets.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "16 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/qualify-and-route-consulting-leads-with-gpt41-mini-slack-and-google-sheets-12761"
+  },
+  {
+    "id": 12760,
+    "title": "Send meeting summaries with Mailchimp and MongoDB",
+    "description": "Automate meeting recap emails: summarize transcripts/notes, store in MongoDB, and send personalized Mailchimp emails—no copy-paste required.",
+    "slug": "send-meeting-summaries-with-mailchimp-and-mongodb-12760",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12760-send-meeting-summaries-with-mailchimp-and-mongodb.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-meeting-summaries-with-mailchimp-and-mongodb-12760"
+  },
+  {
+    "id": 12758,
+    "title": "Analyze meeting sentiment with Azure OpenAI and save insights to Google Sheets",
+    "description": "Automate meeting sentiment analysis: webhook transcripts → AI morale, engagement & risk insights. Clean, timestamp, and update Google Sheets by meeting ID.",
+    "slug": "analyze-meeting-sentiment-with-azure-openai-and-save-insights-to-google-sheets-12758",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12758-analyze-meeting-sentiment-with-azure-openai-and-save-insights-to-google-sheets.webp",
+    "categories": [
+      "Crypto Trading",
+      "Multimodal AI"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 14,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-meeting-sentiment-with-azure-openai-and-save-insights-to-google-sheets-12758"
+  },
+  {
+    "id": 12757,
+    "title": "Ask questions about past meetings using voice with OpenAI and Pinecone",
+    "description": "Ask past meeting questions by voice and get instant spoken AI answers. Uses Pinecone RAG, team namespaces, and webhooks to recall decisions fast.",
+    "slug": "ask-questions-about-past-meetings-using-voice-with-openai-and-pinecone-12757",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12757-ask-questions-about-past-meetings-using-voice-with-openai-and-pinecone.webp",
+    "categories": [
+      "Internal Wiki",
+      "AI RAG"
+    ],
+    "author": "Rahul Joshi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 13,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/ask-questions-about-past-meetings-using-voice-with-openai-and-pinecone-12757"
+  },
+  {
+    "id": 12755,
+    "title": "Generate and post Instagram captions with Google Drive, GPT-4.1-mini, Gmail and Blotato",
+    "description": "Automate social posts from Google Drive: AI writes captions, Gmail approval ensures quality, then auto-publishes via Blotato—perfect for creators and teams.",
+    "slug": "generate-and-post-instagram-captions-with-google-drive-gpt-41-mini-gmail-and-blotato-12755",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12755-generate-and-post-instagram-captions-with-google-drive--gpt-4-1-mini--gmail-and-blotato.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "Automate With Marc",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 12,
+    "downloads": 3,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-and-post-instagram-captions-with-google-drive-gpt-41-mini-gmail-and-blotato-12755"
+  },
+  {
+    "id": 12752,
+    "title": "Generate UGC-style AI videos with Google Sheets, NanoBanana Pro and Veo 3.1",
+    "description": "AI UGC video generator: blend 3 images into realistic selfies, auto-create 8s TikTok/Reels videos with Veo 3.1, batch via Sheets & fallbacks.",
+    "slug": "generate-ugc-style-ai-videos-with-google-sheets-nanobanana-pro-and-veo-31-12752",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12752-generate-ugc-style-ai-videos-with-google-sheets--nanobanana-pro-and-veo-3-1.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Kristian Ekachandra",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 34,
+    "downloads": 10,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ugc-style-ai-videos-with-google-sheets-nanobanana-pro-and-veo-31-12752"
+  },
+  {
+    "id": 12751,
+    "title": "Score and route leads with Clearbit, Mattermost and Trello",
+    "description": "Automate lead enrichment & scoring in n8n: alert hot prospects in Mattermost, create Trello cards for all leads, and streamline sales triage.",
+    "slug": "score-and-route-leads-with-clearbit-mattermost-and-trello-12751",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12751-score-and-route-leads-with-clearbit--mattermost-and-trello.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/score-and-route-leads-with-clearbit-mattermost-and-trello-12751"
+  },
+  {
+    "id": 12750,
+    "title": "Warm up Gmail inboxes with OpenAI GPT-4o-mini and Data Tables",
+    "description": "Automate Gmail warmup in n8n with AI-made threads, smart ramp-up, random scheduling, and auto read/reply—boost deliverability. Learn more.",
+    "slug": "warm-up-gmail-inboxes-with-openai-gpt-4o-mini-and-data-tables-12750",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12750-warm-up-gmail-inboxes-with-openai-gpt-4o-mini-and-data-tables.webp",
+    "categories": [
+      "Miscellaneous",
+      "Multimodal AI"
+    ],
+    "author": "Jatin Khatri",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/warm-up-gmail-inboxes-with-openai-gpt-4o-mini-and-data-tables-12750"
+  },
+  {
+    "id": 12748,
+    "title": "Send 24-hour Hacker News trends to Telegram with OpenRouter AI translation",
+    "description": "Smart Hacker News monitor with Gravity Score trend detection, noise filtering, optional AI translation, and clean Telegram digests. Learn more.",
+    "slug": "send-24-hour-hacker-news-trends-to-telegram-with-openrouter-ai-translation-12748",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12748-send-24-hour-hacker-news-trends-to-telegram-with-openrouter-ai-translation.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "CryoZeroLabs",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-24-hour-hacker-news-trends-to-telegram-with-openrouter-ai-translation-12748"
+  },
+  {
+    "id": 12747,
+    "title": "Back up workflows from multiple n8n instances to Google Drive",
+    "description": "Automate daily n8n workflow backups to Google Drive across multiple instances. Smart versioning updates files in place for clean history and easy rollback.",
+    "slug": "back-up-workflows-from-multiple-n8n-instances-to-google-drive-12747",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12747-back-up-workflows-from-multiple-n8n-instances-to-google-drive.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "CryoZeroLabs",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/back-up-workflows-from-multiple-n8n-instances-to-google-drive-12747"
+  },
+  {
+    "id": 12746,
+    "title": "Send AI pet grooming reminders and follow-ups with GPT-4o mini, Twilio, email, Google Sheets and Slack",
+    "description": "Automate pet grooming reminders and client engagement with n8n—SMS/email prep tips, Sheets tracking, Slack schedules, follow-ups, and weekly reports. Learn more.",
+    "slug": "send-ai-pet-grooming-reminders-and-follow-ups-with-gpt-4o-mini-twilio-email-google-sheets-and-slack-12746",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12746-send-ai-pet-grooming-reminders-and-follow-ups-with-gpt-4o-mini--twilio--email--google-sheets-and-slack.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-ai-pet-grooming-reminders-and-follow-ups-with-gpt-4o-mini-twilio-email-google-sheets-and-slack-12746"
+  },
+  {
+    "id": 12745,
+    "title": "Nurture landscaping leads and book calls with GoHighLevel, OpenAI and Slack",
+    "description": "AI GoHighLevel workflow for landscapers: personalized SMS/email follow-ups, Slack hot-lead alerts, Sheets tracking, reports—book more jobs fast.",
+    "slug": "nurture-landscaping-leads-and-book-calls-with-gohighlevel-openai-and-slack-12745",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12745-nurture-landscaping-leads-and-book-calls-with-gohighlevel--openai-and-slack.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "16 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/nurture-landscaping-leads-and-book-calls-with-gohighlevel-openai-and-slack-12745"
+  },
+  {
+    "id": 12744,
+    "title": "Sync Beex WhatsApp ticket messages with HubSpot contact activities",
+    "description": "Automate Beex WhatsApp ticket logs in HubSpot—match contacts by phone, pull full chats, format in HTML, and save as a searchable activity.",
+    "slug": "sync-beex-whatsapp-ticket-messages-with-hubspot-contact-activities-12744",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12744-sync-beex-whatsapp-ticket-messages-with-hubspot-contact-activities.webp",
+    "categories": [
+      "Ticket Management"
+    ],
+    "author": "Beex",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-beex-whatsapp-ticket-messages-with-hubspot-contact-activities-12744"
+  },
+  {
+    "id": 12742,
+    "title": "Capture and schedule HVAC leads with OpenAI, Google Sheets, Slack and SMS",
+    "description": "Automate HVAC lead capture & booking: AI classifies and routes leads, logs to Google Sheets, alerts Slack, confirms, schedules, and sends SMS. Learn more.",
+    "slug": "capture-and-schedule-hvac-leads-with-openai-google-sheets-slack-and-sms-12742",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12742-capture-and-schedule-hvac-leads-with-openai--google-sheets--slack-and-sms.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 167,
+    "downloads": 54,
+    "source_url": "https://n8nworkflows.xyz/workflows/capture-and-schedule-hvac-leads-with-openai-google-sheets-slack-and-sms-12742"
+  },
+  {
+    "id": 12741,
+    "title": "Send Stripe invoice reminders with GPT-4.1-mini, Google Sheets and Slack",
+    "description": "Automate invoicing and overdue reminders for accounting firms—AI emails, PDF invoices, Google Sheets logging, Slack alerts, and scheduled follow-ups. Learn more.",
+    "slug": "send-stripe-invoice-reminders-with-gpt-41-mini-google-sheets-and-slack-12741",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12741-send-stripe-invoice-reminders-with-gpt-4-1-mini--google-sheets-and-slack.webp",
+    "categories": [
+      "Invoice Processing",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "15 Jan 2026",
+    "views": 76,
+    "downloads": 12,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-stripe-invoice-reminders-with-gpt-41-mini-google-sheets-and-slack-12741"
+  },
+  {
+    "id": 12740,
+    "title": "Analyze legal contracts with GPT-4.1 and manage cases in Google Sheets and Slack",
+    "description": "AI contract & case workflow for law firms: extracts clauses, logs to Google Sheets, routes matters, alerts via Slack, sends summaries & PDFs. Learn more.",
+    "slug": "analyze-legal-contracts-with-gpt-41-and-manage-cases-in-google-sheets-and-slack-12740",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12740-analyze-legal-contracts-with-gpt-4-1-and-manage-cases-in-google-sheets-and-slack.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "15 Jan 2026",
+    "views": 118,
+    "downloads": 20,
+    "source_url": "https://n8nworkflows.xyz/workflows/analyze-legal-contracts-with-gpt-41-and-manage-cases-in-google-sheets-and-slack-12740"
+  },
+  {
+    "id": 12739,
+    "title": "Create consulting client onboarding tasks with GPT-4o-mini, Google Sheets and Slack",
+    "description": "Automate client onboarding for consulting firms: AI checklists, smart task routing, Sheets logging, Slack alerts, welcome emails, and kickoff scheduling. Learn more.",
+    "slug": "create-consulting-client-onboarding-tasks-with-gpt-4o-mini-google-sheets-and-slack-12739",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12739-create-consulting-client-onboarding-tasks-with-gpt-4o-mini--google-sheets-and-slack.webp",
+    "categories": [
+      "CRM",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "15 Jan 2026",
+    "views": 233,
+    "downloads": 56,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-consulting-client-onboarding-tasks-with-gpt-4o-mini-google-sheets-and-slack-12739"
+  },
+  {
+    "id": 12737,
+    "title": "Extract sales insights from Scoot call transcripts using Gemini",
+    "description": "Turn Scoot call transcripts into CRM-ready sales insights. Gemini extracts key details, updates your CRM, and emails reps a formatted summary.",
+    "slug": "extract-sales-insights-from-scoot-call-transcripts-using-gemini-12737",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12737-extract-sales-insights-from-scoot-call-transcripts-using-gemini.webp",
+    "categories": [
+      "CRM",
+      "AI Summarization"
+    ],
+    "author": "AI Sales Agent HQ",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/extract-sales-insights-from-scoot-call-transcripts-using-gemini-12737"
+  },
+  {
+    "id": 12735,
+    "title": "Forecast and report multi-channel tax liabilities with OpenAI, Gmail, Sheets and Airtable",
+    "description": "Automate multi-jurisdiction tax compliance: sync e-commerce, Stripe/PayPal & QuickBooks/Xero, detect anomalies with AI, and generate filing-ready reports.",
+    "slug": "forecast-and-report-multi-channel-tax-liabilities-with-openai-gmail-sheets-and-airtable-12735",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12735-forecast-and-report-multi-channel-tax-liabilities-with-openai--gmail--sheets-and-airtable.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 59,
+    "downloads": 11,
+    "source_url": "https://n8nworkflows.xyz/workflows/forecast-and-report-multi-channel-tax-liabilities-with-openai-gmail-sheets-and-airtable-12735"
+  },
+  {
+    "id": 12734,
+    "title": "Coordinate patient care and alerts with EHR/FHIR, GPT-4, Twilio, Gmail and Slack",
+    "description": "Automate patient care coordination with AI risk scoring, multi-channel reminders, and Slack escalations—HIPAA-ready, cuts no-shows up to 40%.",
+    "slug": "coordinate-patient-care-and-alerts-with-ehrfhir-gpt-4-twilio-gmail-and-slack-12734",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12734-coordinate-patient-care-and-alerts-with-ehr-fhir--gpt-4--twilio--gmail-and-slack.webp",
+    "categories": [
+      "Engineering",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 97,
+    "downloads": 43,
+    "source_url": "https://n8nworkflows.xyz/workflows/coordinate-patient-care-and-alerts-with-ehrfhir-gpt-4-twilio-gmail-and-slack-12734"
+  },
+  {
+    "id": 12733,
+    "title": "Automate satellite data analysis and regulatory reporting with GPT-4 and Slack",
+    "description": "Automate satellite data ingestion and AI analysis into compliant SDQAR reports and regulatory packages, with Slack/email alerts and audit logs—learn more.",
+    "slug": "automate-satellite-data-analysis-and-regulatory-reporting-with-gpt-4-and-slack-12733",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12733-automate-satellite-data-analysis-and-regulatory-reporting-with-gpt-4-and-slack.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 16,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/automate-satellite-data-analysis-and-regulatory-reporting-with-gpt-4-and-slack-12733"
+  },
+  {
+    "id": 12732,
+    "title": "Detect multi-source transaction fraud and reconcile finances with OpenAI, Nvidia NIM, Gmail, Slack and Google Sheets",
+    "description": "Automate real-time fraud detection across Stripe/PayPal/Plaid & banking APIs with AI risk scoring, instant Slack/Gmail alerts, and Sheets audit logs.",
+    "slug": "detect-multi-source-transaction-fraud-and-reconcile-finances-with-openai-nvidia-nim-gmail-slack-and-google-sheets-12732",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12732-detect-multi-source-transaction-fraud-and-reconcile-finances-with-openai--nvidia-nim--gmail--slack-and-google-sheets.webp",
+    "categories": [
+      "SecOps",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 87,
+    "downloads": 40,
+    "source_url": "https://n8nworkflows.xyz/workflows/detect-multi-source-transaction-fraud-and-reconcile-finances-with-openai-nvidia-nim-gmail-slack-and-google-sheets-12732"
+  },
+  {
+    "id": 12731,
+    "title": "Grade and deliver multi-course assignment feedback with GPT-4o, Google Drive, Slack, and Gmail",
+    "description": "Automate BI reporting: pull data from Sheets, databases & APIs, generate KPI dashboards with GPT-4 insights, and email polished reports—save 80%.",
+    "slug": "grade-and-deliver-multi-course-assignment-feedback-with-gpt-4o-google-drive-slack-and-gmail-12731",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12731-grade-and-deliver-multi-course-assignment-feedback-with-gpt-4o--google-drive--slack--and-gmail.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 5,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/grade-and-deliver-multi-course-assignment-feedback-with-gpt-4o-google-drive-slack-and-gmail-12731"
+  },
+  {
+    "id": 12730,
+    "title": "Draft and manage academic research papers with GPT-4 and Pinecone",
+    "description": "Automate academic research with smart AI routing, Pinecone memory, semantic search, and emailed, citation-tracked results—cut time up to 60%.",
+    "slug": "draft-and-manage-academic-research-papers-with-gpt-4-and-pinecone-12730",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12730-draft-and-manage-academic-research-papers-with-gpt-4-and-pinecone.webp",
+    "categories": [
+      "Market Research",
+      "AI RAG"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 12,
+    "downloads": 4,
+    "source_url": "https://n8nworkflows.xyz/workflows/draft-and-manage-academic-research-papers-with-gpt-4-and-pinecone-12730"
+  },
+  {
+    "id": 12729,
+    "title": "Generate social videos with AI avatars using VEED, Claude, and OpenAI",
+    "description": "Automate TikTok/Reels videos: Claude writes scripts, OpenAI makes avatar + voice, VEED lip-syncs/renders. Auto-save to Drive & log to Sheets.",
+    "slug": "generate-social-videos-with-ai-avatars-using-veed-claude-and-openai-12729",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12729-generate-social-videos-with-ai-avatars-using-veed--claude--and-openai.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "VEED",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 3,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-social-videos-with-ai-avatars-using-veed-claude-and-openai-12729"
+  },
+  {
+    "id": 12728,
+    "title": "Create AI screencast videos with Claude, VEED, OpenAI and automated slides",
+    "description": "Automate AI screencast videos: Claude scripts, Flux slides, ElevenLabs voice, VEED lip-sync avatar, Creatomate 16:9 edit—saved to Drive & Sheets.",
+    "slug": "create-ai-screencast-videos-with-claude-veed-openai-and-automated-slides-12728",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12728-create-ai-screencast-videos-with-claude--veed--openai-and-automated-slides.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "VEED",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 8,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-ai-screencast-videos-with-claude-veed-openai-and-automated-slides-12728"
+  },
+  {
+    "id": 12727,
+    "title": "Generate VEED AI talking head videos from sheet rows with OpenAI or ElevenLabs",
+    "description": "Production-ready n8n workflow: generate AI avatar videos via VEED Fabric 1.0, approve by email, track in Sheets, and publish to every platform.",
+    "slug": "generate-veed-ai-talking-head-videos-from-sheet-rows-with-openai-or-elevenlabs-12727",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12727-generate-veed-ai-talking-head-videos-from-sheet-rows-with-openai-or-elevenlabs.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "veed",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 175,
+    "downloads": 77,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-veed-ai-talking-head-videos-from-sheet-rows-with-openai-or-elevenlabs-12727"
+  },
+  {
+    "id": 12725,
+    "title": "Verify AI draft answers with Pearl Hybrid Intelligence and OpenAI",
+    "description": "Combine AI drafts with Pearl expert verification—20,000 licensed pros across 100+ domains. Get accurate, attributed answers fast. Learn more.",
+    "slug": "verify-ai-draft-answers-with-pearl-hybrid-intelligence-and-openai-12725",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12725-verify-ai-draft-answers-with-pearl-hybrid-intelligence-and-openai.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Vitaliy",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 7,
+    "downloads": 3,
+    "source_url": "https://n8nworkflows.xyz/workflows/verify-ai-draft-answers-with-pearl-hybrid-intelligence-and-openai-12725"
+  },
+  {
+    "id": 12724,
+    "title": "Automated error monitoring and reporting system using data tables",
+    "description": "Automate n8n error monitoring: log every workflow failure to a table/DB and get scheduled summaries via email, Slack, Teams or Discord.",
+    "slug": "automated-error-monitoring-and-reporting-system-using-data-tables-12724",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12724-automated-error-monitoring-and-reporting-system-using-data-tables.webp",
+    "categories": [
+      "DevOps",
+      "AI Summarization"
+    ],
+    "author": "Harshal Patil",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/automated-error-monitoring-and-reporting-system-using-data-tables-12724"
+  },
+  {
+    "id": 12723,
+    "title": "Translate and upload dubbed YouTube videos using ElevenLabs and Google Drive",
+    "description": "Automate video dubbing & publishing: ElevenLabs AI localization, Google Drive storage, and YouTube uploads—scale multilingual content faster and cheaper.",
+    "slug": "translate-and-upload-dubbed-youtube-videos-using-elevenlabs-and-google-drive-12723",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12723-translate-and-upload-dubbed-youtube-videos-using-elevenlabs-and-google-drive.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "Davide",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 47,
+    "downloads": 17,
+    "source_url": "https://n8nworkflows.xyz/workflows/translate-and-upload-dubbed-youtube-videos-using-elevenlabs-and-google-drive-12723"
+  },
+  {
+    "id": 12722,
+    "title": "Create an AI chatbot for WhatsApp with Whapi.Cloud and OpenAI GPT-3.5",
+    "description": "No-code WhatsApp automation via Whapi.Cloud: webhook inbox, AI chat, quick commands, rich replies & group management—go live in 5–10 minutes.",
+    "slug": "create-an-ai-chatbot-for-whatsapp-with-whapicloud-and-openai-gpt-35-12722",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12722-create-an-ai-chatbot-for-whatsapp-with-whapi-cloud-and-openai-gpt-3-5.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": " Jason Mitchell",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 8,
+    "downloads": 3,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-an-ai-chatbot-for-whatsapp-with-whapicloud-and-openai-gpt-35-12722"
+  },
+  {
+    "id": 12721,
+    "title": "Back up and restore n8n workflows with GitHub sync",
+    "description": "Bidirectional n8n↔GitHub sync: daily auto-backups with smart change detection, clean commits, and one-click restore for fast recovery/cloning.",
+    "slug": "back-up-and-restore-n8n-workflows-with-github-sync-12721",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12721-back-up-and-restore-n8n-workflows-with-github-sync.webp",
+    "categories": [
+      "DevOps"
+    ],
+    "author": "Muhammad Anas Farooq",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "15 Jan 2026",
+    "views": 3,
+    "downloads": 2,
+    "source_url": "https://n8nworkflows.xyz/workflows/back-up-and-restore-n8n-workflows-with-github-sync-12721"
+  },
+  {
+    "id": 12715,
+    "title": "Generate AI sales proposals with Gemini and Google Docs",
+    "description": "Generate polished Google Docs sales proposals from a simple form—Gemini AI writes content, auto-calculates ROI, and fills your template in minutes.",
+    "slug": "generate-ai-sales-proposals-with-gemini-and-google-docs-12715",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12715-generate-ai-sales-proposals-with-gemini-and-google-docs.webp",
+    "categories": [
+      "Document Extraction",
+      "Multimodal AI"
+    ],
+    "author": "AI Sales Agent HQ",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 0,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-sales-proposals-with-gemini-and-google-docs-12715"
+  },
+  {
+    "id": 12714,
+    "title": "Curate and send weekly AI newsletters with Tavily, Gemini, and Gmail",
+    "description": "Automate a weekly HTML newsletter: Tavily curates blog + web news, Gemini writes polished content, and Gmail delivers branded emails. Learn more.",
+    "slug": "curate-and-send-weekly-ai-newsletters-with-tavily-gemini-and-gmail-12714",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12714-curate-and-send-weekly-ai-newsletters-with-tavily--gemini--and-gmail.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "AI Sales Agent HQ",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/curate-and-send-weekly-ai-newsletters-with-tavily-gemini-and-gmail-12714"
+  },
+  {
+    "id": 12712,
+    "title": "Re-engage dormant leads with Claude emails using Crunchbase, NewsAPI, Hunter, and Gmail",
+    "description": "Automatically re-engage dormant CRM leads (90+ days) by detecting funding/news/leadership triggers and drafting AI emails for rep approval. Learn more.",
+    "slug": "re-engage-dormant-leads-with-claude-emails-using-crunchbase-newsapi-hunter-and-gmail-12712",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12712-re-engage-dormant-leads-with-claude-emails-using-crunchbase--newsapi--hunter--and-gmail.webp",
+    "categories": [
+      "Lead Nurturing",
+      "Multimodal AI"
+    ],
+    "author": "AI Sales Agent HQ",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/re-engage-dormant-leads-with-claude-emails-using-crunchbase-newsapi-hunter-and-gmail-12712"
+  },
+  {
+    "id": 12710,
+    "title": "Enrich B2B leads for Attio CRM with Apollo, LinkedIn, news and GPT-4o",
+    "description": "Automate Attio B2B lead enrichment with n8n—Apollo, LinkedIn scraping & news + AI summaries and verified insights synced to your CRM.",
+    "slug": "enrich-b2b-leads-for-attio-crm-with-apollo-linkedin-news-and-gpt-4o-12710",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12710-enrich-b2b-leads-for-attio-crm-with-apollo--linkedin--news-and-gpt-4o.webp",
+    "categories": [
+      "Lead Generation",
+      "AI RAG"
+    ],
+    "author": "Blaine Holt",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 11,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/enrich-b2b-leads-for-attio-crm-with-apollo-linkedin-news-and-gpt-4o-12710"
+  },
+  {
+    "id": 12708,
+    "title": "Sync and enrich HubSpot leads from Google Sheets and Telegram with Gemini and Lusha",
+    "description": "Automate lead ingestion from Sheets/Telegram with Gemini AI, enrich via Lusha, match HubSpot records to prevent duplicates, and sync alerts + status updates.",
+    "slug": "sync-and-enrich-hubspot-leads-from-google-sheets-and-telegram-with-gemini-and-lusha-12708",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12708-sync-and-enrich-hubspot-leads-from-google-sheets-and-telegram-with-gemini-and-lusha.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Danny",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 36,
+    "downloads": 10,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-and-enrich-hubspot-leads-from-google-sheets-and-telegram-with-gemini-and-lusha-12708"
+  },
+  {
+    "id": 12704,
+    "title": "Generate product videos from images with BrowserAct and Google Drive",
+    "description": "Automate product scraping with BrowserAct, generate AI videos from images, and upload both to Google Drive—scalable, batch-ready workflow. Learn more.",
+    "slug": "generate-product-videos-from-images-with-browseract-and-google-drive-12704",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12704-generate-product-videos-from-images-with-browseract-and-google-drive.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "browseract",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-product-videos-from-images-with-browseract-and-google-drive-12704"
+  },
+  {
+    "id": 12703,
+    "title": "Create a daily AI & automation content digest from YouTube, Reddit, X and Perplexity with OpenAI and Airtable",
+    "description": "Automate a daily AI & n8n digest: pull trends from YouTube, Reddit, X and Perplexity, summarize with OpenAI, archive in Airtable, email via Gmail.",
+    "slug": "create-a-daily-ai-automation-content-digest-from-youtube-reddit-x-and-perplexity-with-openai-and-airtable-12703",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12703-create-a-daily-ai---automation-content-digest-from-youtube--reddit--x-and-perplexity-with-openai-and-airtable.webp",
+    "categories": [
+      "Content Creation",
+      "AI Summarization"
+    ],
+    "author": "Chase Hannegan",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 127,
+    "downloads": 48,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-a-daily-ai-automation-content-digest-from-youtube-reddit-x-and-perplexity-with-openai-and-airtable-12703"
+  },
+  {
+    "id": 12702,
+    "title": "Route and reassign leads with SLA using Google Sheets and Slack",
+    "description": "SLA-based lead routing in n8n with round-robin assignment, Slack “Contacted” updates, auto re-routing, and one-time escalation—CRM-lite.",
+    "slug": "route-and-reassign-leads-with-sla-using-google-sheets-and-slack-12702",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12702-route-and-reassign-leads-with-sla-using-google-sheets-and-slack.webp",
+    "categories": [
+      "Lead Nurturing"
+    ],
+    "author": "Muh Resky Adiansyah",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "14 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/route-and-reassign-leads-with-sla-using-google-sheets-and-slack-12702"
+  },
+  {
+    "id": 12699,
+    "title": "Enrich Google Sheets company data with the Tavily Research API",
+    "description": "Enrich missing CSV/Google Sheets fields with web-verified data using Tavily’s AI Research API—auto-maps to existing columns and exports clean results.",
+    "slug": "enrich-google-sheets-company-data-with-the-tavily-research-api-12699",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12699-enrich-google-sheets-company-data-with-the-tavily-research-api.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Mani Srinivasan",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/enrich-google-sheets-company-data-with-the-tavily-research-api-12699"
+  },
+  {
+    "id": 12696,
+    "title": "Send daily Reddit digest email with Google Sheets scoring and SMTP",
+    "description": "n8n template to scrape Reddit via RSS, score posts using Google Sheets keywords, and email top threads—social listening without pricey tools.",
+    "slug": "send-daily-reddit-digest-email-with-google-sheets-scoring-and-smtp-12696",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12696-send-daily-reddit-digest-email-with-google-sheets-scoring-and-smtp.webp",
+    "categories": [
+      "Market Research",
+      "AI Summarization"
+    ],
+    "author": "Rachel Stewart",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 0,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-daily-reddit-digest-email-with-google-sheets-scoring-and-smtp-12696"
+  },
+  {
+    "id": 12695,
+    "title": "Automate Xero invoices and payments using webhooks, PostgreSQL and WhatsApp",
+    "description": "Automate invoicing with n8n + Xero: auto-create invoices, track payments, send WhatsApp alerts, and sync logs to Google tools. Learn more.",
+    "slug": "automate-xero-invoices-and-payments-using-webhooks-postgresql-and-whatsapp-12695",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12695-automate-xero-invoices-and-payments-using-webhooks--postgresql-and-whatsapp.webp",
+    "categories": [
+      "Invoice Processing"
+    ],
+    "author": "Gilbert Onyebuchi",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/automate-xero-invoices-and-payments-using-webhooks-postgresql-and-whatsapp-12695"
+  },
+  {
+    "id": 12694,
+    "title": "Generate Shopify collection blog posts with Perplexity, Gemini and Google Sheets",
+    "description": "Automate Shopify collections into SEO blogs with AI images via n8n. Track and approve in Google Sheets, publish to Shopify, and scale content fast.",
+    "slug": "generate-shopify-collection-blog-posts-with-perplexity-gemini-and-google-sheets-12694",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12694-generate-shopify-collection-blog-posts-with-perplexity--gemini-and-google-sheets.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "MANISH KUMAR",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-shopify-collection-blog-posts-with-perplexity-gemini-and-google-sheets-12694"
+  },
+  {
+    "id": 12690,
+    "title": "Build a Shopify store chat agent with Shopify MCP and C1 by Thesys",
+    "description": "Build an embeddable Shopify AI chat agent with n8n, Shopify MCP & C1 by Thesys—live catalog/cart/checkout + streaming interactive UI. Learn more.",
+    "slug": "build-a-shopify-store-chat-agent-with-shopify-mcp-and-c1-by-thesys-12690",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12690-build-a-shopify-store-chat-agent-with-shopify-mcp-and-c1-by-thesys.webp",
+    "categories": [
+      "Support Chatbot",
+      "AI Chatbot"
+    ],
+    "author": "Thesys",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/build-a-shopify-store-chat-agent-with-shopify-mcp-and-c1-by-thesys-12690"
+  },
+  {
+    "id": 12688,
+    "title": "Track tenant document compliance with GPT-4o-mini, Google Drive, Sheets, email and Slack",
+    "description": "AI-powered compliance tracking for property managers: validates lease/ID docs in Google Sheets, flags gaps, and sends Email/Slack reminders. Learn more.",
+    "slug": "track-tenant-document-compliance-with-gpt-4o-mini-google-drive-sheets-email-and-slack-12688",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12688-track-tenant-document-compliance-with-gpt-4o-mini--google-drive--sheets--email-and-slack.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "13 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-tenant-document-compliance-with-gpt-4o-mini-google-drive-sheets-email-and-slack-12688"
+  },
+  {
+    "id": 12687,
+    "title": "Escalate unresolved maintenance requests with GPT-4o, Google Sheets and Slack",
+    "description": "AI maintenance request tracker for property managers: logs to Google Sheets, classifies urgency, monitors SLAs, auto-escalates, sends daily Slack/email reports.",
+    "slug": "escalate-unresolved-maintenance-requests-with-gpt-4o-google-sheets-and-slack-12687",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12687-escalate-unresolved-maintenance-requests-with-gpt-4o--google-sheets-and-slack.webp",
+    "categories": [
+      "Project Management",
+      "AI Summarization"
+    ],
+    "author": "Hyrum Hurst",
+    "complexity": "advanced",
+    "price": "Paid",
+    "date": "13 Jan 2026",
+    "views": 2,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/escalate-unresolved-maintenance-requests-with-gpt-4o-google-sheets-and-slack-12687"
+  },
+  {
+    "id": 12686,
+    "title": "Predict incidents and run autonomous remediation with GPT-4 and Slack",
+    "description": "Automate customer journeys with smart AI routing across OpenAI, Claude & NVIDIA—personalized replies, Gmail/Sheets tracking, 70% less manual work.",
+    "slug": "predict-incidents-and-run-autonomous-remediation-with-gpt-4-and-slack-12686",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12686-predict-incidents-and-run-autonomous-remediation-with-gpt-4-and-slack.webp",
+    "categories": [
+      "DevOps",
+      "AI Summarization"
+    ],
+    "author": "Cheng Siong Chin",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 5,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/predict-incidents-and-run-autonomous-remediation-with-gpt-4-and-slack-12686"
+  },
+  {
+    "id": 12684,
+    "title": "Poll KIE.ai video generation status and send results via Telegram",
+    "description": "Production-ready n8n polling webhook for Veo/Sora/Seedance: async status checks, retries/timeouts, S3+Redis sync, and Telegram previews.",
+    "slug": "poll-kieai-video-generation-status-and-send-results-via-telegram-12684",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12684-poll-kie-ai-video-generation-status-and-send-results-via-telegram.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "JoeVenner",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/poll-kieai-video-generation-status-and-send-results-via-telegram-12684"
+  },
+  {
+    "id": 12682,
+    "title": "Generate AI short-form videos from Telegram with OpenAI, KIE.ai and YouTube/TikTok/Instagram",
+    "description": "Turn Telegram into an AI video studio—create viral Shorts from text/voice/images in minutes, auto-publish to YouTube with SEO titles. Learn more.",
+    "slug": "generate-ai-short-form-videos-from-telegram-with-openai-kieai-and-youtubetiktokinstagram-12682",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12682-generate-ai-short-form-videos-from-telegram-with-openai--kie-ai-and-youtube-tiktok-instagram.webp",
+    "categories": [
+      "Content Creation",
+      "Multimodal AI"
+    ],
+    "author": "JoeVenner",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 3,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-ai-short-form-videos-from-telegram-with-openai-kieai-and-youtubetiktokinstagram-12682"
+  },
+  {
+    "id": 12680,
+    "title": "Track receipt expenses via LINE with OpenAI GPT-4o-mini and Google Sheets",
+    "description": "Automate expense tracking via LINE: OCR receipts with GPT‑4o‑mini, prevent duplicates, save to Drive, log to Sheets, and get AI cash‑flow insights.",
+    "slug": "track-receipt-expenses-via-line-with-openai-gpt-4o-mini-and-google-sheets-12680",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12680-track-receipt-expenses-via-line-with-openai-gpt-4o-mini-and-google-sheets.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Chatbot"
+    ],
+    "author": "HayatoFujita/藤田隼人",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/track-receipt-expenses-via-line-with-openai-gpt-4o-mini-and-google-sheets-12680"
+  },
+  {
+    "id": 12679,
+    "title": "Sync contacts two-way between Zoho CRM and KlickTipp",
+    "description": "Two-way Zoho CRM–KlickTipp sync template: real-time contact, subscription & segment updates via webhooks—no manual imports. Learn more.",
+    "slug": "sync-contacts-two-way-between-zoho-crm-and-klicktipp-12679",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12679-sync-contacts-two-way-between-zoho-crm-and-klicktipp.webp",
+    "categories": [
+      "CRM"
+    ],
+    "author": "KlickTipp",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/sync-contacts-two-way-between-zoho-crm-and-klicktipp-12679"
+  },
+  {
+    "id": 12676,
+    "title": "Monitor .my domains with MYNIC RDAP and send alerts via Gmail and Discord",
+    "description": "Automate .my domain monitoring with Khaisa Domain Sniper—free MYNIC RDAP checks plus instant Gmail & Discord alerts so you never miss a drop.",
+    "slug": "monitor-my-domains-with-mynic-rdap-and-send-alerts-via-gmail-and-discord-12676",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12676-monitor--my-domains-with-mynic-rdap-and-send-alerts-via-gmail-and-discord.webp",
+    "categories": [
+      "Market Research"
+    ],
+    "author": "Khaisa Studio",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/monitor-my-domains-with-mynic-rdap-and-send-alerts-via-gmail-and-discord-12676"
+  },
+  {
+    "id": 12674,
+    "title": "Send AI revenue forecast alerts from HubSpot via Gmail, Slack and Sheets",
+    "description": "Automate AI revenue forecasts from HubSpot deals—best/likely/worst scenarios, risk insights, Slack & email alerts, and Google Sheets tracking.",
+    "slug": "send-ai-revenue-forecast-alerts-from-hubspot-via-gmail-slack-and-sheets-12674",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12674-send-ai-revenue-forecast-alerts-from-hubspot-via-gmail--slack-and-sheets.webp",
+    "categories": [
+      "CRM",
+      "AI Summarization"
+    ],
+    "author": "Avkash Kakdiya",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 1,
+    "downloads": 1,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-ai-revenue-forecast-alerts-from-hubspot-via-gmail-slack-and-sheets-12674"
+  },
+  {
+    "id": 12673,
+    "title": "Send AI-powered post-purchase emails and WhatsApp messages from PostgreSQL to Google Sheets with Groq",
+    "description": "Automate post‑purchase outreach: detect completed PostgreSQL orders, generate AI messages, send via Gmail & WhatsApp, and log everything in Google Sheets.",
+    "slug": "send-ai-powered-post-purchase-emails-and-whatsapp-messages-from-postgresql-to-google-sheets-with-groq-12673",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12673-send-ai-powered-post-purchase-emails-and-whatsapp-messages-from-postgresql-to-google-sheets-with-groq.webp",
+    "categories": [
+      "Lead Nurturing",
+      "AI Chatbot"
+    ],
+    "author": "Avkash Kakdiya",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 5,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/send-ai-powered-post-purchase-emails-and-whatsapp-messages-from-postgresql-to-google-sheets-with-groq-12673"
+  },
+  {
+    "id": 12672,
+    "title": "Generate and enrich Google Maps leads with Apify, Hunter and Google Sheets",
+    "description": "Automate Google Maps lead gen daily: scrape, clean, dedupe in Google Sheets, enrich verified emails w/ confidence, and get emailed reports. Learn more.",
+    "slug": "generate-and-enrich-google-maps-leads-with-apify-hunter-and-google-sheets-12672",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12672-generate-and-enrich-google-maps-leads-with-apify--hunter-and-google-sheets.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Avkash Kakdiya",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 7,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/generate-and-enrich-google-maps-leads-with-apify-hunter-and-google-sheets-12672"
+  },
+  {
+    "id": 12671,
+    "title": "Route and categorize Gmail emails to Slack with Llama 3 via OpenRouter",
+    "description": "Automate Gmail triage in n8n with AI categorization and Slack routing—auto-create channels, post summaries with reply links, and keep teams aligned.",
+    "slug": "route-and-categorize-gmail-emails-to-slack-with-llama-3-via-openrouter-12671",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12671-route-and-categorize-gmail-emails-to-slack-with-llama-3-via-openrouter.webp",
+    "categories": [
+      "Ticket Management",
+      "AI Summarization"
+    ],
+    "author": "Intuz ",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "13 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/route-and-categorize-gmail-emails-to-slack-with-llama-3-via-openrouter-12671"
+  },
+  {
+    "id": 12665,
+    "title": "Manage Patreon and Ko-fi leads with Gmail, OpenAI and Google Sheets",
+    "description": "Automate Patreon & Ko-fi supporter communication via webhook detection, Ko-fi validation, AI event status, newsletter syncing, custom emails & optional CRM.",
+    "slug": "manage-patreon-and-ko-fi-leads-with-gmail-openai-and-google-sheets-12665",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12665-manage-patreon-and-ko-fi-leads-with-gmail--openai-and-google-sheets.webp",
+    "categories": [
+      "Lead Generation",
+      "AI Summarization"
+    ],
+    "author": "Max",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-patreon-and-ko-fi-leads-with-gmail-openai-and-google-sheets-12665"
+  },
+  {
+    "id": 12664,
+    "title": "Distribute summarized meeting notes with Microsoft Teams and ClickUp",
+    "description": "Automate meeting recaps: transcribe recordings/notes, AI-summarize action items, post to Microsoft Teams, and create ClickUp tasks to track follow-ups.",
+    "slug": "distribute-summarized-meeting-notes-with-microsoft-teams-and-clickup-12664",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12664-distribute-summarized-meeting-notes-with-microsoft-teams-and-clickup.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "vinci-king-01",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 4,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/distribute-summarized-meeting-notes-with-microsoft-teams-and-clickup-12664"
+  },
+  {
+    "id": 12663,
+    "title": "Create and schedule LinkedIn posts from Google Sheets with Gemini and DALL·E",
+    "description": "Automate LinkedIn posts with n8n: turn topics into on-brand drafts + images, approve in Google Sheets, then auto-publish on schedule.",
+    "slug": "create-and-schedule-linkedin-posts-from-google-sheets-with-gemini-and-dalle-12663",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12663-create-and-schedule-linkedin-posts-from-google-sheets-with-gemini-and-dall-e.webp",
+    "categories": [
+      "Social Media",
+      "Multimodal AI"
+    ],
+    "author": "simonscrapes",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 199,
+    "downloads": 82,
+    "source_url": "https://n8nworkflows.xyz/workflows/create-and-schedule-linkedin-posts-from-google-sheets-with-gemini-and-dalle-12663"
+  },
+  {
+    "id": 12662,
+    "title": "Automate 3-way invoice matching from Gmail to Xero with Slack and Teams alerts",
+    "description": "Automate AP with AI invoice parsing, secure decryption, fuzzy vendor match, 3-way reconciliation, and Slack/Teams/Gmail alerts—learn more.",
+    "slug": "automate-3-way-invoice-matching-from-gmail-to-xero-with-slack-and-teams-alerts-12662",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12662-automate-3-way-invoice-matching-from-gmail-to-xero-with-slack-and-teams-alerts.webp",
+    "categories": [
+      "Invoice Processing",
+      "AI Summarization"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/automate-3-way-invoice-matching-from-gmail-to-xero-with-slack-and-teams-alerts-12662"
+  },
+  {
+    "id": 12661,
+    "title": "Secure and classify legal documents with OpenAI, Airtable and HTML to PDF",
+    "description": "Enterprise Legal Vault automates AI doc classification, risk scoring, encryption/watermarks, retention, and compliance across GDPR/CCPA/HIPAA. Learn more.",
+    "slug": "secure-and-classify-legal-documents-with-openai-airtable-and-html-to-pdf-12661",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12661-secure-and-classify-legal-documents-with-openai--airtable-and-html-to-pdf.webp",
+    "categories": [
+      "Document Extraction",
+      "AI Summarization"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 2,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/secure-and-classify-legal-documents-with-openai-airtable-and-html-to-pdf-12661"
+  },
+  {
+    "id": 12660,
+    "title": "Deliver encrypted payroll PDFs via Google Drive, Sheets, Gmail and Slack",
+    "description": "Securely encrypt and email payslips with 128-bit AES, fail-closed error handling, Drive/Sheets automation, and Slack alerts. Learn more.",
+    "slug": "deliver-encrypted-payroll-pdfs-via-google-drive-sheets-gmail-and-slack-12660",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12660-deliver-encrypted-payroll-pdfs-via-google-drive--sheets--gmail-and-slack.webp",
+    "categories": [
+      "Document Extraction"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 1,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/deliver-encrypted-payroll-pdfs-via-google-drive-sheets-gmail-and-slack-12660"
+  },
+  {
+    "id": 12659,
+    "title": "Manage enterprise contract approvals and audit PDFs with HubSpot, Google Drive and Slack",
+    "description": "AI-optimized enterprise CLM with dynamic approvals, smart PDF compression, immutable audit trails, HubSpot sync, Drive archiving & Slack alerts.",
+    "slug": "manage-enterprise-contract-approvals-and-audit-pdfs-with-hubspot-google-drive-and-slack-12659",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12659-manage-enterprise-contract-approvals-and-audit-pdfs-with-hubspot--google-drive-and-slack.webp",
+    "categories": [
+      "Document Extraction"
+    ],
+    "author": "Jitesh Dugar",
+    "complexity": "intermediate",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/manage-enterprise-contract-approvals-and-audit-pdfs-with-hubspot-google-drive-and-slack-12659"
+  },
+  {
+    "id": 12656,
+    "title": "Log farm machinery operations from a webhook into Google Sheets",
+    "description": "Automate farm ops logging via webhook to Google Sheets—track machinery, fuel, and breakdowns in real time. Save 30–60 minutes daily. Learn more.",
+    "slug": "log-farm-machinery-operations-from-a-webhook-into-google-sheets-12656",
+    "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/12656-log-farm-machinery-operations-from-a-webhook-into-google-sheets.webp",
+    "categories": [
+      "Document Extraction"
+    ],
+    "author": "vaughn959",
+    "complexity": "advanced",
+    "price": "Free",
+    "date": "12 Jan 2026",
+    "views": 0,
+    "downloads": 0,
+    "source_url": "https://n8nworkflows.xyz/workflows/log-farm-machinery-operations-from-a-webhook-into-google-sheets-12656"
+  }
+]

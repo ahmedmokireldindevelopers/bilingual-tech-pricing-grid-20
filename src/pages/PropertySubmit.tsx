@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -765,6 +766,11 @@ const PropertySubmitContent = () => {
 const PropertySubmit = () => {
   return (
     <LanguageProvider>
+      <SEO
+        title="Submit Your Property"
+        description="List your property for sale, rent, or exchange. Reach thousands of potential buyers with our marketing platform."
+        keywords={['Submit Property', 'Sell Home', 'Rent Apartment', 'Real Estate Listing']}
+      />
       <PropertySubmitContent />
     </LanguageProvider>
   );

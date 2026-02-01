@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -328,6 +329,11 @@ const BookingContent = () => {
 
 const Booking = () => (
   <LanguageProvider>
+    <SEO
+      title="Book an Appointment"
+      description="Schedule a consultation with our technical experts for WhatsApp API, Chatbot development, or Business Automation."
+      keywords={['Booking', 'Consultation', 'Appointment', 'Technical Support']}
+    />
     <BookingContent />
   </LanguageProvider>
 );

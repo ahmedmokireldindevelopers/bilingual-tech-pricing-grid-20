@@ -72,9 +72,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Poppins', 'Tajawal', 'sans-serif'],
-				arabic: ['Tajawal', 'sans-serif'],
-				english: ['Poppins', 'sans-serif']
+				sans: ['Inter', 'Cairo', 'sans-serif'],
+				arabic: ['Cairo', 'sans-serif'],
+				english: ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
