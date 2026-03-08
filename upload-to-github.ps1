@@ -2,6 +2,7 @@
 param(
     [string]$RepoName,
     [string]$Owner,
+    [string]$Token,
     [ValidateSet("public", "private")]
     [string]$Visibility = "private",
     [string]$Description = "",
@@ -255,7 +256,7 @@ function Ensure-GitHubCli {
         return
     }
 
-    throw "GitHub CLI is required to create a repository. Install it from https://cli.github.com/ and run the script again."
+    throw "GitHub CLI is required for this path."
 }
 
 function Ensure-GitHubAuth {
@@ -276,6 +277,181 @@ function Ensure-GitHubAuth {
     Invoke-WriteCommand -FilePath "gh" -Arguments @("auth", "login")
 }
 
+function Get-GitHubToken {
+    if ($DryRun) {
+        return "dry-run-token"
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($Token)) {
+        return $Token.Trim()
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
+        return $env:GH_TOKEN.Trim()
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($env:GITHUB_TOKEN)) {
+        return $env:GITHUB_TOKEN.Trim()
+    }
+
+    if ($NoPrompt) {
+        throw "A GitHub token is required. Pass -Token or set GH_TOKEN or GITHUB_TOKEN."
+    }
+
+    $secureToken = Read-Host "GitHub personal access token" -AsSecureString
+    $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureToken)
+    try {
+        $plainToken = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($bstr)
+    }
+    finally {
+        [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+    }
+
+    if ([string]::IsNullOrWhiteSpace($plainToken)) {
+        throw "A GitHub token is required."
+    }
+
+    return $plainToken.Trim()
+}
+
+function Get-GitHubHeaders {
+    param([string]$AuthToken)
+
+    return @{
+        Accept                 = "application/vnd.github+json"
+        Authorization          = "Bearer $AuthToken"
+        "X-GitHub-Api-Version" = "2022-11-28"
+        "User-Agent"           = "upload-to-github-script"
+    }
+}
+
+function Invoke-GitHubApi {
+    param(
+        [string]$Method,
+        [string]$Uri,
+        [string]$AuthToken,
+        [object]$Body
+    )
+
+    if ($DryRun) {
+        Write-Host "[dry-run] $Method $Uri" -ForegroundColor Yellow
+        return $null
+    }
+
+    $request = @{
+        Method      = $Method
+        Uri         = $Uri
+        Headers     = Get-GitHubHeaders -AuthToken $AuthToken
+        ErrorAction = "Stop"
+    }
+
+    if ($null -ne $Body) {
+        $request.Body = ($Body | ConvertTo-Json -Depth 10)
+        $request.ContentType = "application/json"
+    }
+
+    try {
+        return Invoke-RestMethod @request
+    }
+    catch {
+        $response = $_.Exception.Response
+        if ($null -ne $response) {
+            $reader = New-Object System.IO.StreamReader($response.GetResponseStream())
+            $errorBody = $reader.ReadToEnd()
+            $reader.Dispose()
+            throw "GitHub API request failed: $Method $Uri`n$errorBody"
+        }
+
+        throw
+    }
+}
+
+function Get-AuthenticatedGitHubLogin {
+    param([string]$AuthToken)
+
+    if ($DryRun) {
+        if (-not [string]::IsNullOrWhiteSpace($Owner)) {
+            return $Owner
+        }
+
+        return "dry-run-user"
+    }
+
+    $user = Invoke-GitHubApi -Method "GET" -Uri "https://api.github.com/user" -AuthToken $AuthToken
+    if ([string]::IsNullOrWhiteSpace($user.login)) {
+        throw "Unable to determine the authenticated GitHub username."
+    }
+
+    return $user.login
+}
+
+function Test-GitHubOrganization {
+    param(
+        [string]$Organization,
+        [string]$AuthToken
+    )
+
+    if ($DryRun) {
+        return $true
+    }
+
+    try {
+        Invoke-GitHubApi -Method "GET" -Uri "https://api.github.com/orgs/$Organization" -AuthToken $AuthToken | Out-Null
+        return $true
+    }
+    catch {
+        return $false
+    }
+}
+
+function New-GitHubRepositoryViaApi {
+    param(
+        [string]$RepositoryName,
+        [string]$RepositoryOwner,
+        [string]$RepositoryVisibility,
+        [string]$RepositoryDescription,
+        [string]$ExistingOriginUrl
+    )
+
+    $authToken = Get-GitHubToken
+    $authenticatedLogin = Get-AuthenticatedGitHubLogin -AuthToken $authToken
+
+    if (-not [string]::IsNullOrWhiteSpace($ExistingOriginUrl)) {
+        $backupRemoteName = Get-UniqueRemoteName -BaseName "origin-backup"
+        Write-Step "Renaming existing origin remote to $backupRemoteName"
+        Invoke-WriteCommand -FilePath "git" -Arguments @("remote", "rename", "origin", $backupRemoteName)
+    }
+
+    $targetOwner = $RepositoryOwner
+    if ([string]::IsNullOrWhiteSpace($targetOwner)) {
+        $targetOwner = $authenticatedLogin
+    }
+
+    $body = @{
+        name        = $RepositoryName
+        description = $RepositoryDescription
+        private     = $RepositoryVisibility -eq "private"
+    }
+
+    if ($targetOwner -eq $authenticatedLogin) {
+        $uri = "https://api.github.com/user/repos"
+    }
+    else {
+        if (-not (Test-GitHubOrganization -Organization $targetOwner -AuthToken $authToken)) {
+            throw "Owner '$targetOwner' is not the authenticated user and was not found as an organization. Omit -Owner for a personal repo or pass an organization you can create repos in."
+        }
+
+        $uri = "https://api.github.com/orgs/$targetOwner/repos"
+    }
+
+    Write-Step "Creating GitHub repository $targetOwner/$RepositoryName"
+    Invoke-GitHubApi -Method "POST" -Uri $uri -AuthToken $authToken -Body $body | Out-Null
+
+    $remoteUrl = "https://github.com/$targetOwner/$RepositoryName.git"
+    Write-Step "Adding origin remote"
+    Invoke-WriteCommand -FilePath "git" -Arguments @("remote", "add", "origin", $remoteUrl)
+}
+
 function New-GitHubRepository {
     param(
         [string]$RepositoryName,
@@ -285,27 +461,32 @@ function New-GitHubRepository {
         [string]$ExistingOriginUrl
     )
 
-    Ensure-GitHubCli
-    Ensure-GitHubAuth
+    if (Test-CommandAvailable -Name "gh") {
+        Ensure-GitHubCli
+        Ensure-GitHubAuth
 
-    if (-not [string]::IsNullOrWhiteSpace($ExistingOriginUrl)) {
-        $backupRemoteName = Get-UniqueRemoteName -BaseName "origin-backup"
-        Write-Step "Renaming existing origin remote to $backupRemoteName"
-        Invoke-WriteCommand -FilePath "git" -Arguments @("remote", "rename", "origin", $backupRemoteName)
+        if (-not [string]::IsNullOrWhiteSpace($ExistingOriginUrl)) {
+            $backupRemoteName = Get-UniqueRemoteName -BaseName "origin-backup"
+            Write-Step "Renaming existing origin remote to $backupRemoteName"
+            Invoke-WriteCommand -FilePath "git" -Arguments @("remote", "rename", "origin", $backupRemoteName)
+        }
+
+        $targetRepo = $RepositoryName
+        if (-not [string]::IsNullOrWhiteSpace($RepositoryOwner)) {
+            $targetRepo = "$RepositoryOwner/$RepositoryName"
+        }
+
+        $arguments = @("repo", "create", $targetRepo, "--$RepositoryVisibility", "--source", ".", "--remote", "origin")
+        if (-not [string]::IsNullOrWhiteSpace($RepositoryDescription)) {
+            $arguments += @("--description", $RepositoryDescription)
+        }
+
+        Write-Step "Creating GitHub repository $targetRepo"
+        Invoke-WriteCommand -FilePath "gh" -Arguments $arguments
+        return
     }
 
-    $targetRepo = $RepositoryName
-    if (-not [string]::IsNullOrWhiteSpace($RepositoryOwner)) {
-        $targetRepo = "$RepositoryOwner/$RepositoryName"
-    }
-
-    $arguments = @("repo", "create", $targetRepo, "--$RepositoryVisibility", "--source", ".", "--remote", "origin")
-    if (-not [string]::IsNullOrWhiteSpace($RepositoryDescription)) {
-        $arguments += @("--description", $RepositoryDescription)
-    }
-
-    Write-Step "Creating GitHub repository $targetRepo"
-    Invoke-WriteCommand -FilePath "gh" -Arguments $arguments
+    New-GitHubRepositoryViaApi -RepositoryName $RepositoryName -RepositoryOwner $RepositoryOwner -RepositoryVisibility $RepositoryVisibility -RepositoryDescription $RepositoryDescription -ExistingOriginUrl $ExistingOriginUrl
 }
 
 if ($ReplaceOrigin -and $UseExistingRemote) {
