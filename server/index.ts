@@ -140,6 +140,59 @@ app.post('/api/property-submit',
   }
 );
 
+// Load Templates
+let cachedTemplates: any[] | null = null;
+let cachedList: any[] | null = null;
+
+const getTemplates = () => {
+  if (cachedTemplates) return cachedTemplates;
+
+  try {
+    const templatesPath = path.join(__dirname, 'data', 'templates.json');
+    if (fs.existsSync(templatesPath)) {
+      console.log('Reading and caching templates.json into memory...');
+      const data = fs.readFileSync(templatesPath, 'utf-8');
+      cachedTemplates = JSON.parse(data);
+      return cachedTemplates || [];
+    }
+  } catch (err) {
+    console.error('Error reading templates.json:', err);
+  }
+  return [];
+};
+
+// Templates List API
+app.get('/api/templates', (req, res) => {
+  if (cachedList) {
+    return res.json(cachedList);
+  }
+
+  const templates = getTemplates();
+  // Don't send the massive JSON payload for the list view
+  const list = templates.map((t: any) => ({
+    id: t.id,
+    urlSlug: t.urlSlug,
+    title: t.title,
+    description: t.description,
+    isPremium: t.isPremium,
+    downloads: t.downloads,
+    tags: t.tags
+  }));
+  cachedList = list;
+  res.json(list);
+});
+
+// Single Template API
+app.get('/api/templates/:id', (req, res) => {
+  const templates = getTemplates();
+  const template = templates.find((t: any) => t.id === req.params.id || t.urlSlug === req.params.id);
+  if (template) {
+    res.json(template);
+  } else {
+    res.status(404).json({ error: 'Template not found' });
+  }
+});
+
 // Health check endpoint
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });

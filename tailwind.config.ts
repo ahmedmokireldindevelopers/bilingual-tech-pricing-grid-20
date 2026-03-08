@@ -72,9 +72,13 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'Cairo', 'sans-serif'],
+				sans: ['Outfit', 'Cairo', 'sans-serif'],
 				arabic: ['Cairo', 'sans-serif'],
-				english: ['Inter', 'sans-serif']
+				english: ['Outfit', 'sans-serif']
+			},
+			boxShadow: {
+				'glow': '0 0 40px -10px rgba(78, 84, 200, 0.35)',
+				'glow-sm': '0 0 20px -5px rgba(78, 84, 200, 0.25)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

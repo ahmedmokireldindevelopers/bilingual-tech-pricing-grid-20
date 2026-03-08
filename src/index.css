@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,15 +7,14 @@
 
 @layer base {
   :root {
-    /* ... (vars remain same, just implied) */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 224 30% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 224 30% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 224 30% 12%;
 
     --primary: 238 83% 54%;
     --primary-foreground: 210 40% 98%;
@@ -23,8 +22,8 @@
     --secondary: 238 80% 77%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
     --accent: 348 100% 70%;
     --accent-foreground: 222.2 47.4% 11.2%;
@@ -32,11 +31,11 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 238 83% 54%;
 
-    --radius: 0.5rem;
+    --radius: 0.625rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -101,7 +100,7 @@
   .ltr {
     direction: ltr;
     text-align: left;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
   }
 }
 
@@ -117,11 +116,11 @@
 
 @layer components {
   .service-card {
-    @apply border rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-white;
+    @apply border border-gray-200/80 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-tech-blue/5 hover:-translate-y-1 bg-white dark:bg-gray-800/50 dark:border-gray-700/50 dark:hover:shadow-tech-blue/10;
   }
 
   .price-card {
-    @apply border rounded-xl p-6 transition-all duration-300 hover:shadow-xl bg-white overflow-hidden relative;
+    @apply border border-gray-200/80 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:shadow-tech-blue/5 bg-white dark:bg-gray-800/50 dark:border-gray-700/50 overflow-hidden relative;
   }
 
   .feature-list li {
@@ -129,26 +128,34 @@
   }
 
   .service-icon {
-    @apply rounded-full p-3 bg-tech-light text-tech-blue flex items-center justify-center w-12 h-12;
+    @apply rounded-xl p-3 bg-tech-light text-tech-blue flex items-center justify-center w-12 h-12 dark:bg-tech-blue/20 dark:text-tech-purple transition-transform duration-300 hover:scale-105;
   }
 
   .cta-button {
-    @apply bg-tech-blue text-white py-3 px-6 rounded-lg font-medium transition-all hover:bg-tech-dark;
+    @apply bg-tech-blue text-white py-3 px-6 rounded-xl font-medium transition-all duration-300 hover:bg-tech-dark hover:shadow-lg hover:shadow-tech-blue/25 focus:ring-2 focus:ring-tech-blue/50 focus:ring-offset-2;
   }
 
   .secondary-button {
-    @apply border border-tech-blue text-tech-blue py-3 px-6 rounded-lg font-medium transition-all hover:bg-tech-light;
+    @apply border-2 border-tech-blue text-tech-blue py-3 px-6 rounded-xl font-medium transition-all duration-300 hover:bg-tech-light dark:hover:bg-tech-blue/10 focus:ring-2 focus:ring-tech-blue/50 focus:ring-offset-2;
   }
 
   .contact-link {
-    @apply flex items-center gap-2 text-tech-dark hover:text-tech-blue transition-colors;
+    @apply flex items-center gap-2 text-tech-dark hover:text-tech-blue transition-colors duration-200;
   }
 
   .section-title {
-    @apply text-3xl font-bold mb-2;
+    @apply text-3xl font-bold mb-2 tracking-tight text-gray-900 dark:text-white;
   }
 
   .section-subtitle {
-    @apply text-lg text-muted-foreground mb-8 max-w-3xl mx-auto;
+    @apply text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed;
+  }
+
+  .page-container {
+    @apply min-h-screen bg-gray-50/80 dark:bg-gray-900/95 pt-24 pb-12 px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-elevated {
+    @apply bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700/50 transition-shadow duration-300 hover:shadow-md;
   }
 }

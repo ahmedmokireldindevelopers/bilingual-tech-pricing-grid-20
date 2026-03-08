@@ -33,8 +33,8 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled || !isHomePage
-        ? 'bg-white shadow-sm border-b border-gray-100' 
-        : 'bg-white/5 backdrop-blur-sm'
+        ? 'bg-white/95 dark:bg-gray-900/95 shadow-md shadow-gray-200/50 dark:shadow-black/20 border-b border-gray-200/80 dark:border-gray-700/50 backdrop-blur-md' 
+        : 'bg-white/5 dark:bg-transparent backdrop-blur-sm'
     }`}>
       <div className="container mx-auto">
         <div className={`flex items-center justify-between py-2.5 px-4 ${isRtl ? 'flex-row-reverse' : ''}`}>
@@ -60,12 +60,12 @@ const Header = () => {
               <Link 
                 key={link.href}
                 to={link.href} 
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-2 rounded-xl text-sm font-medium transition-all duration-200 flex items-center gap-1.5 ${
                   location.pathname === link.href 
-                    ? 'bg-blue-50 text-blue-600' 
+                    ? 'bg-tech-light dark:bg-tech-blue/20 text-tech-blue dark:text-tech-purple' 
                     : shouldShowLight 
                       ? 'text-white/90 hover:bg-white/10' 
-                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                      : 'text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white'
                 }`}
                 data-testid={`link-nav-${link.href.replace('/', '')}`}
               >
